@@ -1,0 +1,1933 @@
+//ecli{ "cheat.ecl";}
+#include "main.tecl"
+//#include "cheat.tecl"
+
+void Boss()
+{
+    setBoss(0);
+    anmSelect(3);
+    anmSetMain(0, 0);
+    flagSet(64);
+    setHurtbox(48.0f, 48.0f);
+    setHitbox(48.0f, 48.0f);
+    setInvuln(60);
+    lifeSet(13200);
+    movePosTime(60, 4, 0.0f, 128.0f);
+    $CAPTURE = 1;
+    wait(60);
+    dialogWait();
+    moveLimit(0.0f, 128.0f, 280.0f, 64.0f);
+    anmSelect(1);
+    anmSetSprite(1, 53);
+    anmSetSprite(2, 105);
+    anmSelect(3);
+    flagSet(12);
+    fog(128.0f, 3100671);
+    unless ($SPELL_ID >= 0) goto Boss_1376 @ 0;
+    unless (($SPELL_ID >= 32) && ($SPELL_ID <= 35)) goto Boss_788 @ 0;
+    lifeSet(2200);
+    @BossCard1();
+    goto Boss_1376 @ 0;
+Boss_788:
+    unless (($SPELL_ID >= 36) && ($SPELL_ID <= 39)) goto Boss_1016 @ 0;
+    lifeSet(2600);
+    @BossCard2();
+    goto Boss_1376 @ 0;
+Boss_1016:
+    unless (($SPELL_ID >= 40) && ($SPELL_ID <= 43)) goto Boss_1244 @ 0;
+    lifeSet(2800);
+    @BossCard3();
+    goto Boss_1376 @ 0;
+Boss_1244:
+    unless ($SPELL_ID == 121) goto Boss_1376 @ 0;
+    lifeSet(2600);
+    @BossCard2();
+Boss_1376:
+    debug22(3, "Boss3");
+    @Boss1();
+    delete();
+}
+
+void Boss1()
+{
+    timerReset();
+    setNext(0, 2200, 3300, "BossCard1");
+    lifeMarker(0, 2200.0f, -24448);
+    stars(10);
+	setInvuln(120);
+    goto Boss1_508 @ 0;
+Boss1_208:
+    anmSelect(3);
+    anmSelectedPlay(0);
+	@Boss1_at() async;
+	@Boss1_at1() async;
+	wait(60);
+!L 
+	@Boss1_at() async;
+	@Boss1_at1() async;
+!*
+	wait(101000000);
+Boss1_508:
+    if (1) goto Boss1_208 @ 0;
+    return;
+}
+
+void Boss1_at()
+{
+	var A, B, C, D, E;
+	diffI($D, 38, 38, 19, 19);
+	diffF(%E, 4f, 4f, 8f, 8f);
+	@CreatePattern(1, 1, 4, 7, 1, 1, 0f, 0f, 0f, 0f);
+	etExSet(1, 0, 0, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+!E
+	260;
+!N 
+	200;
+!H 
+	100;
+!L 
+	60;
+!*
+	etExSet(1, 1, 0, EX_WAIT, [-1], NEG, NEGF, NEGF);
+	//etExSet(1, 1, 0, EX_WAIT, 200, NEG, NEGF, NEGF);
+	//etExSet(1, 2, 0, EX_VELTIME, 200, 0, 2f, rad(90));
+	etExSet(1, 2, 0, EX_VELTIME, 1, NEG, 0f, NEGF);
+	%A = 76f;
+	while(1)
+	{
+	//%A = 76f;
+	times($D)//
+	{
+		etOffsetAbs(1, %A, 163f);
+		mathAngle(%C, %A, 163f, BOSS_X, BOSS_Y);
+!E
+	260;
+!N 
+	200;
+!H 
+	40;
+!L 
+	20;
+!*
+		etExSet(1, 2, 0, EX_VELTIME, [-1], NEG, 2f, %C);
+		etOn(1);
+		%A = %A - %E;
+		wait(1);
+	}
+	%B = 163f;
+	wait(20);
+	times($D)//
+	{
+		etOffsetAbs(1, %A, %B);
+		mathAngle(%C, %A, %B, BOSS_X, BOSS_Y);
+!E
+	260;
+!N 
+	200;
+!H 
+	40;
+!L 
+	20;
+!*
+		etExSet(1, 2, 0, EX_VELTIME, [-1], NEG, 2f, %C);
+		etOn(1);
+		%A = %A + (%E / 2f);
+!EN
+		%B = %B - 3.4f;
+!HL 
+		%B = %B - 6.8f;
+!*
+		wait(1);
+	}
+	wait(20);
+	times($D)//
+	{
+		etOffsetAbs(1, %A, %B);
+		mathAngle(%C, %A, %B, BOSS_X, BOSS_Y);
+!E
+	260;
+!N 
+	200;
+!H 
+	40;
+!L 
+	20;
+!*
+		etExSet(1, 2, 0, EX_VELTIME, [-1], NEG, 2f, %C);
+		etOn(1);
+		%A = %A + (%E / 2f);
+!EN
+		%B = %B + 3.4f;
+!HL 
+		%B = %B + 6.8f;
+!*
+		wait(1);
+	}
+	wait(20);
+	}
+}
+void Boss1_at1()
+{
+	var A, B, C, D, E;
+	diffI($D, 19, 19, 19, 38);
+	diffF(%E, 8f, 8f, 8f, 4f);
+	@CreatePattern(0, 1, 4, 9, 1, 1, 0f, 0f, 0f, 0f);
+	etExSet(0, 0, 0, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+!E
+	260;
+!N 
+	200;
+!H 
+	40;
+!L 
+	20;
+!*
+	etExSet(0, 1, 0, EX_WAIT, [-1], NEG, NEGF, NEGF);
+	//etExSet(0, 2, 0, EX_VELTIME, 200, 0, 2f, rad(90));
+	%A = -76f;
+	while(1)
+	{
+	times($D)//
+	{
+		etOffsetAbs(0, %A, 78f);
+		mathAngle(%C, %A, 78f, BOSS_X, BOSS_Y);
+!E
+	260;
+!N 
+	200;
+!H 
+	40;
+!L 
+	20;
+!*
+		etExSet(0, 2, 0, EX_VELTIME, [-1], NEG, 2f, %C);
+		etOn(0);
+		%A = %A + %E;
+		wait(_S(0.5));
+	}
+	%B =  78f;
+	wait(10);
+	times($D)//
+	{
+		etOffsetAbs(0, %A, %B);
+		mathAngle(%C, %A, %B, BOSS_X, BOSS_Y);
+!E
+	260;
+!N 
+	200;
+!H 
+	40;
+!L 
+	20;
+!*
+		etExSet(0, 2, 0, EX_VELTIME, [-1], NEG, 2f, %C);
+		etOn(0);
+		%A = %A - %E / 2f;
+!L
+		%B = %B + 3.4f;
+!ENH
+		%B = %B + 6.8f;
+!*
+		diffWait(1, 1, _S(0.5), _S(0.5));
+	}
+	wait(10);
+	times($D)//
+	{
+		etOffsetAbs(0, %A, %B);
+		mathAngle(%C, %A, %B, BOSS_X, BOSS_Y);
+!E
+	260;
+!N 
+	200;
+!H 
+	40;
+!L 
+	20;
+!*
+		etExSet(0, 2, 0, EX_VELTIME, [-1], NEG, 2f, %C);
+		etOn(0);
+		%A = %A - %E / 2f;
+!L
+		%B = %B - 3.4f;
+!ENH
+		%B = %B - 6.8f;
+!*
+		wait(_S(0.5));
+	}
+	wait(10);
+	}
+}
+
+/*void forme()
+{
+	flagSet(1);
+	flagSet(2);
+	anmSelect(2);
+	anmSetMain(0, 5);
+	@forme_at() async;
+	moveVel(0f, 5f);
+	wait(30);
+	moveVel(rad(120), 5f);
+	wait(30);
+	moveVel(rad(240), 5f);
+	wait(30);
+	moveVel(rad(120), 0f);
+	wait(20);
+	wait(1000);
+}
+void forme1()
+{
+	flagSet(1);
+	flagSet(2);
+	anmSelect(2);
+	anmSetMain(0, 5);
+	@forme_at1() async;
+	moveVel(rad(180), 150f);
+	wait(1);
+	GF1 = 1f;
+	moveVel(rad(300), 5f);
+	wait(30);
+	moveVel(rad(420), 5f);
+	wait(30);
+	moveVel(rad(300), 0f);
+	wait(20);
+	wait(1000);
+}
+void forme_at()
+{
+	var A;
+	@CreatePattern(0, 1, 4, 10, 1, 1, 0f, 0f, 0f, 0f);
+	etExSet(0, 0, 0, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+	etExSet(0, 2, 0, EX_VELTIME, 200, 0, 2f, rad(90));
+	@CreatePattern(1, 1, 4, 8, 1, 1, 0f, 0f, 0f, 0f);
+	etExSet(1, 0, 0, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+	etExSet(1, 2, 0, EX_VELTIME, 200, 0, 2f, rad(90));
+	while(1)
+	{
+		//mathAngle(%A, 140f, 0f,  ABS_X, ABS_Y );
+		etExSet(0, 1, 0, EX_WAIT, 200, NEG, NEGF, NEGF);
+		//etExSet(0, 2, 0, EX_VELTIME, 200, 0, 2f, );
+		etOn(0);
+		wait(1);
+	}
+}
+void forme_at1()
+{
+	var A;
+	@CreatePattern(0, 1, 4, 10, 1, 1, 0f, 0f, 0f, 0f);
+	etExSet(0, 0, 0, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+	etExSet(0, 2, 0, EX_VELTIME, 200, 0, 2f, rad(90));
+	@CreatePattern(1, 1, 4, 8, 1, 1, 0f, 0f, 0f, 0f);
+	etExSet(1, 0, 0, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+	etExSet(1, 1, 0, EX_WAIT, 200, NEG, NEGF, NEGF);
+	etExSet(1, 2, 0, EX_VELTIME, 200, 0, 2f, rad(90));
+	while(GF1 == 0f)
+	{
+		//mathAngle(%A, 224f, 0f, ABS_X, ABS_Y);
+		//etExSet(1, 1, 0, EX_WAIT, 200, NEG, NEGF, NEGF);
+		//etExSet(1, 2, 0, EX_VELTIME, 200, 0, 2f, %A);
+		etOn(1);
+	}
+}
+*/
+void Boss2()
+{
+    var A, B;
+	gameSpeed(1f);
+    spec3(0);
+    lifeSet(13600);
+    timerReset();
+    killAllAsync();
+    enmKillAll();
+    unless ($TIMEOUT == 0) goto Boss2_248 @ 0;
+    etCancel(640.0f);
+    goto Boss2_268 @ 0;
+Boss2_248:
+    etClear(640.0f);
+Boss2_268:
+    $MISS_COUNT = 0;
+    $BOMB_COUNT = 0;
+    moveVel(0.0f, 0.0f);
+    moveVelTime(0, 0, 0.0f, 0.0f);
+    movePosTime(0, 0, 0.0f, 0.0f);
+    spellEnd();
+    funcSet(0);
+    reset();
+    playSound(27);
+    movePosTime(60, 4, 0.0f, 96.0f);
+    setNext(0, 2600, 2700, "BossCard2");
+    lifeMarker(0, 2600.0f, -24448);
+    stars(9);
+    setInvuln(120);
+    unless ($TIMEOUT == 0) goto Boss2_908 @ 0;
+    dropClear();
+    dropExtra(10, 2);
+    dropExtra(12, 1);
+    dropExtra(13, 40);
+    dropExtra(1, 50);
+    dropExtra(2, 30);
+    dropArea(64.0f, 64.0f);
+    dropItems();
+	wait(120);
+Boss2_908:
+    playSound(27);
+    $CAPTURE = 1;
+    wait(140);
+    moveLimit(0.0f, 96.0f, 280.0f, 32.0f);
+    $I0 = 2;
+    goto Boss2_1288 @ 0;
+Boss2_1084:
+    anmSelect(3);
+    anmSelectedPlay(0);
+    @Boss2_at() async;
+    @Boss2_at1() async;
+    @Boss2_at2() async;
+    @Boss2_at_1() async;
+    @Boss2_at_2() async;
+    @Boss2_at_3();
+    //@Boss2_at_4() async;
+	//@Boss2_at3();
+    wait(60);
+    moveRand(80, 4, 3.0f);
+    wait(82);
+Boss2_1288:
+    if (1) goto Boss2_1084 @ 0;
+    return;
+}
+
+void Boss2_at()
+{
+	var A, B, C, D, E, F;
+	diffI($F, 12, 10, 9, 9);
+	@CreatePattern(0, 3, 6, 2, 1, 1, 0f, rad(60), 2f, 3f);
+	etExSet(0, 0, 0, EX_WAIT, 20, NEG, NEGF, NEGF);
+	etExSet(1, 0, 0, EX_WAIT, 20, NEG, NEGF, NEGF);
+	etExSet(2, 0, 0, EX_WAIT, 20, NEG, NEGF, NEGF);
+	etExSet(3, 0, 0, EX_WAIT, 20, NEG, NEGF, NEGF);
+	etExSet(0, 1, 0, 8, 50, -999999, 0f, rad(1));
+	etExSet(1, 1, 0, 8, 50, -999999, 0f, rad(1));
+	etExSet(2, 1, 0, 8, 50, -999999, 0f, rad(1));
+	etExSet(3, 1, 0, 8, 50, -999999, 0f, rad(1));
+	etExSet(4, 0, 0, 8, 50, -999999, 0f, rad(-1));
+	etExSet(5, 0, 0, 8, 50, -999999, 0f, rad(-1));
+	etExSet(6, 0, 0, 8, 50, -999999, 0f, rad(-1));
+	etExSet(7, 0, 0, 8, 50, -999999, 0f, rad(-1));
+	etExSet(0, 2, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	etExSet(1, 2, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	etExSet(2, 2, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	etExSet(3, 2, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	etExSet(4, 1, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	etExSet(5, 1, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	etExSet(6, 1, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	etExSet(7, 1, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	while(1)
+	{
+		%B = rad(0);
+		%D = 50f;
+		times(40)//
+		{
+			if(RAND % $F == 1)
+		{
+		etExSet(0, 3, 0, EX_VEL, 10, NEG, 0f, 0f);
+		etExSet(1, 3, 0, EX_VEL, 10, NEG, 0f, 0f);
+		etExSet(2, 3, 0, EX_VEL, 10, NEG, 0f, 0f);
+		etExSet(3, 3, 0, EX_VEL, 10, NEG, 0f, 0f);
+		etExSet(0, 4, 0, EX_SETSPRITE, 6, 0, NEGF, NEGF);
+		etExSet(1, 4, 0, EX_SETSPRITE, 6, 0, NEGF, NEGF);
+		etExSet(2, 4, 0, EX_SETSPRITE, 6, 0, NEGF, NEGF);
+		etExSet(3, 4, 0, EX_SETSPRITE, 6, 0, NEGF, NEGF);
+		etExSet(0, 5, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+		etExSet(1, 5, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+		etExSet(2, 5, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+		etExSet(3, 5, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+		etExSet(0, 6, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+		etExSet(1, 6, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+		etExSet(2, 6, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+		etExSet(3, 6, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+		etExSub(0, 6, "SubBoss2_at");
+		etExSub(1, 6, "SubBoss2_at");
+		etExSub(2, 6, "SubBoss2_at");
+		etExSub(3, 6, "SubBoss2_at");
+		etExSet(0, 7, 0, EX_DELETE, 0, NEG, NEGF, NEGF);
+		etExSet(1, 7, 0, EX_DELETE, 0, NEG, NEGF, NEGF);
+		etExSet(2, 7, 0, EX_DELETE, 0, NEG, NEGF, NEGF);
+		etExSet(3, 7, 0, EX_DELETE, 0, NEG, NEGF, NEGF);
+		} else {
+		etExSet(0, 3, 0, EX_GOTO, 10, 1, NEGF, NEGF);
+		etExSet(1, 3, 0, EX_GOTO, 10, 1, NEGF, NEGF);
+		etExSet(2, 3, 0, EX_GOTO, 10, 1, NEGF, NEGF);
+		etExSet(3, 3, 0, EX_GOTO, 10, 1, NEGF, NEGF);
+		etExSet(0, 10, 0, EX_WAIT, 10, NEG, NEGF, NEGF);
+		etExSet(1, 10, 0, EX_WAIT, 10, NEG, NEGF, NEGF);
+		etExSet(2, 10, 0, EX_WAIT, 10, NEG, NEGF, NEGF);
+		etExSet(3, 10, 0, EX_WAIT, 10, NEG, NEGF, NEGF);
+		}	
+			if(RAND % $F == 1)
+		{
+		etExSet(4, 2, 0, EX_VEL, 10, NEG, 0f, 0f);
+		etExSet(5, 2, 0, EX_VEL, 10, NEG, 0f, 0f);
+		etExSet(6, 2, 0, EX_VEL, 10, NEG, 0f, 0f);
+		etExSet(7, 2, 0, EX_VEL, 10, NEG, 0f, 0f);
+		etExSet(4, 3, 0, EX_SETSPRITE, 6, 0, NEGF, NEGF);
+		etExSet(5, 3, 0, EX_SETSPRITE, 6, 0, NEGF, NEGF);
+		etExSet(6, 3, 0, EX_SETSPRITE, 6, 0, NEGF, NEGF);
+		etExSet(7, 3, 0, EX_SETSPRITE, 6, 0, NEGF, NEGF);
+		etExSet(4, 4, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+		etExSet(5, 4, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+		etExSet(6, 4, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+		etExSet(7, 4, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+		etExSet(4, 5, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+		etExSet(5, 5, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+		etExSet(6, 5, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+		etExSet(7, 5, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+		etExSub(4, 5, "SubBoss2_at");
+		etExSub(5, 5, "SubBoss2_at");
+		etExSub(6, 5, "SubBoss2_at");
+		etExSub(7, 5, "SubBoss2_at");
+		etExSet(4, 6, 0, EX_DELETE, 0, NEG, NEGF, NEGF);
+		etExSet(5, 6, 0, EX_DELETE, 0, NEG, NEGF, NEGF);
+		etExSet(6, 6, 0, EX_DELETE, 0, NEG, NEGF, NEGF);
+		etExSet(7, 6, 0, EX_DELETE, 0, NEG, NEGF, NEGF);
+		} else {
+		etExSet(4, 2, 0, EX_GOTO, 10, 1, NEGF, NEGF);
+		etExSet(5, 2, 0, EX_GOTO, 10, 1, NEGF, NEGF);
+		etExSet(6, 2, 0, EX_GOTO, 10, 1, NEGF, NEGF);
+		etExSet(7, 2, 0, EX_GOTO, 10, 1, NEGF, NEGF);
+		etExSet(4, 10, 0, EX_WAIT, 10, NEG, NEGF, NEGF);
+		etExSet(5, 10, 0, EX_WAIT, 10, NEG, NEGF, NEGF);
+		etExSet(6, 10, 0, EX_WAIT, 10, NEG, NEGF, NEGF);
+		etExSet(7, 10, 0, EX_WAIT, 10, NEG, NEGF, NEGF);
+		}
+			etOffsetRad(0, %B, %D);
+			//mathAngle(%A, BOSS_X, BOSS_Y, cos(%B)*%D, sin(%B)*%D);
+			%C= %B + rad(16);
+			//%E= %B - rad(16);
+			etAngle(0, %C, rad(90));
+			etOn(0);
+			wait(4);
+			%D = %D - 0.75f;
+			%B = %B - rad(36);
+		}
+		wait(100);
+	}
+}
+void Boss2_at1()
+{
+	var A, B, C, D,E;
+	@CreatePattern(1, 3, 6, 2, 1, 1, 0f, rad(60), 2f, 3f);
+	//etExSet(1, 0, 1, EX_VELADD, 1, NEG, rad(10), 0f);
+	while(1)
+	{
+		%B = rad(90);
+		%D = 50f;
+		times(40)//
+		{
+			etOffsetRad(1, %B, %D);
+			//mathAngle(%A, BOSS_X, BOSS_Y, cos(%B)*%D, sin(%B)*%D);
+			%C= %B + rad(16);
+			GF0 = %C;
+			// %E= %B - rad(16);
+			etAngle(1, %C, rad(90));
+			etOn(1);
+			wait(4);
+			%D = %D - 0.75f;
+			%B = %B - rad(36);
+		}
+		wait(100);
+	}
+}
+void Boss2_at2()
+{
+	var A, B, C, D, E;
+	@CreatePattern(2, 3, 6, 2, 1, 1, 0f, rad(60), 2f, 3f);
+	//etExSet(2, 0, 1, EX_VELADD, 1, NEG, rad(10), 0f);
+	while(1)
+	{
+		%B = rad(180);
+		%D = 50f;
+		times(40)//
+		{
+			etOffsetRad(2, %B, %D);
+			//mathAngle(%A, BOSS_X, BOSS_Y, cos(%B)*%D, sin(%B)*%D);
+			%C= %B + rad(16);
+			// %E= %B - rad(16);
+			etAngle(2, %C, rad(90));
+			etOn(2);
+			wait(4);
+			%D = %D - 0.75f;
+			%B = %B - rad(36);
+		}
+		wait(100);
+	}
+}
+/*void Boss2_at3()
+{
+	var A, B, C, D, E;
+	@CreatePattern(3, 3, 6, 2, 1, 1, 0f, rad(120), 2f, 3f);
+//	etExSet(3, 0, 1, EX_VELADD, 1, NEG, rad(10), 0f);
+	while(1)
+	{
+		%B = rad(0);
+		%D = 50f;
+		times(40)
+		{
+			etOffsetRad(3, %B, %D);
+			%C= %B + rad(16);
+			etAngle(3, %C, rad(90));
+			etOn(3);
+			wait(4);
+			%D = %D - 0.75f;
+			%B = %B - rad(36);
+		}
+		wait(100);
+	}
+}*/
+void Boss2_at_1()
+{
+	var A, B, C, D, E;
+	@CreatePattern(4, 3, 6, 4, 1, 1, 0f, rad(60), 3f, 3f);
+	while(1)
+	{
+		%B = rad(0);
+		%D = 50f;
+		times(40)//
+		{
+			etOffsetRad(4, %B, %D);
+			//mathAngle(%A, BOSS_X, BOSS_Y, cos(%B)*%D, sin(%B)*%D);
+			%C= %B - rad(24);
+			//%E= %B - rad(16);
+			etAngle(4, %C, rad(90));
+			etOn(4);
+			wait(4);
+			%D = %D - 0.75f;
+			%B = %B - rad(36);
+		}
+		wait(100);
+	}
+}
+void Boss2_at_2()
+{
+	var A, B, C, D,E;
+	@CreatePattern(5, 3, 6, 4, 1, 1, 0f, rad(60), 3f, 3f);
+	//etExSet(1, 0, 1, EX_VELADD, 1, NEG, rad(10), 0f);
+	while(1)
+	{
+		%B = rad(90);
+		%D = 50f;
+		times(40)//
+		{
+			etOffsetRad(5, %B, %D);
+			%C= %B - rad(24);
+			etAngle(5, %C, rad(90));
+			etOn(5);
+			wait(4);
+			%D = %D - 0.75f;
+			%B = %B - rad(36);
+		}
+		wait(100);
+	}
+}
+void Boss2_at_3()
+{
+	var A, B, C, D, E;
+	@CreatePattern(6, 3, 6, 4, 1, 1, 0f, rad(60), 3f, 3f);
+	//etExSet(2, 0, 1, EX_VELADD, 1, NEG, rad(10), 0f);
+	while(1)
+	{
+		%B = rad(180);
+		%D = 50f;
+		times(40)//
+		{
+			etOffsetRad(6, %B, %D);
+			%C= %B - rad(24);
+			etAngle(6, %C, rad(90));
+			etOn(6);
+			wait(4);
+			%D = %D - 0.75f;
+			%B = %B - rad(36);
+		}
+		wait(100);
+	}
+}
+void SubBoss2_at()
+{
+	var A, B, C;
+	diffF(%A, 1f, 2f, 2f, 3f);
+	diffI($B, 1, 1, 2, 2);
+	diffI($C, 4, 4, 8, 6);
+	@CreatePattern(8, 2, 12, 5, $C, $B, 0f, 0f, %A, 1f);
+	etOn(8);
+}
+
+void Boss3()
+{
+    var A, B, C;
+    spec3(0);
+    lifeSet(10800);
+!H
+	lifeSet(8800);
+!L 
+	lifeSet(7800);
+!*
+    movePosTime(60, 4, 0.0f, 128.0f);
+    timerReset();
+    killAllAsync();
+    enmKillAll();
+    unless ($TIMEOUT == 0) goto Boss3_280 @ 0;
+    etCancel(640.0f);
+    goto Boss3_300 @ 0;
+Boss3_280:
+    etClear(640.0f);
+Boss3_300:
+    $MISS_COUNT = 0;
+    $BOMB_COUNT = 0;
+    moveVel(0.0f, 0.0f);
+    moveVelTime(0, 0, 0.0f, 0.0f);
+    movePosTime(0, 0, 0.0f, 0.0f);
+    spellEnd();
+    funcSet(0);
+    reset();
+    playSound(27);
+    setNext(0, 2800, 3000, "BossCard3");
+    lifeMarker(0, 2800.0f, -24448);
+    stars(8);
+    setInvuln(120);
+    unless ($TIMEOUT == 0) goto Boss3_908 @ 0;
+    dropClear();
+    dropExtra(10, 1);
+    dropExtra(12, 2);
+    dropExtra(13, 40);
+    dropExtra(1, 40);
+    dropExtra(2, 45);
+    dropArea(64.0f, 64.0f);
+    dropItems();
+	moveLimitReset();	
+	wait(120);
+	movePosTime(30, 1, 170f, 40f);
+Boss3_908:
+	@Boss3_at();
+Boss3_1288:
+    if (1) goto Boss3_908 @ 0;
+    return;
+}
+
+void Boss3_at()
+{
+	var A, B, C, D, E;
+	$A = 1;
+	$B = 1;
+	@CreatePattern(0, 1, 21, 0, 1, 1, FINAL_ANGLE, 0f, 0f, 0f);
+	ExSetWait(0, 0, 0, 180); 
+	times(6)//
+	{
+	etEx(0, $A, EX_SETSPRITE, 21, $B, NEGF, NEGF);
+	@ExWait(0, $A + 1, 40);
+	$A += 1;
+	$B += 1;
+	}
+	wait(30);
+	@Mouvement() async;
+	while(1)
+	{
+		%D = RANDRAD / 4f;
+		while(GI0 == 1)
+		{
+			etAngle(0, FINAL_ANGLE, 0f);
+			%E = RANDF2 * 192f;
+			mathAngle(%C, ABS_X, ABS_Y, %E, 224f);
+			etExSet(0, 1, 0, EX_ACCEL, 20, NEG, 0.075f, %C + %D);
+			etOn(0);
+			waitf(0.5f);
+		}
+		wait(1);
+	}
+}
+
+void Mouvement()
+{
+	int NbreZig, time;
+	float X, Y;
+debut:
+	GI0 = 1;
+	gameSpeed(0.5f);
+	diffI(NbreZig, 2, 4, 6, 8);
+	X = 170f;
+	Y = ABS_Y;
+!E
+	movePosTime(10, 0, -X, 80f);
+	wait(10);
+	movePosTime(10, 0, X, 160f);
+	wait(10);
+	movePosTime(10, 0, -X, 240f);
+	wait(10);
+	movePosTime(10, 0, X, 320f);
+	wait(10);
+!N
+	movePosTime(10, 0, -X, 80f);
+	wait(10);
+	movePosTime(10, 0, X, 120f);
+	wait(10);
+	movePosTime(10, 0, -X, 160f);
+	wait(10);
+	movePosTime(10, 0, X, 200f);
+	wait(10);
+	movePosTime(10, 0, -X, 240f);
+	wait(10);
+	movePosTime(10, 0, X, 280f);
+	wait(10);
+!H
+	movePosTime(10, 0, -X, 60f);
+	wait(10);
+	movePosTime(10, 0, X, 100f);
+	wait(10);
+	movePosTime(10, 0, -X, 140f);
+	wait(10);
+	movePosTime(10, 0, X, 180f);
+	wait(10);
+	movePosTime(10, 0, -X, 220f);
+	wait(10);
+	movePosTime(10, 0, X, 260f);
+	wait(10);
+	movePosTime(10, 0, -X, 300f);
+	wait(10);
+	movePosTime(10, 0, X, 340f);
+	wait(10);
+!L
+	movePosTime(10, 0, -X, 60f);
+	wait(10);
+	movePosTime(10, 0, X, 90f);
+	wait(10);
+	movePosTime(10, 0, -X, 120f);
+	wait(10);
+	movePosTime(10, 0, X, 150f);
+	wait(10);
+	movePosTime(10, 0, -X, 180f);
+	wait(10);
+	movePosTime(10, 0, X, 210f);
+	wait(10);
+	movePosTime(10, 0, -X, 240f);
+	wait(10);
+	movePosTime(10, 0, X, 270f);
+	wait(10);
+	movePosTime(10, 0, -X, 300f);
+	wait(10);
+	movePosTime(10, 0, X, 330f);
+	wait(10);
+	movePosTime(10, 0, -X, 360f);
+	wait(10);
+	movePosTime(10, 0, X, 390f);
+	wait(10);
+!*
+	gameSpeed(1f);
+	GI0 = 0;
+	wait(200);
+	movePosTime(40, 0, 170f, 360f);
+	wait(40);
+	GI0 = 1;
+	gameSpeed(0.5f);
+!E
+	time = 7;
+!N
+	time = 10;
+!H
+	time = 15;
+!L	
+	time = 20;
+!*
+	movePosTime(time, 0, 130f, 20f);
+	wait(time);
+	movePosTime(time, 0, 70f, 360f);
+	wait(time);
+	movePosTime(time, 0, 20f, 20f);
+	wait(time);
+	movePosTime(time, 0, -50f, 360f);
+	wait(time);
+	movePosTime(time, 0, -90f, 20f);
+	wait(time);
+	movePosTime(time, 0, -140f, 360f);
+	wait(time);
+	movePosTime(time, 0, -170f, 20f);
+	wait(time);
+	gameSpeed(1f);
+	GI0 = 0;
+	wait(200);
+	movePosTime(30, 1, -170f, 40f);
+	wait(30);
+	goto debut @ 0;
+}
+
+void BossCard1()
+{
+    var A, B;
+    timerReset();
+    killAllAsync();
+    enmKillAll();
+    enmCreate("Ecl_EtBreak", 0.0f, 0.0f, 9999, 0, 0);
+    spellEnd();
+    funcSet(0);
+    reset();
+    playSound(27);
+    moveVel(0.0f, 0.0f);
+    moveVelTime(0, 0, 0.0f, 0.0f);
+    movePosTime(0, 0, 0.0f, 0.0f);
+    $MISS_COUNT = 0;
+    $BOMB_COUNT = 0;
+    setNext(0, 0, 3000, "Boss2");
+    spell(32, 100000000, 0, "Butterflies Passing Through Adversity");
+	enmCreateA("SpellPortrait1", 0f, 0f, 100, 100, 1);
+    movePosTime(60, 4, 0.0f, 144.0f);
+    moveLimit(0.0f, 128.0f, 280.0f, 256.0f);
+	//diffWait(90, 90, 90, 90);
+	//@BossCard1_at1() async;
+	wait(100);
+    goto BossCard1_2620 @ 0;
+BossCard1_920:
+	@BossCard1_at();
+BossCard1_2620:
+    if (1) goto BossCard1_920 @ 0;
+    return;
+}
+
+void BossCard1_at()
+{
+	var A;
+	//wait(120);
+	etNew(0);
+	etSprite(0, 22, 1);
+	etAim(0, 1);
+	etAngle(0, rad(-90), rad(20));
+	etCount(0, 5, 1);
+	etSpeed(0, 1f, 1f);
+	etExSet(0, 0, 0, EX_SIZE, 70, 0, 1f, 4f);
+	etEx(0, 0, EX_VELTIME, 70, 4, 0f, NEGF);
+	etEx(0, 0, EX_INVULN, 99999, NEG, NEGF, NEGF);
+	//etExSet(0, 1, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+	etExSet(0, 3, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+!EN 
+	$A = 30;
+!HL 
+	$A = 0;
+!*
+	etExSet(0, 1, 0, EX_WAIT, 40 + $A, NEG, NEGF, NEGF);
+	etExSet(0, 2, 0, EX_SPECIAL, NEG, NEG,NEGF, NEGF);
+	etExSub(0, 2, "BossCard1_at2");
+	
+	//etExSet(0, 1, 0, EX_WAIT, 123, NEG, NEGF, NEGF);
+	//etExSet(0, 2, 0, EX_SHOOT, 
+	//etEx(0, 0, EX_LAYER, 1, NEG, NEGF, NEGF); marche po pour ce que je veux
+	while(1)
+	{
+	etOn(0);
+!EN
+	@Stars() async;
+!*
+	diffWait(90, 90, 40, 40);
+	gameSpeed(0.3f);
+	playSound(32);
+	wait(30);
+	wait(30);
+	gameSpeed(1f);
+	moveRand(30, 4, 2f);
+	diffWait(100, 80, 80, 60);
+	}
+}
+void BossCard1_at2()
+{
+	var A, B, C;
+	GF0 = 0f;
+!EN
+	etNew(0);
+	etAim(0, 1);
+	etSprite(0, 12, 6);
+	etSpeedD(0, 2f, 2f, 3f, 4f, 1f, 1f, 2f, 2f) ;
+	etCountD(0, 5, 15, 20, 25, 3, 3, 4, 6);
+	etEx(0, 0, EX_ANIM, 1, NEG, NEGF, NEGF);
+	etExSet(0, 1, 0, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+	%C = rad(225);
+	@CreatePattern(1, 1, 23, 1, 3, 2, %C, rad(10), 1f, 2f); //voir cheat.tecl pour plus d'infos
+	if ($MISS_COUNT == 1 || $BOMB_COUNT == 2)
+	{
+		etCountD(0, 15, 20, 25, 30, 3, 4, 6, 8);
+	}	
+	if ($MISS_COUNT >= 2 || $BOMB_COUNT >= 4)
+	{
+		etCountD(0, 20, 25, 35, 40, 6, 7, 8, 9);
+	}
+	if(GF0 == 0f)
+	{
+		etAim(0, 1);
+		etAngle(0, rad(90), rad(10));
+		%B = RANDF2 * 2f  + 6f;
+		etSprite(0, 12, _S(%B));
+		playSound(23);
+		etOn(0);
+		wait(60);
+		//enmCreateA("Stars", BOSS_X, BOSS_Y, 100, 100, 0);
+		GF0 = 1f;
+		goto end @ 0;
+	}
+	if(GF0 == 1f)
+	{
+		etAim(0, 0);
+		%B = RANDF2 * 2f  + 6f;
+		etSprite(0, 12, _S(%B));
+		etAngle(0, 0f, rad(10));
+		playSound(23);
+		etOn(0);
+		wait(60);
+		//enmCreateA("Stars", BOSS_X, BOSS_Y, 100, 100, 0);
+		playSound(30);
+		GF0 = 0f;
+		}
+!HL
+	%A = rad(90);
+	//$B = _S(RANDF2) * 4  + 6;
+	etNew(0);
+	etAim(0, 3);
+	//etSprite(0, 12, $B);
+	etAngle(0, RANDRAD, RANDRAD / 4f);
+	etSpeedD(0, 0f, 0f, 1f, 1.5f, 0f, 0f, 0.25f, 0.5f);
+	etCountD(0, 0, 0, 10, 10, 0, 0, 4, 5);
+	//etExSet(0, 0, 0, EX_VELTIME, 10, NEG, 2f, -(%A));
+	etEx(0, 0, EX_ANIM, 1, NEG, NEGF, NEGF);
+	etExSet(0, 4, 0, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+	playSound(30);
+	if(GF0 == 0f)
+	{
+		%B = RANDF2 * 2f  + 6f;
+		etSprite(0, 12, _S(%B));
+		etExSet(0, 0, 0, 8, 60, -999999, 0f, 0.05217994f);
+		etExSet(0, 1, 0, EX_WAIT, 120, NEG, NEGF, NEGF);
+!H
+		etExSet2(0, 2, 0, EX_ANGLE, 20, 1, 5, NEG, rad(20), NEGF, NEGF, NEGF);
+!L
+		etExSet2(0, 2, 0, EX_ANGLE, 20, 1, 5, NEG, rad(20), NEGF, NEGF, NEGF);
+!HL	
+		etExSet(0, 3, 0, 8, 40, -999999, 0f, -0.02017994f);
+		playSound(23);
+		etOn(0);
+		GF0 = 1f;
+		goto end @ 0;
+	}
+	if(GF0 == 1f)
+	{
+		%B = RANDF2 * 2f  + 6f;
+		etSprite(0, 12, _S(%B));
+		diffWait(0, 0, 110, 110);
+		playSound(30);
+		diffWait(0, 0, 110, 110);
+		etExSet(0, 0, 0, 8, 60, -999999, 0f, -0.05217994f);
+		etExSet(0, 1, 0, EX_WAIT, 120, NEG, NEGF, NEGF);
+!H
+		etExSet2(0, 2, 0, EX_ANGLE, 20, 1, 5, NEG, rad(20), NEGF, NEGF, NEGF);
+!L
+		etExSet2(0, 2, 0, EX_ANGLE, 20, 1, 5, NEG, rad(20), NEGF, NEGF, NEGF);
+!HL	
+		etExSet(0, 3, 0, 8, 40, -999999, 0f, -0.02017994f);
+		playSound(23);
+		etOn(0);
+		GF0 = 0f;
+	}
+!*	
+end:
+}
+void BossCard2_at3()
+{
+	var C;
+	%C = rad(160);
+	@CreatePattern(1, 1, 22, 0, 1, 3, %C, rad(10), 1f, 2f); //voir cheat.tecl pour plus d'infos
+	times(23)//
+	{
+		etSprite(1, 22, 4);
+		etOn(1);
+		playSound(38);
+		%C = %C + rad(5);
+		etAngle(1, %C, rad(10));
+		etSprite(1, 22, 6);
+		etOn(1);
+		playSound(38);
+		%C = %C + rad(5);
+		etAngle(1, %C, rad(10));
+	}
+}
+void Stars()
+{
+	wait(170);
+	@BossCard2_at3();
+}
+	
+/*void BossCard1_at2()
+{
+	var A;
+	rankF3(%A, rad(20), rad(40), rad(60)); 
+	etNew(0);
+	etAim(0, 1);
+	etSprite(0, 12, 6);
+	etAngle(0, rad(90), %A);
+!E
+	etSpeedR3(0, 2f, 1f, 0.5f, 1.5f, 0.5f, 0.25f); 
+	etCountR3(0, 1, 10, 1000, 5, 3, 2); 
+!N
+	etSpeedR3(0, 3f, 2f, 1f, 2.5f, 1.5f, 0.5f); 
+	etCountR3(0, 20, 15, 10, 6, 4, 3);
+!H
+	etSpeedR3(0, 4f, 3f, 2f, 3.5f, 2.5f, 1.5f); 
+	etCountR3(0, 25, 20, 15, 8, 6, 4);
+!L
+	etSpeedR3(0, 5f, 4f, 3f, 4.5f, 3.5f, 2.5f); 
+	etCountR3(0, 35, 30, 25, 10, 8, 6);
+!*	
+	etOn(0);
+}*/
+
+void BossCard2()
+{
+    var A;
+    timerReset();
+    killAllAsync();
+    enmKillAll();
+    enmCreate("Ecl_EtBreak", 0.0f, 0.0f, 9999, 0, 0);
+    spellEnd();
+    funcSet(0);
+    reset();
+    playSound(27);
+    moveVel(0.0f, 0.0f);
+    moveVelTime(0, 0, 0.0f, 0.0f);
+    movePosTime(0, 0, 0.0f, 0.0f);
+    $MISS_COUNT = 0;
+    $BOMB_COUNT = 0;
+    anmSetSprite(3, -1);
+    anmSetSprite(4, -1);
+    setNext(0, 0, 3000, "Boss3");
+!EN
+    spell(36, 3000, 500000, "Remilia's help: Gungnir with Spinning Arrows");
+!HL
+    spell3(38, 3000, 500000, "Remilia's Attack: Gungnir with Spinning Arrows");
+!O67
+    spellEx(121, 3000, 500000, "Remilia's help: Gungnir with Spinning Arrows");
+!*
+	enmCreateA("SpellPortrait2", 0f, 0f, 100, 100, 1);
+	//anmMove(5, 0f, -128f);
+    movePosTime(60, 4, 0.0f, 144.0f);
+    moveLimit(0.0f, 128.0f, 280.0f, 64.0f);
+    wait(90);
+    //anmPlay(1, 63);
+    goto BossCard2_912 @ 60;
+BossCard2_892:
+    @BossCard2_at() async;
+	diffWait(60, 70, 100, 100);
+	@BossCard2_at4() async;
+	//@BossCard2_at1() async;
+	wait(10000000);
+BossCard2_912:
+    if (1) goto BossCard2_892 @ 60;
+    return;
+}
+
+void BossCard2_at()
+{
+	var A, B, C;
+	$A = 2 + $DIFF;
+	%A = 2f + %DIFF;
+	%B = rad(90);
+	%C = rad(40);
+	etNew(7);
+	etSprite(7, 31, 0);
+	etAim(7, 1);
+	etCountD(7, 4, 4, 4, 4, 1, 1, 1, 1);
+	etSpeed(7, 2f, 2f);
+!ENH
+	etAngle(7, rad(90), rad(100));
+!L
+	etAngle(7, rad(90), rad(80));
+!*
+	etExSet(7, 0, 1, EX_BOUNCE, 200, BOUNCE_ULR, 3f, NEGF);
+	while(1)
+	{
+		@BossCard2_at_2() async;
+		etOn(7);
+		diffWait(180, 180, 120, 90);
+		//etExSet(0, 3, 0, EX_DEFINESHOOT, 1, 0,%B, %C);
+		%B = %B - rad(20) - RANDRAD / 8f;
+		%C = %C - rad(30) - RANDRAD / 8f;
+	}
+}
+void BossCard2_at_2()
+{
+	etNew(6);
+	etSprite(6, 32, 1);
+	etAim(6, 1);
+	etSpeed(6, 2f, 2f);
+	etCountD(6, 4, 4, 4, 4, 1, 1, 1, 1);
+!ENH
+	etAngle(6, rad(90), rad(100));
+!L
+	etAngle(6, rad(90), rad(80));
+!*
+	etExSet(6, 0, 1, EX_BOUNCE, 10, BOUNCE_ULR, 3f, NEGF);
+	@BossCard2_at_3() async;
+	times(9)//
+	{
+		etOn(6);
+		wait(10);
+	}
+}
+
+void BossCard2_at_3()
+{
+	etNew(4);
+	etAim(4, 1);
+	etSprite(4, 10, 1);
+	etCountD(4, 4, 4, 4, 4, 1, 1, 1, 1);
+!ENH
+	etAngle(4, rad(90), rad(100));
+!L
+	etAngle(4, rad(90), rad(80));
+!*
+	etOffset(4, 0f, 30f);
+	etExSet(4, 0, 1, EX_BOUNCE, 10, BOUNCE_ULR, 3f, NEGF);
+	etExSet(4, 1, 1, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+	etNew(5);
+	etAim(5, 1);
+	etSprite(5, 10, 1);
+	etCountD(5, 4, 4, 4, 4, 1, 1, 1, 1);
+!ENH
+	etAngle(5, rad(90), rad(100));
+!L
+	etAngle(5, rad(90), rad(80));
+!*
+	etOffset(5, 0f, -30f);
+	etExSet(5, 0, 1, EX_BOUNCE, 10, BOUNCE_ULR, 3f, NEGF);
+	etExSet(5, 1, 1, EX_BRIGHT, 1, NEG, NEGF, NEGF);
+	times(4)//
+	{
+		etOn(4);
+		etOn(5);
+		wait(20);
+	}
+}
+void BossCard2_at4()
+{
+	var A, B, C, D;
+	%A = rad(90);
+	%B = rad(-90);
+	%C = rad(0);
+	%D = rad(180);
+	@CreatePattern(1, 1, 12, 5, 1, 1, %A, 0f, 2f, 2f);
+	@CreatePattern(0, 1, 12, 2, 1, 1, %B, 0f, 2f, 2f);
+	@CreatePattern(2, 1, 12, 3, 1, 1, %C, 0f, 2f, 2f);
+	@CreatePattern(3, 1, 12, 14, 1, 1, %D, 0f, 2f, 2f);
+	//etEx(0, 0, EX_ANIM, 0, NEG, NEGF, NEGF);
+	// etEx(1, 0, EX_ANIM, 0, NEG, NEGF, NEGF);
+	// etEx(2, 0, EX_ANIM, 0, NEG, NEGF, NEGF);
+	etExSet(0, 0, 0, EX_WAIT, 80, NEG, NEGF, NEGF);
+	etExSet(1, 0, 0, EX_WAIT, 80, NEG, NEGF, NEGF);
+	etExSet(2, 0, 0, EX_WAIT, 80, NEG, NEGF, NEGF);
+	etExSet(3, 0, 0, EX_WAIT, 80, NEG, NEGF, NEGF);
+	etEx(0, 1, EX_OFFSCREEN, 300, 0, NEGF, NEGF);
+	etEx(1, 1, EX_OFFSCREEN, 300, 0, NEGF, NEGF);
+	etEx(2, 1, EX_OFFSCREEN, 300, 0, NEGF, NEGF);
+	etEx(3, 1, EX_OFFSCREEN, 300, 0, NEGF, NEGF);
+	//etExSet(0, 2, 0, EX_WAIT, 180, NEG, NEGF, NEGF);
+	//etExSet(1, 2, 0, EX_WAIT, 180, NEG, NEGF, NEGF);
+	//etExSet(2, 2, 0, EX_WAIT, 180, NEG, NEGF, NEGF);
+	etExSet(0, 2, 0, EX_VELTIME, 40, NEG, -2f, NEGF);
+	etExSet(1, 2, 0, EX_VELTIME, 40, NEG, -2f, NEGF);
+	etExSet(2, 2, 0, EX_VELTIME, 40, NEG, -2f, NEGF);
+	etExSet(3, 2, 0, EX_VELTIME, 40, NEG, -2f, NEGF);
+	etExSet(0, 3, 0, EX_WAIT, 80, NEG, NEGF, NEGF);
+	etExSet(1, 3, 0, EX_WAIT, 80, NEG, NEGF, NEGF);
+	etExSet(2, 3, 0, EX_WAIT, 80, NEG, NEGF, NEGF);
+	etExSet(3, 3, 0, EX_WAIT, 80, NEG, NEGF, NEGF);
+	etExSet(0, 4, 0, EX_SETSPRITE, 12, 7, NEGF, NEGF);
+	etExSet(1, 4, 0, EX_SETSPRITE, 12, 10, NEGF, NEGF);
+	etExSet(2, 4, 0, EX_SETSPRITE, 12, 12, NEGF, NEGF);
+	etExSet(3, 4, 0, EX_SETSPRITE, 12, 15, NEGF, NEGF);
+	while(1)
+	{
+!EN
+		times(400)//
+		{
+			etOn(1);
+			etOn(0);
+!N
+			etOn(2);
+!EN
+			diffWait(2, 1, 0, 0);
+			%A = %A + rad(41);
+			%B = %B + rad(41);
+			%C = %C + rad(41);
+			etAngle(1, %A, 0f);
+			etAngle(0, %B, 0f);
+			etAngle(2, %C, 0f);
+		}
+		times(400)//
+		{
+			etOn(1);
+			etOn(0);
+!N
+			etOn(2);
+!EN
+			diffWait(2, 1, 0, 0);
+			%A = %A - rad(41);
+			%B = %B - rad(41);
+			%C = %C - rad(41);
+			etAngle(1, %A, 0f);
+			etAngle(0, %B, 0f);
+			etAngle(2, %C, 0f);
+		}
+!H
+	etExSet(0, 0, 0, EX_WAIT, 40, NEG, NEGF, NEGF);
+	etExSet(1, 0, 0, EX_WAIT, 40, NEG, NEGF, NEGF);
+	etExSet(2, 0, 0, EX_WAIT, 40, NEG, NEGF, NEGF);
+	etExSet(0, 2, 0, EX_VELTIME, 40, NEG, -2.5f, NEGF);
+	etExSet(1, 2, 0, EX_VELTIME, 40, NEG, -2.5f, NEGF);
+	etExSet(2, 2, 0, EX_VELTIME, 40, NEG, -2.5f, NEGF);
+	etSpeed(0, 3f, 3f);
+	etSpeed(1, 3f, 3f);
+	etSpeed(2, 3f, 3f);
+	times(300)//
+	{
+		etOn(1);
+		etOn(0);
+		etOn(2);
+		wait(1);
+		%A = %A + rad(41);
+		%B = %B + rad(41);
+		%C = %C + rad(41);
+		etAngle(1, %A, 0f);
+		etAngle(0, %B, 0f);
+		etAngle(2, %C, 0f);
+	}
+	times(300)//
+	{
+		etOn(1);
+		etOn(0);
+		etOn(2);
+		wait(1);
+		%A = %A - rad(41);
+		%B = %B - rad(41);
+		%C = %C - rad(41);
+		etAngle(1, %A, 0f);
+		etAngle(0, %B, 0f);
+		etAngle(2, %C, 0f);
+	}
+!L
+	etExSet(0, 0, 0, EX_WAIT, 40, NEG, NEGF, NEGF);
+	etExSet(1, 0, 0, EX_WAIT, 40, NEG, NEGF, NEGF);
+	etExSet(2, 0, 0, EX_WAIT, 40, NEG, NEGF, NEGF);
+	etExSet(3, 0, 0, EX_WAIT, 40, NEG, NEGF, NEGF);
+	etExSet(0, 2, 0, EX_VELTIME, 40, NEG, -3f, NEGF);
+	etExSet(1, 2, 0, EX_VELTIME, 40, NEG, -3f, NEGF);
+	etExSet(2, 2, 0, EX_VELTIME, 40, NEG, -3f, NEGF);
+	etExSet(3, 2, 0, EX_VELTIME, 40, NEG, -3f, NEGF);
+	etSpeed(0, 3f, 3f);
+	etSpeed(1, 3f, 3f);
+	etSpeed(2, 3f, 3f);
+	etSpeed(3, 3f, 3f);
+	times(600)//
+	{
+		etOn(1);
+		etOn(0);
+		etOn(2);
+		etOn(3);
+		wait(1);
+		%A = %A + rad(41);
+		%B = %B + rad(41);
+		%C = %C + rad(41);
+		%D = %D + rad(41);
+		etAngle(1, %A, 0f);
+		etAngle(0, %B, 0f);
+		etAngle(2, %C, 0f);
+		etAngle(3, %D, 0f);
+	}
+	times(600)//
+	{
+		etOn(1);
+		etOn(0);
+		etOn(2);
+		etOn(3);
+		wait(1);
+		%A = %A - rad(41);
+		%B = %B - rad(41);
+		%C = %C - rad(41);
+		%D = %D - rad(41);
+		etAngle(1, %A, 0f);
+		etAngle(0, %B, 0f);
+		etAngle(2, %C, 0f);
+		etAngle(3, %D, 0f);
+	}
+!*
+	}
+}
+/*void BossCard2_at1()
+{
+	var A, B;
+	%A = rad(90);
+	%B = rad(40);
+	etNew(4);
+	etAim(4, 1);
+	etSprite(4, 13, 6);
+	etCountD(4, 2, 3, 4, 5, 1, 1, 1, 1);
+	etExSet(4, 0, 1, EX_BOUNCE, 3, BOUNCE_ULR, 1.5f, NEGF);
+	while(1)
+	{
+		times(10)
+		{
+			etAngle(4, %A, %B);
+			etOn(4);
+			%A = %A + rad(20) + RANDRAD / 8f;
+			%B = %B + rad(30) + RANDRAD / 8f;
+			wait(20);
+		}
+		times(10)
+		{
+			etAngle(4, %A, %B);
+			etOn(4);
+			%A = %A - rad(20) - RANDRAD / 8f;
+			%B = %B - rad(30) - RANDRAD / 8f;
+			wait(20);
+		}
+	}
+}*/
+		
+	
+
+void BossCard3()
+{
+    var A;
+    timerReset();
+    killAllAsync();
+    enmKillAll();
+    enmCreate("Ecl_EtBreak", 0.0f, 0.0f, 9999, 0, 0);
+    spellEnd();
+    funcSet(0);
+    reset();
+    playSound(27);
+    moveVel(0.0f, 0.0f);
+    moveVelTime(0, 0, 0.0f, 0.0f);
+    movePosTime(0, 0, 0.0f, 0.0f);
+    $MISS_COUNT = 0;
+    $BOMB_COUNT = 0;
+!EN
+    spell(40, 2520, 500000, "Immortal Scarlet Flowers of Illusion");
+!HL
+    spell3(42, 2520, 500000, "Immortal Scarlet Flowers of Illusion");
+!*
+	enmCreateA("SpellPortrait3", 0f, 0f, 100, 100, 1);
+	//anmMove(5, 0f, -128f);
+    setNext(0, 0, 2520, "BossEscape");
+    spec3(1);
+    moveLimitReset();
+    moveLimit(0.0f, 128.0f, 280.0f, 64.0f);
+    movePosTime(60, 4, 0.0f, 224.0f);
+    setInvuln(60);
++60: //60
+    anmSelect(3);
+    anmSelectedPlay(0);
+    diffI($I1, 8, 16, 16, 16);
+    goto BossCard3_1264 @ 60;
+BossCard3_736:
+	wait(100);
+	@BossCard3_at();
+    wait(300);
+	@BossCard3_at();
+	movePosTime(100, 4, 0f, 128f);
+	@BossCard3_at_2();//flowers
+	wait(300);
+	movePosTime(60, 4, 0.0f, 224.0f);
+BossCard3_1264:
+    if (1) goto BossCard3_736 @ 60;
+    return;
+}
+void BossCard3_at()
+{
+	var A;
+	%A = rad(0);
+	@CreatePattern(4, 1, 13, 2, 1, 1, rad(-90), 0f, 1f, 1f);
+	etExSet(4, 1, 0, EX_VELTIME, 120, NEG, 0f, NEGF);
+	etExSet(4, 0, 0, EX_SIZE, 1, 0, 1f, 3f);
+	etExSet(4, 2, 0, EX_WAIT, 60, NEG, NEGF, NEGF);
+	etExSet(4, 4, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	etExSet(4, 3, 0, 16777216, -999999, -999999, -999999.0f, -999999.0f);
+    etExSub(4, 3, "BossCard3_at1");
+	@BossCard3_at2() async;//couteaux qui tournent
+	//anmSelect(1);
+	playSound(30);
+	anmPlay(1, 63);
+	wait(60);
+	//anmPlay(1, 23);
+	anmPlay(1, 76);
+    playSound(6);
+	etOn(4); //bullet Reisen
+	anmPlay(1, 25);
+	//anmPlay(1, 67);
+	playSound(24);
+	wait(5);
+	playSound(6);
+	wait(140);
+	gameSpeed(0.01f);
+	wait(1);
+	gameSpeed(1f);
+	//anmPlay(1, 22);
+	
+	
+}
+void BossCard3_at_2()
+{
+	var A;
+	%A = rad(60);
+	/*times(6){
+		enmCreate("doll", cos(%A)*50f,sin(%A)*50f, 100, 10, 1);
+		%A = %A + rad(60);
+		wait(2);
+	}*/
+	enmCreateA("Flower", 96f, 128f,100, 10, 1);
+	enmCreateA("Flower1", -96f, 128f,100, 10, 1);
+}
+void doll()
+{
+	var A, B;
+	anmSelect(2);
+	anmSetMain(0, 5);
+	%A = 0f;
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(5, 1, 31, 3, 1, 1, 0f, rad(20), 2f, 2f);
+	etExSet(5, 1, 0, EX_SIZE, 40, 4, 1f, 0.75f);
+	//etExSet(5, , 0, EX_WAIT, 10, NEG, NEGF, NEGF);
+	etExSet(5, 0, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+	etExSub(5, 0, "Subdoll");
+	//etExSet(5, 3, 0, EX_WAIT, 120, NEG, NEGF, NEGF);
+	diffI($B, 8, 12, 20, 15);
+	F0 = 0f;
+	F2 = 0f;
+	%A = rad(360) / _f($B); 
+	times($B)//
+	{
+	etAngle(5, %A, 0f);
+	etOn(5);
+	GF0 = %A;
+	%A = %A + (rad(360) / _f($B));
+	}
+	wait(200);
+	enmKillAll();
+}
+void Subdoll()
+{
+	@CreatePattern(6, 1, 12, 14, 2, 3,0f, 0f, 0f, 0f);
+	etSpeedD(6, 2f, 2f, 3f, 3f, 1f, 1f, 2f, 2f); 
+	etCountD(6, 2, 3, 5, 7, 3, 3, 3, 4);
+	//mathAngle(%A, F0,F2,ABS_X, ABS_Y);
+	etAngle(6, GF0, rad(20));
+	etOffsetRad(6, GF0, 70f);
+	wait(30);
+	etOn(6);
+}
+
+void Flower()
+{
+	var A, B;
+	%A = 0f;
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(5, 1, 31, 3, 1, 1, 0f, rad(20), 1f, 1f);
+	etExSet(5, 0, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+	etExSub(5, 0, "SubFlower");
+	etExSet(5, 1, 0, EX_SIZE, 1, 4, 1f, 0.5f);
+	etExSet(5, 2, 0, EX_WAIT, 60, NEG, NEGF, NEGF);
+	etExSet(5, 3, 0, EX_VEL, NEG, NEG, NEGF, 0f);
+	etExSet(5, 4, 0, EX_SIZE, 40, 4, 0.4f, 0.75f);
+	etExSet(5, 5, 0, EX_WAIT, 120, NEG, NEGF, NEGF);
+	etExSet(5, 6, 0, EX_VEL, NEG, NEG, NEGF, 2f);
+	//etExSet(5, 3, 0, EX_WAIT, 120, NEG, NEGF, NEGF);
+	diffI($B, 13, 11, 15, 20);
+	F0 = 0f;
+	F2 = 0f;
+	%A = rad(360) / _f($B); 
+	times($B)//
+	{
+	etAngle(5, %A, 0f);
+	etOn(5);
+	GF0 = %A;
+	%A = %A + (rad(360) / _f($B));
+	}
+	wait(200);
+	//enmKillAll();
+}
+void Flower1()
+{
+	var A, B;
+	%A = 0f;
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(5, 1, 31, 3, 1, 1, 0f, rad(20), 1f, 1f);
+	etExSet(5, 0, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+	etExSub(5, 0, "SubFlower");
+	etExSet(5, 1, 0, EX_SIZE, 1, 4, 1f, 0.5f);
+	etExSet(5, 2, 0, EX_WAIT, 60, NEG, NEGF, NEGF);
+	etExSet(5, 3, 0, EX_VEL, NEG, NEG, NEGF, 0f);
+	etExSet(5, 4, 0, EX_SIZE, 40, 4, 0.4f, 0.75f);
+	etExSet(5, 5, 0, EX_WAIT, 120, NEG, NEGF, NEGF);
+	etExSet(5, 6, 0, EX_VEL, NEG, NEG, NEGF, 2f);
+	//etExSet(5, 3, 0, EX_WAIT, 120, NEG, NEGF, NEGF);
+	diffI($B, 13, 11, 15, 20);
+	F0 = 0f;
+	F2 = 0f;
+	%A = rad(180) + (rad(360) / _f($B)); 
+	times($B)//
+	{
+	etAngle(5, %A, 0f);
+	etOn(5);
+	GF0 = %A;
+	%A = %A + (rad(360) / _f($B));
+	}
+	wait(200);
+	//enmKillAll();
+}
+void SubFlower()
+{
+	@CreatePattern(6, 1, 12, 13, 5, 1, GF0, rad(30), 26f, 26f);
+	//etSpeedD(6, 2f, 2f, 3f, 3f, 1f, 1f, 2f, 2f); 
+	etExSet(6, 0, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	etExSet(6, 1, 0, EX_VEL, NEG, NEG, NEGF, 0f);
+	etExSet(6, 2, 0, EX_WAIT, 40, NEG, NEGF, NEGF);
+	etExSet(6, 3, 0, EX_VEL, NEG, NEG, NEGF, 2f);
+	//etExSet(6, 4, 0, EX_ANGLE_ACCEL, 30, NEG, 0.01f, rad(1));
+	@CreatePattern(7, 1, 12, 14, 5, 1, GF0, rad(30), 10f, 10f);
+	etExSet(7, 0, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+	etExSet(7, 1, 0, EX_VEL, NEG, NEG, NEGF, 0f);
+	etExSet(7, 2, 0, EX_WAIT, 40, NEG, NEGF, NEGF);
+	etExSet(7, 3, 0, EX_VEL, NEG, NEG, NEGF, 2f);
+//	etExSet(7, 4, 0, EX_ANGLE_ACCEL, 30, NEG, 0.01f, rad(1));
+	//etAngle(6, GF0, rad(30));
+	etOffsetRad(6, GF0, 60f);
+	etOffsetRad(7, GF0, 15f);
+	wait(120);
+	etOn(6);
+	etOn(7);
+}
+	
+/*void doll() pattern abandonne/inutilise 
+
+{
+	var A, B, C, D, E, F, G;
+	anmSelect(2);
+	anmSetMain(0, 5);
+	flagSet(1);
+	%A = rad(-20);
+	%B = rad(70);
+	%C = rad(170);
+	%D = %A + %G;
+	%E = %B + %G;
+	%F = %C + %G;
+	%G = rad(0);
+	@CreatePattern(5, 1, 12, 5, 1, 3, rad(90), rad(50), 2f, 3f);
+	@CreatePattern(6, 1, 12, 5, 1, 3, rad(-90), rad(50), 2f, 3f);
+	@CreatePattern(7, 1, 12, 5, 1, 3, rad(0), rad(50), 2f, 3f);
+!H
+	etCount(5, 2, 2);
+	etCount(6, 2, 2);
+	etCount(7, 2, 2);
+!*
+	times(10)
+	{
+	etExSet(5, 0, 0, EX_WAIT, 20, NEG, NEGF, NEGF);
+	etExSet(6, 0, 0, EX_WAIT, 20, NEG, NEGF, NEGF);
+	etExSet(7, 0, 0, EX_WAIT, 20, NEG, NEGF, NEGF);
+	etExSet(5, 1, 0, EX_SETSPRITE, 12, 12, NEGF, NEGF);
+	etExSet(6, 1, 0, EX_SETSPRITE, 12, 12, NEGF, NEGF);
+	etExSet(7, 1, 0, EX_SETSPRITE, 12, 12, NEGF, NEGF);
+	%A = rad(-45);
+	%B = rad(-135);
+	%C = rad(-225);
+	%D = %A + %G;
+	%E = %B + %G;
+	%F = %C + %G;
+	etExSet(5, 2, 0, EX_VEL, NEG, NEG, %D, 2f);
+	etExSet(6, 2, 0, EX_VEL, NEG, NEG, %E, 2f);
+	etExSet(7, 2, 0, EX_VEL, NEG, NEG, %F, 2f);
+	etExSet(5, 3, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+	etExSet(6, 3, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+	etExSet(7, 3, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+	etExSet(5, 4, 0, EX_SETSPRITE, 12, 3, NEGF, NEGF);
+	etExSet(6, 4, 0, EX_SETSPRITE, 12, 3, NEGF, NEGF);
+	etExSet(7, 4, 0, EX_SETSPRITE, 12, 3, NEGF, NEGF);
+	%A = rad(45);
+	%B = rad(225);
+	%C = rad(225);
+	%D = %A + %G;
+	%E = %B + %G;
+	%F = %C + %G;
+	etExSet(5, 5, 0, EX_VEL, NEG, NEG, %D, 2f);
+	etExSet(6, 5, 0, EX_VEL, NEG, NEG, %E, 2f);
+	etExSet(7, 5, 0, EX_VEL, NEG, NEG, %F, 2f);
+!L
+	etExSet(5, 9, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+	etExSet(6, 9, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+	etExSet(7, 9, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+	etExSet(5, 10, 0, EX_SETSPRITE, 12, 10, NEGF, NEGF);
+	etExSet(6, 10, 0, EX_SETSPRITE, 12, 10, NEGF, NEGF);
+	etExSet(7, 10, 0, EX_SETSPRITE, 12, 10, NEGF, NEGF);
+	%A = rad(60);
+	%B = rad(120);
+	%C = rad(242);
+	%D = %A + %G;
+	%E = %B + %G;
+	%F = %C + %G;
+	etExSet(5, 11, 0, EX_VEL, NEG, NEG, rad(60), 2f);
+	etExSet(6, 11, 0, EX_VEL, NEG, NEG, rad(120), 2f);
+	etExSet(7, 11, 0, EX_VEL, NEG, NEG, rad(242), 2f);
+!*
+	%A = rad(-20);
+	%B = rad(70);
+	%C = rad(170);
+	%D = %A + %G;
+	%E = %B + %G;
+	%F = %C + %G;//il y avait plus intelligent a faire mais le c/c a fait que c'est comme ca
+		etAngle(5, %D, 0f);
+		etAngle(6, %E, 0f);
+		etAngle(7, %F, 0f);
+		etOn(5);
+		etOn(6);
+		etOn(7);
+	%G = %G + rad(41);
+	wait(1);
+	}
+	wait(400);
+	enmKillAll();
+}*/
+
+void BossCard3_at2()
+{
+	var A;
+!E
+	1;
+!N
+	2;
+!H
+	2;
+!L
+	3;
+!*
+	@CreatePattern(3, 1, 21, 3, 2, [-1], rad(90), rad(180), 2f, 3f);
+	etExSet(3, 0, 0, EX_HITBOX, NEG, NEG, 0.60f, NEGF);
+	%A = rad(90);
+	times(30)//
+	{
+		%A = %A + rad(22);
+		etAngle(3, %A, rad(180));
+		etSprite(3, 21, 2);
+		etOn(3);
+		diffWait(6, 5, 3, 2);
+		%A = %A + rad(21);
+		etAngle(3, %A, rad(180));
+		etSprite(3, 21, 4);
+		etOn(3);
+		diffWait(6, 5, 3, 2);
+	}
+}
+	
+void BossCard3_at1()
+{
+	var A, B, C, D, E, F;
+	@CreatePattern(1, 3, 11, 6, 2, 1, 0f, rad(30), 0.01f, 0.01f);
+	$E = 6;
+	etExSet(1, 0, 0, EX_WAIT, 120, NEG, NEGF, NEGF);
+	etExSet(1, 1, 0, EX_VEL, 0, NEG, NEGF, 2f);
+!HL
+	etCount(1, 3, 1);
+!*
+	@CreatePattern(0, 1, 11, 1, 1, 2, rad(90), 0f, 2f, 3f);
+	$A = RAND % 2;
+	if($A == 0)
+	{
+		etExSet(0, 0, 0, EX_WAIT, 1, NEG, NEGF, NEGF);
+!E
+		$B = 24;
+!N	
+		$B = 36;
+!H	
+		$B = 72;
+!L
+		$B = 90;
+!*
+		%A = rad(90);
+		times($B)//
+		{
+			etSpeed(0, 2f, 3f);
+			etSprite(0, 11, 5);
+!E
+			%A = %A + rad(17);
+!N		
+			%A = %A + rad(12);
+!H
+			%A = %A + rad(7);
+!L		
+			%A = %A + rad(3);
+!*
+			etAngle(0, %A, 0f);
+			etOn(0);
+			wait(1);
+			etSpeed(0, 1f, 2f);
+			etSprite(0, 11, 1);
+!E
+			%A = %A + rad(15);
+!N		
+			%A = %A + rad(10);
+!H
+			%A = %A + rad(5);
+!L		
+			%A = %A + rad(1);
+!*
+			etAngle(0, %A, 0f);
+			etOn(0);
+			wait(1);
+		}	
+	}else{
+		%A = rad(0);
+!E
+	25;
+!N
+	40;
+!H
+	50;
+!L
+	60;
+!*
+		$E = 2;
+		$B = [-1];
+		etOffsetRad(1, %A, 50f);
+		times($B)
+		{	
+			etOn(1);
+			%A = %A + (rad(360) / _f($B));
+			etAngle(1, %A, 0f);
+			etOffsetRad(1, %A, 50f);
+			wait(1);
+		}
+		anmSelect(2);
+		anmSetMain(0, 0);
+		movePos(0f, 40f);
+		movePos(cos(rad(45))*50f, 100f + sin(rad(45))*50f);
+		%A = rad(-70);
+		etAngle(1, %A, 0f);
+		wait(1);
+		etOffsetRad(1, %A, 40f);
+		%D = rad(45);
+		%C = (%A + ((rad(180) / _f($B/4)) * _f(($B/4)+3))) - rad(24);
+		//((-70 + (180 / (40/4)) * ((40/4)+3)) - 29
+		$F = 0;
+		times(2)
+		{
+		times(4)
+		{
+
+			etSprite(1, 11, $E);
+			times((($B/4)+3))
+			{	
+				etOn(1);
+				%A = %A + (rad(180) / _f($B/4));
+				etAngle(1, %A, 0f);
+				etOffsetRad(1, %A, 40f);
+				wait(1);
+			}
+			%A = %A - %C;
+			%D = %D + rad(90);
+			etAngle(1, %A, 0f);
+			etOffsetRad(1, %A, 40f);
+			movePos(cos(%D) * 50f, 100f + sin(%D) * 50f);
+		}
+		%D = %D + rad(45);
+		movePos(cos(%D) * 50f, 100f + sin(%D) * 50f);
+		%A = rad(-10);
+		%C = (%A + ((rad(180) / _f($B/4)) * _f(($B/4)+3))) - rad(79);
+		$E = 10;
+		etAngle(1, %A, 0f);
+		etOffsetRad(1, %A, 40f);
+		}
+	}
+	
+}		
+void SpellPortrait1()
+{
+	anmSelect(5);
+	anmPlay(5, 0);
+}
+void SpellPortrait2()
+{
+	anmSelect(5);
+	anmPlay(5, 1);
+}
+void SpellPortrait3()
+{
+	anmSelect(5);
+	anmPlay(5, 2);
+}
+
+
+void BossDead()
+{
+    flagSet(156);
+    anmPlay(1, 25);
+    playSound(5);
+    anmPlay(1, 96);
+    moveVel(%RANDRAD, 0.4f);
+    unless ($TIMEOUT == 0) goto BossDead_308 @ 0;
+    enmCreate("Ecl_EtBreak2", 0.0f, 0.0f, 9999, 0, 0);
+    goto BossDead_364 @ 0;
+BossDead_308:
+    enmCreate("Ecl_EtBreak2_ni", 0.0f, 0.0f, 9999, 0, 0);
+BossDead_364:
+    enmKillAll();
++60: //60
+    etClearAll();
+    spellEnd();
+    unless ($TIMEOUT == 0) goto BossDead_596 @ 60;
+    dropClear();
+    dropExtra(1, 7);
+    dropExtra(2, 10);
+    dropArea(48.0f, 48.0f);
+    dropItems();
+BossDead_596:
+    setScreenShake(30, 12, 0);
+    anmPlay(1, 25);
+    anmPlay(1, 97);
+    playSound(5);
+    setBoss(-1);
+    delete();
+    delete();
+}
+
+void BossEscape()
+{
+    spellEnd();
+    moveLimitReset();
+    enmKillAll();
+    unless ($TIMEOUT == 0) goto BossEscape_208 @ 0;
+    etCancel(640.0f);
+    goto BossEscape_228 @ 0;
+BossEscape_208:
+    etClear(640.0f);
+BossEscape_228:
+    lifeSet(100000);
+    setChapter(0);
+    setBoss(-1);
+    flagSet(16);
+    movePosTime(60, 4, -224.0f, -16.0f);
+    wait(60);
+    delete();
+    delete();
+}
+
+void TraceEnemyPos()
+{
+    var A;
+    goto TraceEnemyPos_100 @ 0;
+TraceEnemyPos_60:
+    moveEnmRel($A);
+    wait(1);
+TraceEnemyPos_100:
+    if (1) goto TraceEnemyPos_60 @ 0;
+    return;
+}

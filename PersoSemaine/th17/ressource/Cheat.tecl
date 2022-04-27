@@ -1,0 +1,77 @@
+#include "etama.tecl" 
+void enmLIVES()
+{	
+	dropExtra(6, 10);
+	wait(100);
+}
+void enmBombs()
+{	
+	dropExtra(6, 10);
+	wait(100);
+}
+
+void CreatePattern(int ETID, int AIM,int SPRITE,int COLOR,int COUNT1,int COUNT2,float ANGLE,float ANGLESPREAD,float SPEED1,float SPEED2)
+{
+	etNew(ETID);
+	etAim(ETID, AIM);
+	etSprite(ETID, SPRITE, COLOR);
+	etCount(ETID, COUNT1, COUNT2);
+	etAngle(ETID, ANGLE, ANGLESPREAD);
+	etSpeed(ETID, SPEED1, SPEED2);
+}
+
+void CreatePatternD(int ETID, int AIM,int SPRITE,int COLOR,int COUNT1E,int COUNT1N,int COUNT1H,int COUNT1L,int COUNT2E,int COUNT2N,int COUNT2H,int COUNT2L, float ANGLE,float ANGLESPREAD,float SPEED1E,float SPEED1N,float SPEED1H,float SPEED1L,float SPEED2E,float SPEED2N,float SPEED2H,float SPEED2L)
+{
+	etNew(ETID);
+	etAim(ETID, AIM);
+	etSprite(ETID, SPRITE, COLOR);
+	etCountD(ETID, COUNT1E, COUNT1N, COUNT1H, COUNT1L, COUNT2E, COUNT2N, COUNT2H, COUNT2L);
+	etAngle(ETID, ANGLE, ANGLESPREAD);
+	etSpeedD(ETID, SPEED1E, SPEED1N, SPEED1H, SPEED1L, SPEED2E, SPEED2N, SPEED2H, SPEED2L);
+}
+
+void ExSetWait(int id, int a, int b, int c)
+{
+	etExSet(id, a, b, EX_WAIT, c, NEG, NEGF, NEGF);
+}
+void ExWait(int id, int a, int c)
+{
+	etEx(id, a, EX_WAIT, c, NEG, NEGF, NEGF);
+}
+/* 
+	%B = rad(90);
+	while(1){
+	times(200)
+	{
+		etOn(0);
+		wait(1);
+		etAngle(0, %B, 0f);
+		%B = %B + rad(20);
+	}
+	times(100)
+	{
+		etOn(0);
+		wait(1);
+		etAngle(0, %B, 0f);
+		%A = %A + rad(5);
+		%B = %B - %A;
+	}
+	times(200)
+	{
+		etOn(0);
+		wait(1);
+		etAngle(0, %B, 0f);
+	}
+	times(100)
+	{
+		etOn(0);
+		wait(1);
+		etAngle(0, %B, 0f);
+		%A = %A + rad(5);
+		%B = %B + %A;
+	}
+	}
+*/
+		
+
+

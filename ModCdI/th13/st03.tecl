@@ -1,0 +1,1627 @@
+anim { "enemy.anm"; "st03enm.anm"; "st03menm.anm"; "st3spellcardportrait.anm";}
+ecli { "default.ecl"; "st03mbs.ecl"; "st03bs.ecl";}
+#include "main.tecl"
+
+void MainBossSpell();
+
+void MainMBossSpell(); 
+
+void BigGirl1Sub00()
+{
+	var A, B;
+	anmSelect(2);
+	anmSetMain(0, 40);
+	anmSetSprite(1, 110);
+	moveVel(rad(-60), 1.5f);
+	dropExtra(11, 7);
+!E 
+	4;
+!N
+	8;
+!H
+	10;
+!L 
+	12;
+!*
+	wait(60);
+	@CreatePattern(2, 1, 12, 0, [-1], 3, 0f, rad(50), 2f, 3f);
+	%A = rad(-60);
+	$B = 0;
+	@jolieffet() async;
+	while(1)
+	{
+		times(4)//
+		{
+			$B = $B + 1;
+			etAngle(2, %A, rad(50));
+			etSprite(2, 12, $B);
+			etOn(2);
+			wait(80);
+			%A = %A + rad(90);
+		}
+		wait(120);
+	}
+}
+void BigGirl2Sub00()
+{
+	var A, B;
+	anmSelect(2);
+	anmSetMain(0, 40);
+	anmSetSprite(1,110);
+	moveVel(rad(240), 1.5f);
+	dropExtra(11, 7);
+	$B = 0;
+!E 
+	4;
+!N
+	8;
+!H
+	10;
+!L 
+	12;
+!*
+	wait(60);
+	@CreatePattern(3, 1, 12, 0, [-1], 3, 0f, rad(50), 2f, 3f);
+	%A = rad(240);
+	@jolieffet() async;
+	while(1)
+	{
+		times(4)//
+		{
+			$B = $B + 1;
+			etAngle(3, %A,rad(50));
+			etSprite(3, 12, $B);
+			etOn(3);
+			wait(80);
+			%A = %A - rad(90);
+		}
+		wait(120);
+	}
+}
+void BigGirl3Sub00()
+{
+	var A, B;
+	anmSelect(2);
+	anmSetMain(0, 40);
+	anmSetSprite(1,110);
+	moveVel(rad(60), 1.5f);
+	dropExtra(11, 7);
+	$B = 0;
+!E 
+	4;
+!N
+	8;
+!H
+	10;
+!L 
+	12;
+!*
+	wait(60);
+	@CreatePattern(4, 1, 12, 0, [-1], 3, 0f, rad(50), 2f, 3f);
+	%A = rad(60);
+	@jolieffet() async;
+	while(1)
+	{
+		times(4)//
+		{
+			$B = $B + 1;
+			etAngle(4, %A,rad(50));
+			etSprite(4, 12, $B);
+			etOn(4);
+			wait(80);
+			%A = %A + rad(90);
+		}
+		wait(120);
+	}
+}
+void BigGirl4Sub00()
+{
+	var A, B;
+	anmSelect(2);
+	anmSetMain(0, 40);
+	anmSetSprite(1,110);
+	moveVel(rad(120), 1.5f);
+	dropExtra(11, 7);
+	$B = 0;
+!E 
+	4;
+!N
+	8;
+!H
+	10;
+!L 
+	12;
+!*
+	wait(60);
+	@CreatePattern(0, 1, 12, 0, [-1], 3, 0f, rad(50), 2f, 3f);
+	%A = rad(120);
+	@jolieffet() async;
+	while(1)
+	{
+		times(4)//
+		{
+			$B = $B + 1;
+			etAngle(0, %A,rad(50));
+			etSprite(0, 12, $B);
+			etOn(0);
+			wait(80);
+			%A = %A - rad(90);
+		}
+		wait(120);
+	}
+}
+
+void jolieffet()
+{
+	var A;
+	@CreatePattern(1, 1, 8, 8, 4, 1, %A, rad(90), 2f, 2f);
+	while(1)
+	{
+		mathAngle(%A, ABS_X, ABS_Y, 0f, 224f);
+		etAngle(1, %A, rad(90));
+		etOn(1);
+		wait(90);
+	}
+}
+
+void SGirl0Sub01()
+{
+	flagSet(4);
+	flagSet(8);
+	anmSelect(2);
+	if(RAND % 2){
+	anmSetMain(0, 0);
+	}else{
+	anmSetMain(0, 5);
+	}
+	dropExtra(14, 1 + RAND % 2);
+	moveBezier(200, -50f, 0f, -250f, 200f + RANDF2 * 50f, -120f, 100f);
+	@SgirlSub01_Shoot() async;
+	flagClear(4);
+	flagClear(8);
+	wait(1000);
+}
+void SGirl1Sub01()
+{
+	flagSet(4);
+	flagSet(8);
+	anmSelect(2);
+	if(RAND % 2){
+	anmSetMain(0, 0);
+	}else{
+	anmSetMain(0, 5);
+	}
+	dropExtra(14, 1 + RAND % 2);
+	moveBezier(200, 50f, 0f, 250f, 200f + RANDF2 * 50f, 120f, 100f);
+	@SgirlSub01_Shoot() async;
+	wait(100);
+	flagClear(4);
+	flagClear(8);
+	wait(1000);
+}
+void SgirlSub01_Shoot()
+{
+	var A;
+!E 
+	2.5f;
+!N 
+	3f;
+!H 
+	4f;
+!L 
+	4.5f;
+!EN
+	1;
+!H 
+	3;
+!L 
+	5;
+!*
+	@CreatePattern(0, 0, 4, 2, [-1], 1, 0f, rad(30), [-2.0f], 2f);
+!E 
+	2.5f;
+!N 
+	3f;
+!H 
+	4f;
+!L 
+	4.5f;
+!EN
+	1;
+!H 
+	3;
+!L 
+	5;
+!*
+	@CreatePattern(1, 1, 10, 15, [-1], 1, 0f, rad(30), [-2.0f], 2f);
+	etExSet(0, 0, 0, EX_SAVEANGLE, NEG, NEG, NEGF, NEGF);
+	etExSet(0, 1, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+	etExSub(0, 1, "SgirlSub01_Shoot1");
+	diffWait(90, 60, 50, 40);
+	while(1)
+	{
+!E 
+		if(RAND % 2)
+		{
+			etOn(0);
+		}
+!NHL
+			etOn(0);
+!*
+		diffWait(90, 60, 50, 40);
+	}
+}
+
+void SgirlSub01_Shoot1()
+{
+	var A;
+!E 
+	2.5f;
+!N 
+	3f;
+!H 
+	4f;
+!L 
+	4.5f;
+!EN
+	1;
+!H 
+	3;
+!L 
+	5;
+!*
+	@CreatePattern(1, 1, 10, 15, [-1], 1, 0f, rad(30), [-2.0f], 2f);
+	mathAngle(%A, ABS_X, ABS_Y, PLAYER_X, PLAYER_Y);
+	etAngle(1, %A, rad(30));
+	etOffsetRad(1, %A + rad(90), -8f);
+	etOn(1);
+	mathAngle(%A, ABS_X, ABS_Y, PLAYER_X, PLAYER_Y);
+	etAngle(1, %A, rad(30));
+	etOffsetRad(1, %A + rad(90), 8f);
+	etOn(1);
+}
+void Fairytest()
+{
+	flagSet(4);
+	flagSet(8);
+	anmSelect(2);
+	if(RAND % 2){
+	anmSetMain(0, 0);
+	}else{
+	anmSetMain(0, 5);
+	}
+	movePos(0f, 160f);
+	@SgirlSub01_Shoot();
+}
+void DeathGirlReimu1Sub02()
+{
+	flagSet(2);
+	flagSet(1);
+	GF2 = 1f;
+	@SetupTrap() async;
+	wait(340);
+	@CreatePattern(10, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	GI0 = 1;
+	enmCreate("Trap1", 0f, -150f, 100, 100, 1); 
+	enmCreate("Trap2", 150f, 0f, 100, 100, 1); 
+	enmCreate("Trap3", 0f, 150f, 100, 100, 1); 
+	enmCreate("Trap4", -150f, 0f, 100, 100, 1); 
+	enmCreate("Trap5", -106f, -106f, 100, 100, 1); 
+	enmCreate("Trap6", 106f, 106f, 100, 100, 1); 
+	enmCreate("Trap7", 106f, -106f, 100, 100, 1); 
+	enmCreate("Trap8", -106f, 106f, 100, 100, 1); 
+	wait(200);
+	etClear(60f);
+	wait(200);
+	GF2 = 0f;
+	GI1 = 1;
+	/*while(1)
+	{
+		etClear(2f);
+		wait(1);
+	}*/
+	wait(10000);
+}
+void DeathGirlReimuSub02()
+{
+	flagSet(2);
+	flagSet(1);
+	GI3 = 1;
+	GF2 = 1f;
+	//@SetupTrap() async;
+	wait(340);
+	GI0 = 1;
+	@CreatePattern(10, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	enmCreate("Trap1", 0f, -150f, 100, 100, 1); 
+	enmCreate("Trap2", 150f, 0f, 100, 100, 1); 
+	enmCreate("Trap3", 0f, 150f, 100, 100, 1); 
+	enmCreate("Trap4", -150f, 0f, 100, 100, 1); 
+	enmCreate("Trap5", -106f, -106f, 100, 100, 1); 
+	enmCreate("Trap6", 106f, 106f, 100, 100, 1); 
+	enmCreate("Trap7", 106f, -106f, 100, 100, 1); 
+	enmCreate("Trap8", -106f, 106f, 100, 100, 1); 
+	wait(200);
+	etClear(60f);
+	GF0 = 0.0125f;
+!L 
+	GF0 = 0.00375f;
+!*
+	wait(180);
+	enmCreate("YingYangTrap1", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap2", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap3", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap4", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap5", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap6", 0f, 0f, 100, 100, 2);
+!L
+	enmCreate("YingYangTrap1b", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap2b", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap3b", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap4b", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap5b", 0f, 0f, 100, 100, 2);
+	enmCreate("YingYangTrap6b", 0f, 0f, 100, 100, 2);
+!*
+	wait(100);
+	GF2 = 0f;
+	GI1 = 1;
+	wait(10000);
+}
+
+void SetupTrap()
+{
+	var A, B, C, D, E, F, G, H, COLOR;
+	flagSet(2);
+	flagSet(1);
+	GF4 = 0;
+	$C = MISS_COUNT;
+	$B = BOMB_COUNT;
+	%A = rad(90);
+	$G = 0;
+	@CreatePattern(14, 1, 23, 0, 1, 1, 0f, 0f, 0f, 0f);
+	etExSet(14, 0, 0, EX_OFFSCREEN, 40000, 0, NEGF, NEGF);
+	etExSet(14, 1, 0, EX_WAIT, 90, NEG, NEGF, NEGF);
+	etExSet(14, 2, 0, EX_VELTIME, 250, NEG, 2f, NEGF);
+	etExSet(14, 3, 0, EX_VELTIME, 10, NEG, 0f, NEGF);
+	while(GI3 == 0)
+	{
+		wait(1);
+		if (BOMB_COUNT > $B || MISS_COUNT > $C)
+		{
+			GI1 = 0;
+			GI0 = 0;
+			$G = 0;
+			$B = BOMB_COUNT;
+			$C = MISS_COUNT;
+		}
+	}
+	times(120)
+	{
+		$COLOR = 1 + RAND % 6;
+		etSprite(14, 23, $COLOR);
+		etExSet(14, 1, 0, EX_WAIT, 120+$G, NEG, NEGF, NEGF);
+		etOffsetRad(14, %A, 300f);
+		%E = cos(%A)*300f;
+		%F = sin(%A)*300f;
+		mathAngle(%D, %E, %F, 0f, 0f);
+		etAngle(14, %D, 0f);
+		etOn(14);
+		%A = %A + rad(3);
+		$G = $G - 1;
+		wait(1);
+		if (MISS_COUNT > $C || BOMB_COUNT > $B)
+		{
+			GF2 = 0f;
+			goto secure @ 0;
+		}
+	}
+	$H = 250 + 90;
+	while($H > 0)
+	{
+		if (MISS_COUNT > $C || BOMB_COUNT > $B)
+		{
+			GF2 = 0f;
+			goto secure @ 0;
+		}
+		wait(1);
+		$H = $H - 1;
+	}
+secure:
+	while(1)
+	{
+	while(GF2 == 0f)
+	{
+		if (BOMB_COUNT > $B)
+		{
+			GI1 = 0;
+			GI0 = 0;
+			GF4 = 1f;
+			wait(300);
+			%A = rad(90);
+			$G = 0;
+			times(120)
+			{
+				$COLOR = 1 + RAND % 6;
+				etSprite(14, 23, $COLOR);
+				etExSet(14, 1, 0, EX_WAIT, 60, NEG, NEGF, NEGF);
+				etOffsetRad(14, %A, 300f);
+				%E = cos(%A)*300f;
+				%F = sin(%A)*300f;
+				mathAngle(%D, %E, %F, 0f, 0f);
+				etAngle(14, %D, 0f);
+				etOn(14);
+				%A = %A + rad(3);
+			}
+			$B = BOMB_COUNT;
+			$C = MISS_COUNT;
+			wait(180);
+			GI0 = 1;
+			wait(220);
+			etClear(60f);
+			wait(100);
+			GI1 = 1;
+			}
+		if (MISS_COUNT > $C)
+		{
+			GI0 = 0;
+			GI1 = 0;
+			GF4 = 1f;
+			wait(280);
+			%A = rad(90);
+			$G = 0;
+			times(120)
+			{
+				$COLOR = 1 + RAND % 6;
+				etSprite(14, 23, $COLOR);
+				etExSet(14, 1, 0, EX_WAIT, 60, NEG, NEGF, NEGF);
+				etOffsetRad(14, %A, 300f);
+				%E = cos(%A)*300f;
+				%F = sin(%A)*300f;
+				mathAngle(%D, %E, %F, 0f, 0f);
+				etAngle(14, %D, 0f);
+				etOn(14);
+				%A = %A + rad(3);
+			}
+			$C = MISS_COUNT;
+			$B = BOMB_COUNT;
+			wait(180);
+			GI0 = 1;
+			wait(220);
+			etClear(60f);
+			wait(100);
+			GI1 = 1;
+		}
+		wait(1);
+	}
+	wait(1);
+	}
+}
+
+
+void Trap1()
+{
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(11, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	etAngle(11, rad(45), 0f);
+	etExSet(11, 0, 0, EX_HITBOX, NEG, NEG, 1.5f, NEGF);
+	etExSet(11, 1, 0, EX_WAIT, 212, NEG, NEGF, NEGF);
+	etExSet(11, 2, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	while(1)
+	{
+		if(GI0 == 1)
+		{
+		etOn(11);
+		}
+		wait(10);
+	}
+}
+void Trap2()
+{
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(12, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	etExSet(12, 0, 0, EX_HITBOX, NEG, NEG, 1.5f, NEGF);
+	etExSet(12, 1, 0, EX_WAIT, 212, NEG, NEGF, NEGF);
+	etExSet(12, 2, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	etAngle(12, rad(135), 0f);
+	while(1)
+	{
+		if(GI0 == 1)
+		{
+		etOn(12);
+		}
+		wait(10);
+	}
+}
+void Trap3()
+{
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(13, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	etExSet(13, 0, 0, EX_HITBOX, NEG, NEG, 1.5f, NEGF);
+	etExSet(13, 1, 0, EX_WAIT, 212, NEG, NEGF, NEGF);
+	etExSet(13, 2, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	etAngle(13, rad(225), 0f);
+	while(1)
+	{
+		if(GI0 == 1)
+		{
+		etOn(13);
+		}
+		wait(10);
+	}
+}
+void Trap4()
+{
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(14, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	etExSet(14, 0, 0, EX_HITBOX, NEG, NEG, 1.5f, NEGF);
+	etExSet(14, 1, 0, EX_WAIT, 212, NEG, NEGF, NEGF);
+	etExSet(14, 2, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	etAngle(14, rad(315), 0f);
+	while(1)
+	{
+		if(GI0 == 1)
+		{
+		etOn(14);
+		}
+		wait(10);
+	}
+}
+void Trap5()
+{
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(15, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	etExSet(15, 0, 0, EX_HITBOX, NEG, NEG, 1.5f, NEGF);
+	etExSet(15, 1, 0, EX_WAIT, 212, NEG, NEGF, NEGF);
+	etExSet(15, 2, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	etAngle(15, rad(0), 0f);
+	while(1)
+	{
+		if(GI0 == 1)
+		{
+		etOn(15);
+		}
+		wait(10);
+	}
+}
+void Trap6()
+{
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(9, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	etExSet(9, 0, 0, EX_HITBOX, NEG, NEG, 1.5f, NEGF);
+	etExSet(9, 1, 0, EX_WAIT, 212, NEG, NEGF, NEGF);
+	etExSet(9, 2, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	etAngle(9, rad(180), 0f);
+	while(1)
+	{
+		if(GI0 == 1)
+		{
+		etOn(9);
+		}
+		wait(10);
+	}
+}
+void Trap7()
+{
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(8, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	etExSet(8, 0, 0, EX_HITBOX, NEG, NEG, 1.5f, NEGF);
+	etExSet(8, 1, 0, EX_WAIT, 212, NEG, NEGF, NEGF);
+	etExSet(8, 2, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	etAngle(8, rad(90), 0f);
+	while(1)
+	{
+		if(GI0 == 1)
+		{
+		etOn(8);
+		}
+		wait(10);
+	}
+}
+void Trap8()
+{
+	flagSet(1);
+	flagSet(2);
+	@CreatePattern(7, 1, 11, 14, 1, 1, 0f, 0f, 1f, 1f);
+	etExSet(7, 0, 0, EX_HITBOX, NEG, NEG, 1.5f, NEGF);
+	etExSet(7, 1, 0, EX_WAIT, 212, NEG, NEGF, NEGF);
+	etExSet(7, 2, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	etAngle(7, rad(270), 0f);
+	while(1)
+	{
+		if(GI0 == 1)
+		{
+		etOn(7);
+		}
+		wait(10);
+	}
+}
+
+
+void YingYangTrap1()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+!NHL
+	@YingYangTrap_at() async;
+!*
+	@YingYangTrap_at2() async;
+	moveCircle(0f, GF0, 192f, 0f);
+	wait(10000);
+}
+void YingYangTrap2()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+!NHL
+	@YingYangTrap_at() async;
+!*
+	@YingYangTrap_at2() async;
+	moveCircle(rad(120), GF0, 192f, 0f);
+	wait(10000);
+}	
+void YingYangTrap3()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+!NHL
+	@YingYangTrap_at() async;
+!*
+	@YingYangTrap_at2() async;
+	moveCircle(rad(240), GF0, 192f, 0f);
+	wait(96509);
+}	
+void YingYangTrap4()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+!HL
+	@YingYangTrap_at() async;
+!*
+	@YingYangTrap_at2() async;
+	moveCircle(rad(60), GF0, 192f, 0f);
+	wait(96509);
+}	
+void YingYangTrap5()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+!HL
+	@YingYangTrap_at() async;
+!*
+	@YingYangTrap_at2() async;
+	moveCircle(rad(180), GF0, 192f, 0f);
+	wait(96509);
+}	
+void YingYangTrap6()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+!HL
+	@YingYangTrap_at() async;
+!*
+	@YingYangTrap_at2() async;
+	moveCircle(rad(300), GF0, 192f, 0f);
+	wait(96509);
+}			
+void YingYangTrap1b()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+	@YingYangTrap_at() async;
+	//@YingYangTrap_at2() async;
+	moveCircle(rad(10), GF0, 192f, 0f);
+	wait(10000);
+}
+void YingYangTrap2b()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+	@YingYangTrap_at() async;
+	//@YingYangTrap_at2() async;
+	moveCircle(rad(130), GF0, 192f, 0f);
+	wait(10000);
+}	
+void YingYangTrap3b()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+	@YingYangTrap_at() async;
+	//@YingYangTrap_at2() async;
+	moveCircle(rad(250), GF0, 192f, 0f);
+	wait(96509);
+}	
+void YingYangTrap4b()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+	@YingYangTrap_at() async;
+	//@YingYangTrap_at2() async;
+	moveCircle(rad(70), GF0, 192f, 0f);
+	wait(96509);
+}	
+void YingYangTrap5b()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+	@YingYangTrap_at() async;
+	//@YingYangTrap_at2() async;
+	moveCircle(rad(190), GF0, 192f, 0f);
+	wait(96509);
+}	
+void YingYangTrap6b()
+{
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	flagSet(1);
+	flagSet(16);
+	@YingYangTrap_at() async;
+	//@YingYangTrap_at2() async;
+	moveCircle(rad(310), GF0, 192f, 0f);
+	wait(96509);
+}			
+void YingYangTrap_at()
+{
+	var A, B;
+	%A= rad(133);
+	$B= 1;
+	etNew(2);
+	etSprite(2, ET_ARROWHEAD, 2);
+	etAim(2, 1);
+	etAngle(2,%A, 0f);
+	etCount(2, 1, $B);
+	etSpeed(2, 3f, 3f);
+!L 
+	etSpeed(2, 0.75f, 0.75f); 
+!*
+	while(1){
+		mathAngle(%A, ABS_X, ABS_Y, 0f, 224f); //calcule l'angle pour tirer en direction du boss
+		etAngle(2,%A, 0f);//aplique ce nouvel angle 
+		if(GI1 == 1)
+		{
+			etOn(2);
+		}
+		diffWait(3, 3, 3, 6);
+	}
+}
+
+void YingYangTrap_at2()
+{
+	var A, B;
+	diffI($B, 1, 2, 1, 1);
+!E 
+	2;
+!N 	
+	1;
+!H 
+	1;
+!L
+	1;
+!*
+	diffWait(0, 100, 100, 260);
+	@CreatePattern(3, 0, 16, 3, $B, [-1], 0f, rad(20), 1f, 2f);
+	while(1)
+	{
+		$A = 1 + RAND % 13;
+		etSprite(3, 16, $A);
+		if(GI1 == 1)
+		{
+			etOn(3);
+		}
+		diffWait(120, 100, 100, 80);
+	}
+}
+		
+		
+/*void YingYangTrap_at1()
+{
+	var A, B;
+	%A= rad(133);
+	$B= 1;
+	etNew(2);
+	etSprite(2, ET_ARROWHEAD, 2);
+	etAim(2, 1);
+	etAngle(2,%A, 0f);
+	etCount(1, 1, $B);
+	etSpeed(1, 1f, 1f);
+	while(1){
+		mathAngle(%A, ABS_X, ABS_Y, 0f, 224f); //calcule l'angle pour tirer en direction du boss
+		etAngle(2,%A, 0f);//aplique ce nouvel angle 
+		if(GI1 == 1)
+		{
+			etOn(2);
+		}
+		wait(20);
+	}
+}*/
+
+
+void Phantom00()
+{
+	flagSet(4);
+	anmSelect(2);
+	anmSetSprite(0, 84);
+	if(SHOTTYPE == 0)
+	{
+		setInvuln(50);
+	}
+	phantom_at() async;
+	while(1)
+	{
+		moveBezier(120, ABS_X + 120f, 204f + 10f, ABS_X + 120f, 204f + 10f, ABS_X + 120f, 204f);
+		wait(120);
+		moveBezier(120, ABS_X + 120f, 204f, ABS_X + 120f, 204f, ABS_X + 120f, 204f + 10f);
+		wait(120);
+		
+	}
+	wait(1000);
+}
+void Phantom01()
+{
+	flagSet(4);
+	anmSelect(2);
+	anmSetSprite(0, 84);
+	if(SHOTTYPE == 0)
+	{
+		setInvuln(50);
+	}
+	phantom_at() async;
+	while(1)
+	{
+		moveBezier(120, ABS_X - 120f, 204f + 10f, ABS_X - 120f, 204f + 10f, ABS_X - 120f, 204f);
+		wait(120);
+		moveBezier(120, ABS_X - 120f, 204f, ABS_X - 120f, 204f, ABS_X - 120f, 204f + 10f);
+		wait(120);
+		
+	}
+	wait(1000);
+}
+
+void phantom_at()
+{
+	flagClear(4);
+	var A, B;
+	diffI($B, 3, 6, 8, 10);
+!E 
+	6;
+!N
+	10;
+!H 
+	14;
+!L 
+	16;
+!*
+	@CreatePattern(1, 3, 4, 2, [-1], 1, 0f, 0f, 3.5f, 3.5f);
+	diffWait(90 - RAND % 31, 80 - RAND % 31, 90 - RAND % 10,  90 - RAND % 10);
+	while(1)
+	{
+		$A = 2;
+		times($B)
+		{
+			etOn(1);
+			etSprite(1, 4, $A);
+!EN
+			$A = $A + 2;
+!HL
+			$A = $A + 1;
+!*
+			diffWait(10, 5, 8, 9);
+		}
+		diffWait(120 - RAND % 21, 180 - RAND % 21, 160, 140);
+	}
+}
+
+void SetupFantasySeal()
+{
+	flagSet(1);
+	flagSet(2);
+!EL
+	enmCreateA("FairyFantasySeal", 0f, 60f, 100, 10, 1);
+!EL
+	enmCreateA("FairyFantasySeal", 0f, 400f, 100, 10, 1);
+!HNL
+	enmCreateA("FairyFantasySeal", -100f, 100f, 100, 10, 1);
+	enmCreateA("FairyFantasySeal", 100f, 100f, 100, 10, 1);
+	enmCreateA("FairyFantasySeal", -100f, 360f, 100, 10, 1);
+	enmCreateA("FairyFantasySeal", 100f, 360f, 100, 10, 1);
+!HL
+	enmCreateA("FairyFantasySeal", -180f, 224f, 100, 10, 1);
+	enmCreateA("FairyFantasySeal", 180f, 224f, 100, 10, 1);
+}
+
+void FairyFantasySeal()
+{
+	flagSet(16);
+	anmSelect(2);
+	anmSetMain(0, 40);
+	anmSetSprite(1, 91);
+	anmSetSprite(2, 121);
+	@CreatePattern(0, 0, 32, 1, 1, 1, rad(80), 0f, 2f, 2f);
+	etExSet(0, 0, 1, EX_ACCEL, 40, NEG, 0.15f, NEGF);
+	etExSet(0, 1, 1, EX_ANGLE_ACCEL, 50, NEG, 0f, rad(-4.3));
+	wait(90);
+	etSprite(0, 32, 1 + RAND % 7);
+	@ItemsFairy() async;
+	while(1)
+	{
+		etSprite(0, 32, 1 + RAND % 6);
+		if(GI1 == 1)
+		{
+			etOn(0);
+		}
+		wait(90);
+	}
+	wait(1000);
+}
+
+void ItemsFairy()
+{
+	wait(2900);
+	if(RAND % 2){
+	dropExtra(10, 1);
+	}else{
+	dropExtra(12, 1);
+	}
+	dropExtra(1, 10);
+	dropExtra(2, 10);
+	dropItems();
+}
+
+void MFairy0()
+{
+!L 
+	lifeSet(1500);
+!*
+	anmSelect(2);
+	anmSetMain(0, 35);
+	anmSetSprite(1, 105);
+	dropExtra(1, 7);
+	dropExtra(2, 7);
+	dropExtra(11, 4);
+	dropExtra(12, 1);
+	moveVel(rad(90), 2f);
+	wait(80);
+	moveVel(rad(90), 0f);
+	@MFairy0_at();
+}
+
+void MFairy0_at()
+{
+	var B, C;
+!E 
+	4;
+!N
+	4;
+!H 
+	6;
+!L 
+	6;
+!*
+	$B = [-1];
+	@CreatePattern(0, 2, 0, 0, 24, $B, 0f, 0f, 4f, 3f);
+!H 
+	etCount(0, 16, 4);
+!L 
+	etCount(0, 34, 6);
+!*
+	$C = 0;
+	while(1)
+	{
+		$C = $C + 1;
+		etSprite(0, 21, $C);
+		etAim(0, 2);
+		etOn(0);
+		diffWait(60, 50, 30, 15);
+		$C = $C + 1;
+		etSprite(0, 21, $C);
+		etAim(0, 4);
+		etOn(0);
+		diffWait(60, 50, 30, 20);
+		if($C == 6)
+		{
+			$C = 0;
+		}
+	}
+}
+void MFairy1()
+{
+	setInvuln(160);
+	anmSelect(2);
+	anmSetMain(0, 35);
+	anmSetSprite(1, 105);
+	dropExtra(1, 7);
+	dropExtra(2, 7);
+	dropExtra(11, 4);
+	dropExtra(12, 1);
+	moveVel(rad(90), 2f);
+	wait(80);
+	moveVel(rad(90), 0f);
+	wait(90);
+	@MFairy1_at();
+}
+
+void MFairy1_at()
+{
+	var B, C;
+!E 
+	4;
+!N
+	4;
+!H 
+	6;
+!L 
+	6;
+!*
+	$B = [-1];
+	@CreatePattern(0, 2, 0, 0, 6, $B, 0f, 0f, 4f, 3f);
+!H 
+	etCount(0, 12, 4);
+!L 
+	etCount(0, 16, 6);
+!*
+	$C = 0;
+	while(1)
+	{
+		$C = $C + 1;
+		etSprite(0, 21, $C);
+		etAim(0, 2);
+		etOn(0);
+		diffWait(60, 50, 30, 15);
+		$C = $C + 1;
+		etSprite(0, 21, $C);
+		etAim(0, 4);
+		etOn(0);
+		diffWait(60, 50, 30, 20);
+		if($C == 6)
+		{
+			$C = 0;
+		}
+	}
+}
+
+void BFairy0()
+{
+	var A, B, C, D;
+	anmSelect(2);
+	anmSetMain(0, 40);
+	anmSetSprite(1, 135);
+	moveVel(rad(0), 1.75f);
+	diffI($B, 4, 6, 10, 14);
+!E
+	rad(55);
+!N 
+	rad(45);
+!H
+	rad(35);
+!L 
+	rad(30);
+!*
+	%A = [-1];
+	@CreatePattern(1, 1, 23, 6, 1, 1, %A, 0f, 2f, 2f);
+	etExSet(1, 0, 0, EX_ACCEL, 80, NEG, -0.025f, NEGF);
+	etExSet(1, 1, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	wait(30);
+	while(1)
+	{
+		diffF(%A, rad(55), rad(45), rad(35), rad(30));
+		moveVel(0f, 0f);
+		times($B)
+		{
+			etAngle(1, %A, 0f);
+			etOn(1);
+			F0 = REL_X + cos(%A) * 80f;
+			F1 = REL_Y + sin(%A) * 80f;
+			F2 = %A;
+			enmCreate("LaserBFairy", 0f, 0f, 1, 1, 1);
+!E 
+			%A = %A + rad(20);
+!NH 
+			%A = %A + rad(15);
+!L
+			%A = %A + rad(10);
+!*
+		}
+		wait(80);
+		moveVel(rad(0), 1.75f);
+		diffWait(60, 50, 40, 30);
+	}
+}
+
+void BFairy1()
+{
+	var A, B;
+	anmSelect(2);
+	anmSetMain(0, 40);
+	anmSetSprite(1, 135);
+	moveVel(rad(180), 1.75f);
+	diffI($B, 4, 6, 10, 14);
+!E
+	rad(55);
+!N 
+	rad(45);
+!H
+	rad(35);
+!L 
+	rad(30);
+!*
+	%A = [-1];
+	@CreatePattern(1, 1, 23, 6, 1, 1, %A, 0f, 2f, 2f);
+	etExSet(1, 0, 0, EX_ACCEL, 80, NEG, -0.025f, NEGF);
+	etExSet(1, 1, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	wait(30);
+	while(1)
+	{
+		diffF(%A, rad(55), rad(45), rad(35), rad(30));
+		moveVel(0f, 0f);
+		times($B)
+		{
+			etAngle(1, %A, 0f);
+			etOn(1);
+			F0 = REL_X + cos(%A) * 80f;
+			F1 = REL_Y + sin(%A) * 80f;
+			F2 = %A;
+			enmCreate("LaserBFairy", 0f, 0f, 1, 1, 1);
+!E 
+			%A = %A + rad(20);
+!NH 
+			%A = %A + rad(15);
+!L
+			%A = %A + rad(10);
+!*
+		}
+		wait(80);
+		moveVel(rad(180), 1.75f);
+		diffWait(60, 50, 40, 30);
+	}
+}
+
+void LaserBFairy(float A, float B, float C)
+{
+	%A = F2;
+	%B = F0;
+	%C = F1;
+	flagSet(1);
+	flagSet(2);
+	etNew(2);
+	etAim(2, 1);
+	etSprite(2, 37, 6);
+	wait(80);
+	etAngle(2, %A, 0f);
+	etOffset(2, %B, %C);
+	etSpeed(2, 40f, 40f);
+	laserNew(2, 0f, 600f, 0f, 20f);
+	laserTiming(2, 60, 1, 60, 20, 0);
+	laserStOn(2, 1);
+	wait(60);
+	playSound(18);
+	delete();
+}
+
+void YingYangSub03()
+{
+	flagSet(16);
+	anmSelect(2);
+	anmSetSprite(0, 53);
+	dropExtra(1, 3);
+	dropExtra(2, 2);
+	movePos(0f, 224f);
+	moveCircle(rad(-90), 0f, 192f, 0f);
+	wait(200 + GI0);
+	moveCircle(rad(-90), 0.01f, 192f, 0f);
+	@YingYangSub03_at();
+	wait(1000);
+}
+
+void YingYangSub03_at()
+{
+	var A, B;
+!E 
+	1;
+!N 
+	1;
+!H 
+	2;
+!L 
+	2;
+!E 
+	1;
+!N 
+	1;
+!H 
+	2;
+!L 
+	3;
+!*
+	@CreatePattern(1, 1, 22, 0, [-1], [-2], 0f, rad(20), 3f, 2f);
+	while(1)
+	{
+		mathAngle(%A, ABS_X, ABS_Y, 0f, 224f);
+		etAngle(1, %A, 0f);
+		etOn(1);
+		diffWait(180-GI0, 160-GI0, 140-GI0, 120-GI0);
+	}
+}
+
+
+void LogoEnemy()
+{
+    wait(460);
+    stageLogo();
+    return;
+}
+
+void MainBoss()
+{
+    dialogWait();
+    enmCreateA("Boss", -144.0f, -16.0f, 40, 1000, 1);
+    dialogWait();
+    setChapter(6);
+    bossWait();
+    setChapter(7);
++60: //60
+    dialogRead(1);
+    dialogWait();
+    return;
+}
+
+void MainBossDebug()
+{
+    setChapter(5);
++10: //10
+    dialogRead(0);
+    @MainBoss();
+    return;
+}
+
+void MainBossDebug2()
+{
+    setChapter(5);
++10: //10
+    dialogRead(-1);
+    @MainBoss();
+    return;
+}
+
+void MainFront()
+{
+    @MainSub00();
+	wait(680);
+	@MainSub01();
+	wait(200);
+	@MainSub02();
+	wait(100);
+    return;
+}
+
+void MainLatter()
+{
+	@MainSub05();
+	// @MainSub03();
+	@MainSub04();
+	@MainSub07();
+	wait(1000);
+	@MainSub06();
+    return;
+}
+
+void MainMBoss()
+{
+    setChapter(4);
+    enmCreateA("MBoss", -112.0f, -32.0f, 40, 1000, 1);
++10: //10
+    dialogRead(2);
+    dialogWait();
+    wait(700);
+    @MainSub05();
+   // @MainSub05b();
+    return;
+}
+
+void MainMBossDebug()
+{
+    @MainMBoss();
+    goto MainMBossDebug_112 @ 0;
+MainMBossDebug_92:
+    wait(1000);
+MainMBossDebug_112:
+    if (1) goto MainMBossDebug_92 @ 0;
+    return;
+}
+
+void MainMsgDebug()
+{
++10: //10
+    dialogRead(0);
+    dialogWait();
++1: //11
+    dialogWait();
++60: //71
+    dialogRead(1);
+    dialogWait();
+    goto MainMsgDebug_164 @ 4071;
+MainMsgDebug_148:
++4000: //4071
+    nop();
+MainMsgDebug_164:
+    if (1) goto MainMsgDebug_148 @ 71;
+    return;
+}
+
+void MainSub00()
+{
+	GI3 = 0;
+	enmCreateA("SetupTrap", 0f, 224f, 1, 0, 0);
+	enmCreateA("BigGirl1Sub00", -192f, 480f, 600, 1000, 10);
+	enmCreateA("BigGirl2Sub00", 192f, 480f, 600, 1000, 10);
+	enmCreateA("BigGirl3Sub00", -192f, 0f, 500, 1000, 12);
+	enmCreateA("BigGirl4Sub00", 192f, 0f, 500, 1000, 12);
+}
+
+void MainSub01()
+{
+	@MainSub01b() async;
+	times(40)
+	{
+    enmCreateA("SGirl0Sub01", 192f + RANDF * 30f, 150f + RANDF2 * 55f, 70, 100, 2);
+	wait(20 + RAND % -20);
+	}
+}
+void MainSub01b()
+{
+	wait(360);
+	times(30)
+	{
+    enmCreateA("SGirl1Sub01", -192f - RANDF * 30f, 120f + RANDF2 * 55f, 70, 100, 2);
+	wait(20 + RAND % -20);
+	}
+}
+void MainSub02()
+{
+	var A;
+	$A = 2100;
+	enmCreateA("DeathGirlReimuSub02", 0f, 224f, 100, 100, 1);
+	while($A > 0)
+	{
+		if(GI1 == 1)
+		{
+			$A = $A - 1;
+		}else if(GI0 == 0 && GI1 == 0 && GF4 == 1f) {
+			$A = $A - 150;
+			GF4 = 0f;
+		}
+		wait(1);
+	}
+}
+
+void MainSub03()
+{
+	GI0 = 0;
+	times(32)
+	{
+		enmCreateAF("YingYangSub03", 0f, 30f, 400, 100, 1);
+		GI0 = GI0 + 1;
+		wait(10);
+		//wait(10);
+	}
+}
+
+void MainSub04b()
+{
+   times(10)
+	{
+		enmCreateA("Phantom01", 200f, 204f, 100, 100, 1);
+		wait(100);
+	} 
+}
+
+void MainSub04()
+{
+    times(4)
+	{
+		enmCreateA("Phantom00", -200f, 204f, 100, 100, 1);
+		wait(90);
+	}
+	@MainSub04b() async;
+	times(9)
+	{
+		enmCreateA("Phantom00", -200f, 204f, 100, 100, 1);
+		wait(90);
+	}
+    times(4)
+	{
+		enmCreateA("Phantom00", -200f, 204f, 100, 100, 1);
+		wait(90);
+	}
+	@MainSub04b() async;
+	times(9)
+	{
+		enmCreateA("Phantom00", -200f, 204f, 100, 100, 1);
+		wait(90);
+	}
+	wait(300);
+}
+
+void MainSub05()
+{
+	@MainSub05b() async;
+	times(40)
+	{
+    enmCreateAF("SGirl0Sub01", 192f + RANDF * 30f, 150f + RANDF2 * 55f, 70, 100, 2);
+	wait(20 + RAND % -20);
+	}
+	wait(160);
+	times(6)
+	{
+		enmCreateAF("BFairy0", -210f, 40f + RANDF2 * 30f, 450, 100, 12);
+		enmCreateAF("BFairy1", 210f, 40f + RANDF2 * 30f, 450, 100, 12);
+		wait(220);
+	}
+	wait(300);
+}
+void MainSub05b()
+{
+	wait(360);
+	times(30)
+	{
+    enmCreateAF("SGirl1Sub01", -192f - RANDF * 30f, 120f + RANDF2 * 55f, 70, 100, 2);
+	wait(20 + RAND % -20);
+	}
+}
+
+void MainSub06()
+{
+	var A;
+	$A = 3000;
+	enmCreateA("DeathGirlReimu1Sub02", 0f, 224f, 100, 100, 1);
+	wait(500);
+	enmCreateA("SetupFantasySeal", 0f, 0f, 100, 100, 1);
+	while($A > 0)
+	{
+		if(GI1 == 1)
+		{
+			$A = $A - 1;
+		}else if(GI0 == 0 && GI1 == 0 && GF4 == 1f) {
+			$A = $A - 150;
+			GF4 = 0f;
+		}
+		wait(1);
+	}
+}
+
+void MainSub07()
+{
+	var A;
+	enmCreateA("MFairy1", 0f, -50f, 1200, 100, 12);
+	wait(290);
+	enmCreateA("MFairy1", 0f, -50f, 1200, 100, 10);
+	wait(390);
+	times(6)
+	{
+		enmCreateA("BFairy0", -192f, 40f + RANDF2 * 30f, 450, 100, 12);
+		enmCreateA("BFairy1", 192f, 40f + RANDF2 * 30f, 450, 100, 12);
+		wait(220);
+	}
+	wait(600);
+	enmCreateA("MFairy0", 0f, -50f, 300, 200, 1);
+!H
+	enmCreateA("MFairy0", 40f, -50f, 300, 200, 1);
+	enmCreateA("MFairy0", -40f, -50f, 300, 200, 1);
+!HN
+	enmCreateA("MFairy0", 80f, -50f, 300, 200, 1);
+	enmCreateA("MFairy0", -80f, -50f, 300, 200, 1);
+!EHL
+	enmCreateA("MFairy0", 120f, -50f, 300, 200, 1);
+	enmCreateA("MFairy0", -120f, -50f, 300, 200, 1);
+!N
+	enmCreateA("MFairy0", 140f, -50f, 300, 200, 1);
+	enmCreateA("MFairy0", -140f, -50f, 300, 200, 1);
+!H
+	enmCreateA("MFairy0", 160f, -50f, 300, 200, 1);
+	enmCreateA("MFairy0", -160f, -50f, 300, 200, 1);
+!*
+	$A = 600;
+	while($ENM_CNT_REAL > 3 || $A == 0)
+	{
+		wait(1);
+		$A = $A - 1;
+	}
+	wait(120);
+}
+
+void MapleEnemy()
+{
+    flagSet(32);
+    goto MapleEnemy_124 @ 0;
+MapleEnemy_80:
+    anmPlayAbs(1, 93);
+    wait(5);
+MapleEnemy_124:
+    if (1) goto MapleEnemy_80 @ 0;
+    delete();
+}
+
+void TraceEnemyPos()
+{
+    var A;
+    goto TraceEnemyPos_100 @ 0;
+TraceEnemyPos_60:
+    moveEnmRel($A);
+    wait(1);
+TraceEnemyPos_100:
+    if (1) goto TraceEnemyPos_60 @ 0;
+    return;
+}
+
+void main()
+{
+    var A, B;
+    flagSet(32);
+    setChapter(0);
+    enmMapleEnemy("MapleEnemy", 0, 0, 100, 1000, 0);
+    unless ($SPELL_ID >= 0) goto main_544 @ 0;
+    unless (($SPELL_ID >= 30) && ($SPELL_ID <= 31)) goto main_420 @ 0;
+    @MainMBossSpell();
+    goto main_456 @ 0;
+main_420:
+    @MainBossSpell();
+main_456:
+    goto main_500 @ 0;
+main_480:
+    wait(1000);
+main_500:
+    if (1) goto main_480 @ 0;
+main_544:
+    debug22(1, "MainMBossDebug");
+    debug22(2, "MainBossDebug");
+    debug22(3, "MainBossDebug2");
+    debug22(4, "MainMsgDebug");
+    debug22(5, "MainLatter");
+    @LogoEnemy() async;
++60: //60
+    nop();
+    @MainFront();
+	// enmCreateA("LIVES", 0f, 360f, 1, 1, 6);
+	wait(60);
+    @MainMBoss();
+	wait(160);
+	bossWait();
+    @MainLatter();
+    wait(130);
+    setChapter(5);
+    dialogRead(0);
+    setChapter(6);
+    @MainBoss();
+    goto main_1060 @ 60;
+main_1040:
+    wait(1000);
+main_1060:
+    if (1) goto main_1040 @ 60;
+    delete();
+}

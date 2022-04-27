@@ -1,0 +1,2878 @@
+entry entry0 {
+    version: 8,
+    name: "effect/eff_switch.png",
+    format: 5,
+    width: 64,
+    height: 64,
+    memoryPriority: 10,
+    lowResScale: 0,
+    hasData: 1,
+    THTXSize: 8192,
+    THTXFormat: 5,
+    THTXWidth: 64,
+    THTXHeight: 64,
+    THTXZero: 0,
+    sprites: {
+        sprite0: { x: 0, y: 1, w: 128, h: 128 }
+    }
+}
+
+script script0 {
+    alpha(0);
+    stop();
+}
+
+script script1 {
+    alpha(0);
+    scriptNew(script3);
+    scriptNew(script4);
+    scriptNew(script5);
+    scriptNew(script6);
+    stop();
+}
+
+script script2 {
+    alpha(0);
+    scriptNew(script10);
+    scriptNew(script9);
+    scriptNew(script8);
+    scriptNew(script7);
+    stop();
+}
+
+script script3 {
+-1:
+    type(1);
+    sprite(sprite0);
+    scrollMode(0, 1);
+    scale(3.0f, 12.0f);
+    rotate(0.0f, 0.0f, 1.9198622f);
+    pos(-992.0f, -512.0f, 0.0f);
+    posTime(30, 1, 160.0f, -87.89502f, 0.0f);
+    color(32, 16, 96);
+45:
+    sprite(-1);
+    drawRect(640.0f, 480.0f);
+    scale(1.0f, 1.0f);
+    rotate(0.0f, 0.0f, 0.0f);
+    pos(0.0f, 0.0f, 0.0f);
+    stop();
+}
+
+script script4 {
+-1:
+    type(1);
+    sprite(sprite0);
+    scrollMode(0, 1);
+    scale(3.0f, 12.0f);
+    rotate(0.0f, 0.0f, -1.9198622f);
+    pos(992.0f, -512.0f, 0.0f);
+    color(32, 16, 96);
+5:
+    posTime(30, 1, -96.0f, -161.77138f, 0.0f);
++40: // 45
+    delete();
+}
+
+script script5 {
+-1:
+    type(1);
+    sprite(sprite0);
+    scrollMode(0, 1);
+    scale(3.0f, 12.0f);
+    rotate(0.0f, 0.0f, 1.7453293f);
+    pos(-1056.0f, 0.0f, 0.0f);
+    color(32, 16, 96);
+10:
+    posTime(30, 1, 160.0f, 215.32375f, 0.0f);
++35: // 45
+    delete();
+}
+
+script script6 {
+-1:
+    type(1);
+    sprite(sprite0);
+    scrollMode(0, 1);
+    scale(3.0f, 12.0f);
+    rotate(0.0f, 0.0f, -1.7453293f);
+    pos(1088.0f, 0.0f, 0.0f);
+    color(32, 16, 96);
+15:
+    posTime(30, 1, 64.0f, 177.81573f, 0.0f);
++30: // 45
+    delete();
+}
+
+script script7 {
+-1:
+    type(1);
+    sprite(sprite0);
+    scrollMode(0, 1);
+    scale(3.0f, 12.0f);
+    rotate(0.0f, 0.0f, 1.2217305f);
+    pos(160.0f, -328.10498f, 0.0f);
+    posTime(30, 1, -1024.0f, 96.0f, 0.0f);
+    color(32, 16, 96);
+40:
+    delete();
+}
+
+script script8 {
+-1:
+    type(1);
+    sprite(sprite0);
+    scrollMode(0, 1);
+    scale(3.0f, 12.0f);
+    rotate(0.0f, 0.0f, -1.2217305f);
+    pos(-96.0f, -254.22862f, 0.0f);
+    color(32, 16, 96);
+5:
+    posTime(30, 1, 1024.0f, 96.0f, 0.0f);
++40: // 45
+    delete();
+}
+
+script script9 {
+-1:
+    type(1);
+    sprite(sprite0);
+    scrollMode(0, 1);
+    scale(3.0f, 12.0f);
+    rotate(0.0f, 0.0f, 1.3962634f);
+    pos(160.0f, 104.67626f, 0.0f);
+    color(32, 16, 96);
+10:
+    posTime(30, 1, -1056.0f, 320.0f, 0.0f);
++40: // 50
+    delete();
+}
+
+script script10 {
+-1:
+    type(1);
+    sprite(sprite0);
+    scrollMode(0, 1);
+    scale(3.0f, 12.0f);
+    rotate(0.0f, 0.0f, -1.3962634f);
+    pos(-96.0f, 142.18427f, 0.0f);
+    color(32, 16, 96);
+15:
+    posTime(30, 1, 1088.0f, 320.0f, 0.0f);
++40: // 55
+    delete();
+}
+
+
+entry entry1 {
+    version: 8,
+    name: "effect/eff_line.png",
+    format: 5,
+    width: 128,
+    height: 128,
+    memoryPriority: 10,
+    lowResScale: 0,
+    hasData: 1,
+    THTXSize: 32768,
+    THTXFormat: 5,
+    THTXWidth: 128,
+    THTXHeight: 128,
+    THTXZero: 0,
+    sprites: {
+        sprite1: { x: 65, y: 0, w: 14, h: 128 },
+        sprite2: { x: 81, y: 0, w: 14, h: 128 },
+        sprite3: { x: 49, y: 0, w: 14, h: 128 },
+        sprite4: { x: 49, y: 0, w: 14, h: 128 },
+        sprite5: { x: 33, y: 0, w: 14, h: 295 },
+        sprite6: { x: 97, y: 0, w: 15, h: 448 }
+    }
+}
+
+script script11 {
+-1:
+    blendMode(1);
+    layer(4);
+    sprite(sprite2);
+    alphaTime(0, 0, 255);
+    alphaTime(8, 0, 128);
+    angleVel(0.0f, 0.0f, -0.31415927f);
+    scale(16.0f, 16.0f);
+    scaleTime(40, 4, 16.0f, 320.0f);
+    iset($I0, 32);
+    iset($I1, 3);
+    iset($I2, 600);
+0:
+    texCircle($I0);
++40: // 40
+    scaleTime(40, 1, 16.0f, 172.0f);
+    angleVel(0.0f, 0.0f, 0.10471976f);
++40: // 80
+    scaleTime($I2, 0, 14.0f, 16.0f);
+    angleVel(0.0f, 0.0f, 0.05235988f);
+    wait($I2);
+    alphaTime(20, 0, 0);
++20: // 100
+    stop();
+}
+
+script script12 {
+-1:
+    blendMode(1);
+    iset($I0, 32);
+    iset($I1, 3);
+    iset($I2, 600);
+    layer(4);
+    sprite(sprite3);
+    alphaTime(0, 0, 255);
+    alphaTime(8, 0, 128);
+    angleVel(0.0f, 0.0f, 0.31415927f);
+    scale(128.0f, 16.0f);
+    scaleTime(80, 9, 16.0f, 160.0f);
+0:
+    texCircle($I0);
++80: // 80
+    scaleTime($I2, 0, 14.0f, 16.0f);
+    angleVel(0.0f, 0.0f, -0.06283186f);
+    wait($I2);
+    alphaTime(20, 0, 0);
++20: // 100
+    stop();
+}
+
+script script13 {
+    alpha(0);
+    layer(4);
+    scriptNew(script11);
+    scriptNew(script12);
+    stop();
+}
+
+script script14 {
+-1:
+    blendMode(1);
+    layer(4);
+    sprite(sprite6);
+    type(1);
+    rotate(0.0f, 0.0f, 1.0471976f);
+    scale(1.0f, 1.0f);
+    scrollY(0.01f);
+    alpha(0);
+    alphaTime(20, 0, 128);
+120:
+    alphaTime(20, 0, 0);
++20: // 140
+    delete();
+}
+
+script script15 {
+-1:
+    blendMode(1);
+    layer(4);
+    sprite(sprite6);
+    type(1);
+    rotate(0.0f, 0.0f, 1.0471976f);
+    scale(1.0f, 1.0f);
+    scrollY(-0.01f);
+    alpha(0);
+    alphaTime(20, 0, 128);
+120:
+    alphaTime(20, 0, 0);
++20: // 140
+    delete();
+}
+
+script script16 {
+-1:
+    blendMode(1);
+    iset($I0, 9);
+    iset($I1, 8);
+    layer(4);
+    sprite(sprite6);
+    angleVel(0.0f, 0.0f, -0.02617994f);
+    scale(16.0f, 128.0f);
+    pos(128.0f, 384.0f, 0.0f);
+    alpha(0);
+    alphaTime(20, 0, 128);
+0:
+    texCircle($I0);
++120: // 120
+    alphaTime(20, 0, 0);
++20: // 140
+    delete();
+}
+
+script script17 {
+-1:
+    blendMode(1);
+    iset($I0, 9);
+    iset($I1, 8);
+    layer(4);
+    sprite(sprite6);
+    angleVel(0.0f, 0.0f, 0.02617994f);
+    scale(16.0f, 160.0f);
+    pos(128.0f, 384.0f, 0.0f);
+    alpha(0);
+    alphaTime(20, 0, 128);
+0:
+    texCircle($I0);
++120: // 120
+    alphaTime(20, 0, 0);
++20: // 140
+    delete();
+}
+
+script script18 {
+-1:
+    blendMode(1);
+    iset($I0, 9);
+    iset($I1, 8);
+    layer(4);
+    sprite(sprite6);
+    angleVel(0.0f, 0.0f, 0.02617994f);
+    scale(16.0f, 192.0f);
+    pos(128.0f, 384.0f, 0.0f);
+    alpha(0);
+    alphaTime(20, 0, 128);
+0:
+    texCircle($I0);
++120: // 120
+    alphaTime(20, 0, 0);
++20: // 140
+    delete();
+}
+
+script script19 {
+-1:
+    blendMode(1);
+    iset($I0, 9);
+    iset($I1, 8);
+    layer(4);
+    sprite(sprite6);
+    angleVel(0.0f, 0.0f, 0.02617994f);
+    scale(16.0f, 96.0f);
+    pos(-128.0f, 64.0f, 0.0f);
+    alpha(0);
+    alphaTime(20, 0, 128);
+0:
+    texCircle($I0);
++120: // 120
+    alphaTime(20, 0, 0);
++20: // 140
+    delete();
+}
+
+script script20 {
+    alpha(0);
+    layer(4);
+    scriptNew(script16);
+    scriptNew(script17);
+    scriptNew(script18);
+    scriptNew(script19);
+    fset(%F0, 48.0f);
+    isetDiv($I0, 10, 2);
+offset108:
+    scriptNewPos(14, 0.0f, %F0);
+    fadd(%F0, 32.0f);
+    scriptNewPos(15, 0.0f, %F0);
+    fadd(%F0, 32.0f);
+    jmpDec($I0, offset108, 0);
++140: // 140
+    delete();
+}
+
+
+entry entry2 {
+    version: 8,
+    name: "effect/eff_base.png",
+    format: 5,
+    width: 256,
+    height: 256,
+    memoryPriority: 10,
+    lowResScale: 0,
+    hasData: 1,
+    THTXSize: 131072,
+    THTXFormat: 5,
+    THTXWidth: 256,
+    THTXHeight: 256,
+    THTXZero: 0,
+    sprites: {
+        sprite7: { x: 0, y: 0, w: 16, h: 16 },
+        sprite8: { x: 16, y: 0, w: 16, h: 16 },
+        sprite9: { x: 32, y: 0, w: 16, h: 16 },
+        sprite10: { x: 48, y: 0, w: 16, h: 16 },
+        sprite11: { x: 64, y: 0, w: 16, h: 16 },
+        sprite12: { x: 80, y: 0, w: 16, h: 16 },
+        sprite13: { x: 96, y: 0, w: 16, h: 16 },
+        sprite14: { x: 112, y: 0, w: 16, h: 16 },
+        sprite15: { x: 128, y: 0, w: 16, h: 16 },
+        sprite16: { x: 144, y: 0, w: 16, h: 16 },
+        sprite17: { x: 160, y: 0, w: 16, h: 16 },
+        sprite18: { x: 176, y: 0, w: 16, h: 16 },
+        sprite19: { x: 192, y: 0, w: 16, h: 16 },
+        sprite20: { x: 208, y: 0, w: 16, h: 16 },
+        sprite21: { x: 224, y: 0, w: 16, h: 16 },
+        sprite22: { x: 240, y: 0, w: 16, h: 16 },
+        sprite23: { x: 0, y: 16, w: 64, h: 64 },
+        sprite24: { x: 64, y: 16, w: 64, h: 64 },
+        sprite25: { x: 128, y: 16, w: 64, h: 64 },
+        sprite26: { x: 128, y: 16, w: 64, h: 64 },
+        sprite27: { x: 192, y: 16, w: 64, h: 64 },
+        sprite28: { x: 0, y: 80, w: 64, h: 64 },
+        sprite29: { x: 64, y: 80, w: 64, h: 64 },
+        sprite30: { x: 0, y: 224, w: 32, h: 32 },
+        sprite31: { x: 33, y: 225, w: 30, h: 30 },
+        sprite32: { x: 64, y: 224, w: 32, h: 32 },
+        sprite33: { x: 128, y: 80, w: 128, h: 128 },
+        sprite34: { x: 33, y: 225, w: 30, h: 30 },
+        sprite35: { x: 64, y: 80, w: 64, h: 64 },
+        sprite36: { x: 192, y: 224, w: 32, h: 32 }
+    }
+}
+
+script script21 {
+-1:
+    sprite(sprite23);
+    layer(16);
+    type(1);
+    alpha(0);
+    alphaTime(6, 0, 255);
+    scale(2.3f, 2.3f);
+    scaleTime(18, 4, 1.0f, 1.0f);
+    rotate(0.0f, 0.0f, 3.1415927f);
+    rotateTime(18, 4, 0.0f, 0.0f, -3.1415927f);
+18:
+    angleVel(0.0f, 0.0f, -0.10471976f);
+    stop();
+    case(1);
+    scaleTime(8, 4, 0.0f, 0.0f);
++8: // 26
+    delete();
+}
+
+script script22 {
+-1:
+    sprite(sprite23);
+    layer(16);
+    type(1);
+    scale(0.3f, 0.3f);
+    scaleTime(12, 4, 1.0f, 1.0f);
+    rotate(0.0f, 0.0f, -3.1415927f);
+    rotateTime(18, 4, 0.0f, 0.0f, 3.1415927f);
+0:
+    scriptNew(script21);
++18: // 18
+    angleVel(0.0f, 0.0f, 0.05235988f);
+    stop();
+    case(1);
+    scaleTime(8, 4, 0.0f, 0.0f);
++8: // 26
+    delete();
+}
+
+script script23 {
+-1:
+    sprite(sprite7);
+    layer(16);
+    type(1);
+    blendMode(1);
+    alpha(244);
+    alphaTime(40, 0, 130);
+    color(255, 255, 255);
+    isetMod($I0, $RAND, 80);
+    iadd($I0, 20);
+    isetMod($I1, $RAND, 128);
+    iadd($I0, 128);
+    colorTime(80, 0, $I1, $I0, $I0);
+0:
+offset200:
+    scaleTime(4, 1, 0.75f, 0.75f);
++4: // 4
+    scaleTime(4, 4, 0.5f, 0.5f);
++4: // 8
+    scaleTime(4, 1, 0.75f, 0.75f);
++4: // 12
+    scaleTime(4, 4, 1.0f, 1.0f);
++4: // 16
+    jmp(offset200, 0);
++8: // 24
+    delete();
+}
+
+script script24 {
+    sprite(sprite7);
+    layer(16);
+    type(1);
+    blendMode(1);
+    alpha(244);
+    color(64, 64, 255);
+    scale(0.5f, 0.5f);
+    scaleTime(110, 0, 0.1f, 0.1f);
+    fset(%F2, %RANDRAD);
+    fsin(%F0, %F2);
+    fcos(%F1, %F2);
+    fsetMul(%F2, %RANDF, 64.0f);
+    fadd(%F2, 64.0f);
+    fmul(%F0, %F2);
+    fmul(%F1, %F2);
+    posTime(70, 4, %F0, %F1, 0.0f);
++70: // 70
+    posTime(40, 1, %F0, %F1, 0.0f);
++40: // 110
+    delete();
+}
+
+script script25 {
+-1:
+    sprite(sprite25);
+    layer(16);
+    type(1);
+    scale(0.5f, 0.5f);
+    scaleTime(30, 4, 5.5f, 5.5f);
+    alphaTime(30, 4, 0);
+0:
+    iset($I0, 8);
+    iset($I1, 255);
+offset128:
+    scriptNewRoot(script27);
+    scriptNewRoot(script27);
+    scriptNewRoot(script27);
+    scriptNewRoot(script27);
+    scriptNewRoot(script27);
+    scriptNewRoot(script27);
++1: // 1
+    jmpDec($I0, offset128, 0);
++30: // 31
+    delete();
+}
+
+script script26 {
+-1:
+    sprite(sprite25);
+    layer(16);
+    type(1);
+    scale(0.5f, 0.5f);
+    scaleTime(60, 1, 4.5f, 4.5f);
+    alphaTime(60, 1, 0);
+0:
+    iset($I0, 60);
+    iset($I1, 255);
+offset128:
+    scriptNew(script27);
+    scriptNew(script27);
+    scriptNew(script28);
+    isub($I1, 4);
++1: // 1
+    jmpDec($I0, offset128, 0);
++30: // 31
+    delete();
+}
+
+script script27 {
+-1:
+    sprite(sprite7);
+    layer(16);
+    type(1);
+    blendMode(1);
+    alpha(255);
+0:
+    isetRand($I0, 15);
+    iadd($I0, 20);
+    fsetMul(%F0, %RANDF, 3.0f);
+    fadd(%F0, 1.0f);
+    scale(%F0, %F0);
+    color(255, 128, 255);
+    colorTime($I0, 0, 255, 0, 0);
+    fset(%F0, %RANDRAD);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F0, %RANDF, 256.0f);
+    fmul(%F1, %F0);
+    fmul(%F2, %F0);
+    posTime($I0, 4, %F1, %F2, 0.0f);
+    scaleTime($I0, 4, 0.0f, 0.0f);
+    wait($I0);
++8: // 8
+    delete();
+}
+
+script script28 {
+-1:
+    sprite(sprite7);
+    layer(16);
+    type(1);
+    blendMode(2);
+    alpha(255);
+0:
+    isetRand($I0, 15);
+    iadd($I0, 20);
+    fsetMul(%F0, %RANDF, 3.0f);
+    fadd(%F0, 1.0f);
+    scale(%F0, %F0);
+    color(128, 255, 128);
+    colorTime($I0, 0, 0, 0, 255);
+    fset(%F0, %RANDRAD);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F0, %RANDF, 256.0f);
+    fmul(%F1, %F0);
+    fmul(%F2, %F0);
+    posTime($I0, 4, %F1, %F2, 0.0f);
+    scaleTime($I0, 4, 0.0f, 0.0f);
+    wait($I0);
++8: // 8
+    delete();
+}
+
+script script29 {
+    layer(16);
+    alpha(0);
+    scriptNewRoot(script30);
+    scriptNewRoot(script31);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script33);
+    scriptNewRoot(script32);
+    scriptNewRoot(script32);
+    scriptNewRoot(script32);
+    scriptNewRoot(script32);
++50: // 50
+    delete();
+}
+
+script script30 {
+-1:
+    sprite(sprite26);
+    layer(16);
+    type(1);
+    scale(0.2f, 0.2f);
+0:
+    scaleTime(30, 4, 2.5f, 2.5f);
+    alphaTime(30, 4, 0);
++30: // 30
+    delete();
+}
+
+script script31 {
+-1:
+    sprite(sprite26);
+    layer(16);
+    blendMode(1);
+    type(1);
+    fsetDiv(%RANDRADLIMIT, 3.1415927f, 4.0f);
+0:
+    rotate(0.0f, 0.0f, %RANDRAD);
+    scale(0.5f, 0.5f);
+    scaleTime(30, 4, 0.2f, 4.5f);
+    alphaTime(30, 4, 0);
++30: // 30
+    delete();
+}
+
+script script32 {
+-1:
+    sprite(-1);
+    blendMode(1);
+    scale(1.0f, 1.0f);
+    layer(16);
+    color(192, 0, 0);
+0:
+    drawPolyBorder(1.0f, 24);
+    fsetMul(%F0, %RANDF, 48.0f);
+    fadd(%F0, 48.0f);
+    scaleTime(30, 4, %F0, %F0);
+    fsetMul(%F1, %RANDRAD, 0.3f);
+    fadd(%F1, [10025.0f]);
+    ins_433(30, 4, %F1, 32.0f);
+    colorTime(30, 1, 255, 255, 255);
+    alphaTime(30, 0, 0);
+    color(192, 0, 0);
++30: // 30
+    delete();
+}
+
+script script33 {
+-1:
+    sprite(sprite30);
+    layer(16);
+    type(8);
+    blendMode(1);
+    alpha(128);
+    color(192, 0, 0);
+0:
+    fsetMul(%F0, %RANDF, 1.0f);
+    fadd(%F0, 0.5f);
+    fset(%F1, [10025.0f]);
+    fsetDiv(%F0, %RANDRAD, 60.0f);
+    fsetDiv(%F2, %RANDRAD, 60.0f);
+    fsetDiv(%F3, %RANDRAD, 60.0f);
+    angleVel(%F0, %F2, %F3);
+    fsetDiv(%F0, %RANDRAD, 4.0f);
+    fadd(%F0, %F1);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F0, %RANDF, 256.0f);
+    fsub(%F0, 32.0f);
+    fmul(%F1, %F0);
+    fmul(%F2, %F0);
+    isetMod($I0, $RAND, 60);
+    iadd($I0, 30);
+    fsetMul(%F0, %RANDF2, 200.0f);
+    posTime($I0, 4, %F1, %F2, %F0);
+    scaleTime($I0, 1, 0.0f, 0.0f);
+    wait($I0);
+    delete();
+}
+
+script script34 {
+    layer(16);
+    alpha(0);
+    scriptNewRoot(script35);
+    scriptNewRoot(script36);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script38);
+    scriptNewRoot(script37);
+    scriptNewRoot(script37);
+    scriptNewRoot(script37);
+    scriptNewRoot(script37);
++50: // 50
+    delete();
+}
+
+script script35 {
+-1:
+    sprite(sprite27);
+    layer(16);
+    type(1);
+    scale(0.2f, 0.2f);
+0:
+    scaleTime(30, 4, 2.5f, 2.5f);
+    alphaTime(30, 4, 0);
++30: // 30
+    delete();
+}
+
+script script36 {
+-1:
+    sprite(sprite27);
+    layer(16);
+    blendMode(1);
+    type(1);
+    fsetDiv(%RANDRADLIMIT, 3.1415927f, 4.0f);
+0:
+    rotate(0.0f, 0.0f, %RANDRAD);
+    scale(0.5f, 0.5f);
+    scaleTime(30, 4, 0.2f, 4.5f);
+    alphaTime(30, 4, 0);
++30: // 30
+    delete();
+}
+
+script script37 {
+-1:
+    sprite(-1);
+    blendMode(1);
+    scale(1.0f, 1.0f);
+    layer(16);
+    color(96, 96, 255);
+0:
+    drawPolyBorder(1.0f, 24);
+    fsetMul(%F0, %RANDF, 48.0f);
+    fadd(%F0, 48.0f);
+    scaleTime(30, 4, %F0, %F0);
+    fsetMul(%F1, %RANDRAD, 0.3f);
+    fadd(%F1, [10025.0f]);
+    ins_433(30, 4, %F1, 32.0f);
+    colorTime(30, 1, 255, 255, 255);
+    alphaTime(30, 0, 0);
+    color(96, 96, 255);
++30: // 30
+    delete();
+}
+
+script script38 {
+-1:
+    sprite(sprite30);
+    layer(16);
+    type(8);
+    blendMode(1);
+    alpha(128);
+    color(96, 96, 255);
+0:
+    fsetMul(%F0, %RANDF, 1.0f);
+    fadd(%F0, 0.5f);
+    fset(%F1, [10025.0f]);
+    fsetDiv(%F0, %RANDRAD, 60.0f);
+    fsetDiv(%F2, %RANDRAD, 60.0f);
+    fsetDiv(%F3, %RANDRAD, 60.0f);
+    angleVel(%F0, %F2, %F3);
+    fsetDiv(%F0, %RANDRAD, 4.0f);
+    fadd(%F0, %F1);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F0, %RANDF, 256.0f);
+    fsub(%F0, 32.0f);
+    fmul(%F1, %F0);
+    fmul(%F2, %F0);
+    isetMod($I0, $RAND, 60);
+    iadd($I0, 30);
+    fsetMul(%F0, %RANDF2, 200.0f);
+    posTime($I0, 4, %F1, %F2, %F0);
+    scaleTime($I0, 1, 0.0f, 0.0f);
+    wait($I0);
+    delete();
+}
+
+script script39 {
+    layer(16);
+    alpha(0);
+    scriptNewRoot(script40);
+    scriptNewRoot(script41);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script43);
+    scriptNewRoot(script42);
+    scriptNewRoot(script42);
+    scriptNewRoot(script42);
+    scriptNewRoot(script42);
++50: // 50
+    delete();
+}
+
+script script40 {
+-1:
+    sprite(sprite29);
+    layer(16);
+    type(1);
+    scale(0.2f, 0.2f);
+0:
+    scaleTime(30, 4, 2.5f, 2.5f);
+    alphaTime(30, 4, 0);
++30: // 30
+    delete();
+}
+
+script script41 {
+-1:
+    sprite(sprite29);
+    layer(16);
+    blendMode(1);
+    type(1);
+    fsetDiv(%RANDRADLIMIT, 3.1415927f, 4.0f);
+0:
+    rotate(0.0f, 0.0f, %RANDRAD);
+    scale(0.5f, 0.5f);
+    scaleTime(30, 4, 0.2f, 4.5f);
+    alphaTime(30, 4, 0);
++30: // 30
+    delete();
+}
+
+script script42 {
+-1:
+    sprite(-1);
+    blendMode(1);
+    scale(1.0f, 1.0f);
+    layer(16);
+    color(0, 192, 0);
+0:
+    drawPolyBorder(1.0f, 24);
+    fsetMul(%F0, %RANDF, 48.0f);
+    fadd(%F0, 48.0f);
+    scaleTime(30, 4, %F0, %F0);
+    fsetMul(%F1, %RANDRAD, 0.3f);
+    fadd(%F1, [10025.0f]);
+    ins_433(30, 4, %F1, 32.0f);
+    colorTime(30, 1, 255, 255, 255);
+    alphaTime(30, 0, 0);
+    color(0, 192, 0);
++30: // 30
+    delete();
+}
+
+script script43 {
+-1:
+    sprite(sprite30);
+    layer(16);
+    type(8);
+    blendMode(1);
+    alpha(128);
+    color(0, 192, 0);
+0:
+    fsetMul(%F0, %RANDF, 1.0f);
+    fadd(%F0, 0.5f);
+    fset(%F1, [10025.0f]);
+    fsetDiv(%F0, %RANDRAD, 60.0f);
+    fsetDiv(%F2, %RANDRAD, 60.0f);
+    fsetDiv(%F3, %RANDRAD, 60.0f);
+    angleVel(%F0, %F2, %F3);
+    fsetDiv(%F0, %RANDRAD, 4.0f);
+    fadd(%F0, %F1);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F0, %RANDF, 256.0f);
+    fsub(%F0, 32.0f);
+    fmul(%F1, %F0);
+    fmul(%F2, %F0);
+    isetMod($I0, $RAND, 60);
+    iadd($I0, 30);
+    fsetMul(%F0, %RANDF2, 200.0f);
+    posTime($I0, 4, %F1, %F2, %F0);
+    scaleTime($I0, 1, 0.0f, 0.0f);
+    wait($I0);
+    delete();
+}
+
+script script44 {
+    layer(16);
+    alpha(0);
+    scriptNewRoot(script45);
+    scriptNewRoot(script46);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script48);
+    scriptNewRoot(script47);
+    scriptNewRoot(script47);
+    scriptNewRoot(script47);
+    scriptNewRoot(script47);
++50: // 50
+    delete();
+}
+
+script script45 {
+-1:
+    sprite(sprite28);
+    layer(16);
+    type(1);
+    scale(0.2f, 0.2f);
+0:
+    scaleTime(30, 4, 2.5f, 2.5f);
+    alphaTime(30, 4, 0);
++30: // 30
+    delete();
+}
+
+script script46 {
+-1:
+    sprite(sprite28);
+    layer(16);
+    blendMode(1);
+    type(1);
+    fsetDiv(%RANDRADLIMIT, 3.1415927f, 4.0f);
+0:
+    rotate(0.0f, 0.0f, %RANDRAD);
+    scale(0.5f, 0.5f);
+    scaleTime(30, 4, 0.2f, 4.5f);
+    alphaTime(30, 4, 0);
++30: // 30
+    delete();
+}
+
+script script47 {
+-1:
+    sprite(-1);
+    blendMode(1);
+    scale(1.0f, 1.0f);
+    layer(16);
+    color(160, 160, 48);
+0:
+    drawPolyBorder(1.0f, 24);
+    fsetMul(%F0, %RANDF, 48.0f);
+    fadd(%F0, 48.0f);
+    scaleTime(30, 4, %F0, %F0);
+    fsetMul(%F1, %RANDRAD, 0.3f);
+    fadd(%F1, [10025.0f]);
+    ins_433(30, 4, %F1, 32.0f);
+    colorTime(30, 1, 255, 255, 255);
+    alphaTime(30, 0, 0);
+    color(160, 160, 48);
++30: // 30
+    delete();
+}
+
+script script48 {
+-1:
+    sprite(sprite30);
+    layer(16);
+    type(8);
+    blendMode(1);
+    alpha(128);
+    color(160, 160, 48);
+0:
+    fsetMul(%F0, %RANDF, 1.0f);
+    fadd(%F0, 0.5f);
+    fset(%F1, [10025.0f]);
+    fsetDiv(%F0, %RANDRAD, 60.0f);
+    fsetDiv(%F2, %RANDRAD, 60.0f);
+    fsetDiv(%F3, %RANDRAD, 60.0f);
+    angleVel(%F0, %F2, %F3);
+    fsetDiv(%F0, %RANDRAD, 4.0f);
+    fadd(%F0, %F1);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F0, %RANDF, 256.0f);
+    fsub(%F0, 32.0f);
+    fmul(%F1, %F0);
+    fmul(%F2, %F0);
+    isetMod($I0, $RAND, 60);
+    iadd($I0, 30);
+    fsetMul(%F0, %RANDF2, 200.0f);
+    posTime($I0, 4, %F1, %F2, %F0);
+    scaleTime($I0, 1, 0.0f, 0.0f);
+    wait($I0);
+    delete();
+}
+
+script script49 {
+    layer(16);
+    alpha(0);
+    scriptNewRoot(script29);
+    scriptNewRoot(script39);
+    scriptNewRoot(script34);
++50: // 50
+    delete();
+}
+
+script script50 {
+    layer(16);
+    alpha(0);
+    scriptNewRoot(script29);
+    scriptNewRoot(script39);
++50: // 50
+    delete();
+}
+
+script script51 {
+    layer(16);
+    alpha(0);
+    scriptNewRoot(script29);
+    scriptNewRoot(script44);
++50: // 50
+    delete();
+}
+
+script script52 {
+    sprite(sprite7);
+    layer(16);
+    type(1);
+    blendMode(1);
+    alpha(128);
+    color(255, 0, 0);
+    isetRand($I0, 15);
+    iadd($I0, 20);
+    fsetMul(%F0, %RANDF, 1.0f);
+    fadd(%F0, 0.4f);
+    scale(%F0, %F0);
+    fset(%F0, %RANDRAD);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F0, %RANDF, 128.0f);
+    fmul(%F1, %F0);
+    fmul(%F2, %F0);
+    pos(%F1, %F2, 0.0f);
+    posTime($I0, 4, 0.0f, 0.0f, 0.0f);
+    scaleTime($I0, 4, 0.0f, 0.0f);
+    wait($I0);
++8: // 8
+    delete();
+}
+
+script script53 {
+    sprite(sprite33);
+    layer(7);
+    type(1);
+    blendMode(1);
+    rotate(0.0f, 0.0f, 3.1415927f);
+    rotateTime(60, 4, 0.0f, 0.0f, -3.1415927f);
+    alpha(128);
+    scale(0.0f, 0.0f);
+    scaleTime(60, 4, 2.0f, 2.0f);
++60: // 60
+    nop();
+    angleVel(0.0f, 0.0f, -0.09817477f);
+offset176:
+    scaleTime(60, 9, 1.6f, 1.6f);
+    alphaTime(60, 9, 128);
++60: // 120
+    scaleTime(60, 9, 2.0f, 2.0f);
+    alphaTime(60, 9, 96);
++60: // 180
+    jmp(offset176, 60);
+    stop();
+}
+
+script script54 {
+    sprite(sprite34);
+    ins_431(1);
+    layer(16);
+    scale(0.0f, 0.0f);
++2: // 2
+    nop();
+    type(1);
+    blendMode(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    fset(%F0, %RANDRAD);
+    angleVel(0.0f, 0.0f, %F0);
+    fsetMul(%F1, %RANDF, 0.5f);
+    fadd(%F1, 0.2f);
+    scale(%F1, %F1);
+    scaleTime(48, 0, 0.0f, 0.0f);
+    alpha(255);
+    alphaTime(48, 0, 0);
+    fsetMul(%F1, %RANDF2, 6.0f);
+    fsetMul(%F2, %RANDF2, 6.0f);
+    pos(%F1, %F2, 0.0f);
+    fsetMul(%F1, %RANDF2, 128.0f);
+    fsetMul(%F2, %RANDF2, 128.0f);
+    posTime(48, 1, %F1, %F2, 0.0f);
++48: // 50
+    delete();
+}
+
+script script55 {
+    sprite(sprite35);
+    layer(16);
+    type(1);
+    blendMode(1);
+    scale(2.0f, 2.0f);
+    color(0, 0, 0);
+    colorTime(30, 0, 255, 255, 255);
+offset112:
+    alpha(32);
++1: // 1
+    alpha(128);
++1: // 2
+    jmp(offset112, 0);
+}
+
+script script56 {
+    sprite(sprite32);
+    blendMode(1);
+    layer(14);
+    type(0);
+    color(128, 255, 128);
+    scale(0.5f, 0.5f);
+    scaleTime(20, 4, 1.5f, 1.5f);
++10: // 10
+    alphaTime(10, 4, 0);
++10: // 20
+    delete();
+}
+
+script script57 {
+-1:
+    sprite(sprite31);
+    layer(6);
+    type(8);
+    blendMode(1);
+    alpha(0);
+    alphaTime(30, 4, 128);
+0:
+    rotate(%RANDRAD, %RANDRAD, %RANDRAD);
+    fsetDiv(%F0, %RANDRAD, 32.0f);
+    fsetDiv(%F1, %RANDRAD, 32.0f);
+    fsetDiv(%F2, %RANDRAD, 32.0f);
+    angleVel(%F0, %F1, %F2);
+    fsetMul(%F0, %RANDF, 3.0f);
+    fadd(%F0, 1.0f);
+    scale(%F0, %F0);
+    fset(%F0, %RANDRAD);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F3, %F1, 256.0f);
+    fsetMul(%F0, %F2, 256.0f);
+    fsetMul(%F1, %RANDF2, 256.0f);
+    pos(%F3, %F0, %F1);
+    posTime(60, 4, 0.0f, 0.0f, 0.0f);
++30: // 30
+    alphaTime(30, 3, 0);
+    scaleTime(30, 3, 0.0f, 0.0f);
++30: // 60
+    delete();
+}
+
+script script58 {
+    alpha(0);
+    layer(16);
++1: // 1
+    iset($I4, 30);
+offset40:
+    scriptNew(script57);
++2: // 3
+    jmpDec($I4, offset40, 1);
++60: // 63
+    delete();
+}
+
+script script59 {
+-1:
+    sprite(sprite31);
+    layer(16);
+    type(8);
+    blendMode(1);
+    alpha(0);
+    alphaTime(20, 4, 128);
+0:
+    rotate(%RANDRAD, %RANDRAD, %RANDRAD);
+    fsetDiv(%F0, %RANDRAD, 32.0f);
+    fsetDiv(%F1, %RANDRAD, 32.0f);
+    fsetDiv(%F2, %RANDRAD, 32.0f);
+    angleVel(%F0, %F1, %F2);
+    fsetMul(%F0, %RANDF, 3.0f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    fset(%F0, %RANDRAD);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F3, %F1, 256.0f);
+    fsetMul(%F0, %F2, 256.0f);
+    fsetMul(%F1, %RANDF2, 256.0f);
+    pos(%F3, %F0, %F1);
+    posTime(40, 4, 0.0f, 0.0f, 0.0f);
++20: // 20
+    alphaTime(20, 1, 0);
+    scaleTime(20, 1, 0.0f, 0.0f);
++20: // 40
+    delete();
+}
+
+script script60 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    color2(255, 80, 255);
+    alpha2(1);
+    color(255, 0, 255);
+    alpha(0);
+    alphaTime(20, 0, 255);
+    wait(20);
+    alpha2Time(40, 0, 255);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 0.0f, 0.0f);
+40:
+    delete();
+}
+
+script script61 {
+    alpha(0);
+    layer(16);
+    scriptNew(script60);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script59);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script62 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    color2(255, 80, 80);
+    alpha2(1);
+    color(255, 0, 0);
+    alpha(0);
+    alphaTime(20, 0, 255);
+    wait(20);
+    alpha2Time(40, 0, 255);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 0.0f, 0.0f);
+40:
+    delete();
+}
+
+script script63 {
+    alpha(0);
+    layer(16);
+    scriptNew(script62);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script59);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script64 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    color2(80, 80, 255);
+    alpha2(1);
+    color(40, 40, 255);
+    alpha(0);
+    alphaTime(20, 0, 255);
+    wait(20);
+    alpha2Time(40, 0, 255);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 0.0f, 0.0f);
+40:
+    delete();
+}
+
+script script65 {
+    alpha(0);
+    layer(16);
+    scriptNew(script64);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script59);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script66 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    color2(80, 255, 255);
+    alpha2(1);
+    color(0, 255, 255);
+    alpha(0);
+    alphaTime(20, 0, 255);
+    wait(20);
+    alpha2Time(40, 0, 255);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 0.0f, 0.0f);
+40:
+    delete();
+}
+
+script script67 {
+    alpha(0);
+    layer(16);
+    scriptNew(script66);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script59);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script68 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    color2(80, 255, 80);
+    alpha2(1);
+    color(0, 255, 0);
+    alpha(0);
+    alphaTime(20, 0, 255);
+    wait(20);
+    alpha2Time(40, 0, 255);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 0.0f, 0.0f);
+40:
+    delete();
+}
+
+script script69 {
+    alpha(0);
+    layer(16);
+    scriptNew(script68);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script59);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script70 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    color2(255, 255, 80);
+    alpha2(1);
+    color(255, 255, 0);
+    alpha(0);
+    alphaTime(20, 0, 255);
+    wait(20);
+    alpha2Time(40, 0, 255);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 0.0f, 0.0f);
+40:
+    delete();
+}
+
+script script71 {
+    alpha(0);
+    layer(16);
+    scriptNew(script70);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script59);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script72 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    color2(255, 255, 255);
+    alpha2(1);
+    color(255, 255, 255);
+    alpha(0);
+    alphaTime(20, 0, 255);
+    wait(20);
+    alpha2Time(40, 0, 255);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 0.0f, 0.0f);
+40:
+    delete();
+}
+
+script script73 {
+    alpha(0);
+    layer(16);
+    scriptNew(script72);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script59);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script74 {
+-1:
+    sprite(sprite31);
+    layer(16);
+    type(8);
+    blendMode(1);
+    alpha(0);
+    alphaTime(20, 4, 128);
+0:
+    rotate(%RANDRAD, %RANDRAD, %RANDRAD);
+    fsetDiv(%F0, %RANDRAD, 32.0f);
+    fsetDiv(%F1, %RANDRAD, 32.0f);
+    fsetDiv(%F2, %RANDRAD, 32.0f);
+    angleVel(%F0, %F1, %F2);
+    fsetMul(%F0, %RANDF, 3.0f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    fset(%F0, %RANDRAD);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F3, %F1, 256.0f);
+    fsetMul(%F0, %F2, 256.0f);
+    fsetMul(%F1, %RANDF2, 256.0f);
+    pos(0.0f, 0.0f, 0.0f);
+    posTime(40, 4, %F3, %F0, %F1);
++20: // 20
+    alphaTime(20, 1, 0);
++20: // 40
+    delete();
+}
+
+script script75 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    scale(0.0f, 0.0f);
+    color2(255, 80, 255);
+    alpha2(255);
+    color(255, 0, 255);
+    alpha(255);
+    alphaTime(20, 0, 0);
+    wait(20);
+    alpha2Time(40, 0, 0);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 1.5f, 1.5f);
+40:
+    delete();
+}
+
+script script76 {
+    alpha(0);
+    layer(16);
+    scriptNew(script75);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script74);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script77 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    scale(0.0f, 0.0f);
+    color2(255, 80, 80);
+    alpha2(255);
+    color(255, 0, 0);
+    alpha(255);
+    alphaTime(20, 0, 0);
+    wait(20);
+    alpha2Time(40, 0, 0);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 1.5f, 1.5f);
+40:
+    delete();
+}
+
+script script78 {
+    alpha(0);
+    layer(16);
+    scriptNew(script77);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script74);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script79 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    scale(0.0f, 0.0f);
+    color2(80, 80, 255);
+    alpha2(255);
+    color(40, 40, 255);
+    alpha(255);
+    alphaTime(20, 0, 0);
+    wait(20);
+    alpha2Time(40, 0, 0);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 1.5f, 1.5f);
+40:
+    delete();
+}
+
+script script80 {
+    alpha(0);
+    layer(16);
+    scriptNew(script79);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script74);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script81 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    scale(0.0f, 0.0f);
+    color2(80, 255, 255);
+    alpha2(255);
+    color(0, 255, 255);
+    alpha(255);
+    alphaTime(20, 0, 0);
+    wait(20);
+    alpha2Time(40, 0, 0);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 1.5f, 1.5f);
+40:
+    delete();
+}
+
+script script82 {
+    alpha(0);
+    layer(16);
+    scriptNew(script81);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script74);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script83 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    scale(0.0f, 0.0f);
+    color2(80, 255, 80);
+    alpha2(255);
+    color(0, 255, 0);
+    alpha(255);
+    alphaTime(20, 0, 0);
+    wait(20);
+    alpha2Time(40, 0, 0);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 1.5f, 1.5f);
+40:
+    delete();
+}
+
+script script84 {
+    alpha(0);
+    layer(16);
+    scriptNew(script83);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script74);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script85 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    scale(0.0f, 0.0f);
+    color2(255, 255, 80);
+    alpha2(255);
+    color(255, 255, 0);
+    alpha(255);
+    alphaTime(20, 0, 0);
+    wait(20);
+    alpha2Time(40, 0, 0);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 1.5f, 1.5f);
+40:
+    delete();
+}
+
+script script86 {
+    alpha(0);
+    layer(16);
+    scriptNew(script85);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script74);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script87 {
+-1:
+    layer(16);
+    type(1);
+    blendMode(1);
+    sprite(-1);
+    drawPoly(256.0f, 36);
+    scale(0.0f, 0.0f);
+    color2(255, 255, 255);
+    alpha2(255);
+    color(255, 255, 255);
+    alpha(255);
+    alphaTime(20, 0, 0);
+    wait(20);
+    alpha2Time(40, 0, 0);
+    alphaTime(10, 0, 0);
+    scaleTime(40, 0, 1.5f, 1.5f);
+40:
+    delete();
+}
+
+script script88 {
+    alpha(0);
+    layer(16);
+    scriptNew(script87);
++1: // 1
+    iset($I4, 30);
+offset52:
+    scriptNew(script74);
++1: // 2
+    jmpDec($I4, offset52, 1);
++60: // 62
+    delete();
+}
+
+script script89 {
+    sprite(sprite31);
+    layer(4);
+    type(1);
+    blendMode(1);
+    color(0, 255, 0);
+    fsetDiv(%F0, %RANDRAD, 32.0f);
+    angleVel(0.0f, 0.0f, %F0);
+    fsetMul(%F0, %RANDF, 3.0f);
+    fadd(%F0, 1.0f);
+    scale(%F0, %F0);
+    fset(%F0, %RANDRAD);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F3, %F1, 256.0f);
+    fsetMul(%F0, %F2, 256.0f);
+    pos(%F3, %F0, 0.0f);
+    fset(%F0, %RANDRAD);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F3, %F1, 512.0f);
+    fsetMul(%F0, %F2, 512.0f);
+    moveBezier(60, 0.0f, 0.0f, 0, 0, 0, 0, %F3, %F0, 0);
+    alpha(0);
+    alphaTime(30, 4, 128);
++30: // 30
+    alphaTime(30, 1, 0);
+    scaleTime(30, 1, 0.0f, 0.0f);
++30: // 60
+    delete();
+}
+
+script script90 {
+    alpha(0);
+    layer(4);
++1: // 1
+    iset($I4, 10);
+offset40:
+    scriptNew(script89);
++4: // 5
+    jmpDec($I4, offset40, 1);
++60: // 65
+    delete();
+}
+
+script script91 {
+-1:
+    sprite(sprite30);
+    type(8);
+    blendMode(1);
+    alpha(0);
+    alphaTime(30, 0, 64);
+    ins_306(1);
+    layer(2);
+0:
+    fsetDiv(%RANDRADLIMIT, 3.1415927f, 64.0f);
+    angleVel(%RANDRAD, %RANDRAD, %RANDRAD);
+    fsetMul(%F0, %RANDF, 0.45f);
+    fadd(%F0, 0.1f);
+    scale(%F0, %F0);
+    fsetMul(%F0, %RANDF, 128.0f);
+    isetAdd($I0, $F0, 128);
+    color(255, $I0, 255);
+    fsetMul(%F0, [10019.0f], 600.0f);
+    fsetMul(%F1, [10020.0f], 600.0f);
+    fsetMul(%F2, [10021.0f], 600.0f);
+    fadd(%F0, [10016.0f]);
+    fadd(%F1, [10017.0f]);
+    fadd(%F2, [10018.0f]);
+    fsetMul(%F3, %RANDF2, 200.0f);
+    fadd(%F0, %F3);
+    fsetMul(%F3, %RANDF2, 200.0f);
+    fadd(%F1, %F3);
+    fadd(%F1, 200.0f);
+    pos(%F0, %F1, %F2);
+    fsetMul(%F3, %RANDF, 150.0f);
+    fadd(%F3, 50.0f);
+    fsub(%F0, %F3);
+    fsetMul(%F3, %RANDF, 50.0f);
+    fsub(%F1, %F3);
+    fsub(%F1, 50.0f);
+    fsetMul(%F3, %RANDF, 40.0f);
+    fadd(%F3, 30.0f);
+    fsetSub(%F3, %F2, %F3);
+    posTime(300, 9, %F0, %F1, %F3);
++200: // 200
+    alphaTime(100, 0, 0);
++100: // 300
+    delete();
+}
+
+script script92 {
+-1:
+    sprite(sprite30);
+    type(8);
+    blendMode(1);
+    alpha(0);
+    alphaTime(30, 0, 64);
+    ins_306(1);
+    layer(2);
+0:
+    fsetDiv(%RANDRADLIMIT, 3.1415927f, 64.0f);
+    angleVel(%RANDRAD, %RANDRAD, %RANDRAD);
+    fsetMul(%F0, %RANDF, 0.45f);
+    fadd(%F0, 0.1f);
+    scale(%F0, %F0);
+    fsetMul(%F0, %RANDF, 128.0f);
+    isetAdd($I0, $F0, 128);
+    color(255, $I0, 128);
+    fsetMul(%F0, [10019.0f], 600.0f);
+    fsetMul(%F1, [10020.0f], 600.0f);
+    fsetMul(%F2, [10021.0f], 600.0f);
+    fadd(%F0, [10016.0f]);
+    fadd(%F1, [10017.0f]);
+    fadd(%F2, [10018.0f]);
+    fsetMul(%F3, %RANDF2, 200.0f);
+    fadd(%F0, %F3);
+    fsetMul(%F3, %RANDF2, 200.0f);
+    fadd(%F1, %F3);
+    fadd(%F0, 100.0f);
+    fadd(%F1, 50.0f);
+    fsub(%F2, 180.0f);
+    pos(%F0, %F1, %F2);
+    fsetMul(%F3, %RANDF, 150.0f);
+    fadd(%F3, 50.0f);
+    fsub(%F0, %F3);
+    fsetMul(%F3, %RANDF, 50.0f);
+    fsub(%F1, %F3);
+    fsetMul(%F3, %RANDF, 40.0f);
+    fadd(%F3, 100.0f);
+    fsetAdd(%F3, %F2, %F3);
+    posTime(300, 9, %F0, %F1, %F3);
++200: // 200
+    alphaTime(100, 0, 0);
++100: // 300
+    delete();
+}
+
+script script93 {
+-1:
+    sprite(sprite30);
+    type(8);
+    blendMode(1);
+    alpha(0);
+    alphaTime(30, 0, 64);
+    ins_306(1);
+    layer(2);
+0:
+    fsetDiv(%RANDRADLIMIT, 3.1415927f, 64.0f);
+    angleVel(%RANDRAD, %RANDRAD, %RANDRAD);
+    fsetMul(%F0, %RANDF, 0.45f);
+    fadd(%F0, 0.1f);
+    scale(%F0, %F0);
+    fsetMul(%F0, %RANDF, 128.0f);
+    isetAdd($I0, $F0, 128);
+    color($I0, $I0, 255);
+    fsetMul(%F0, [10019.0f], 600.0f);
+    fsetMul(%F1, [10020.0f], 600.0f);
+    fsetMul(%F2, [10021.0f], 600.0f);
+    fadd(%F0, [10016.0f]);
+    fadd(%F1, [10017.0f]);
+    fadd(%F2, [10018.0f]);
+    fsetMul(%F3, %RANDF2, 200.0f);
+    fadd(%F0, %F3);
+    fsetMul(%F3, %RANDF2, 200.0f);
+    fadd(%F1, %F3);
+    fsub(%F0, 100.0f);
+    fadd(%F1, 50.0f);
+    fsub(%F2, 180.0f);
+    pos(%F0, %F1, %F2);
+    fsetMul(%F3, %RANDF, 150.0f);
+    fadd(%F3, 50.0f);
+    fadd(%F0, %F3);
+    fsetMul(%F3, %RANDF, 50.0f);
+    fsub(%F1, %F3);
+    fsetMul(%F3, %RANDF, 40.0f);
+    fadd(%F3, 100.0f);
+    fsetAdd(%F3, %F2, %F3);
+    posTime(300, 9, %F0, %F1, %F3);
++200: // 200
+    alphaTime(100, 0, 0);
++100: // 300
+    delete();
+}
+
+script script94 {
+-1:
+    sprite(sprite30);
+    type(8);
+    blendMode(1);
+    alpha(0);
+    alphaTime(30, 0, 64);
+    ins_306(1);
+    layer(2);
+0:
+    fsetDiv(%RANDRADLIMIT, 3.1415927f, 64.0f);
+    angleVel(%RANDRAD, %RANDRAD, %RANDRAD);
+    fsetMul(%F0, %RANDF, 0.45f);
+    fadd(%F0, 0.3f);
+    scale(%F0, %F0);
+    fsetMul(%F0, %RANDF, 128.0f);
+    isetAdd($I0, $F0, 128);
+    color($I0, $I0, 255);
+    fsetMul(%F3, %RANDF, 200.0f);
+    fadd(%F3, 200.0f);
+    fsetMul(%F0, [10019.0f], %F3);
+    fsetMul(%F1, [10020.0f], %F3);
+    fsetMul(%F2, [10021.0f], %F3);
+    fadd(%F0, [10016.0f]);
+    fadd(%F1, [10017.0f]);
+    fadd(%F2, [10018.0f]);
+    fsetMul(%F3, %RANDF2, 150.0f);
+    fadd(%F0, %F3);
+    fsetMul(%F3, %RANDF2, 150.0f);
+    fadd(%F1, %F3);
+    fsetMul(%F3, %RANDF2, 100.0f);
+    fadd(%F2, %F3);
+    pos(%F0, %F1, %F2);
+    fmul(%F0, 1.5f);
+    fmul(%F1, 1.5f);
+    fadd(%F3, 100.0f);
+    fsetAdd(%F3, %F2, %F3);
+    posTime(300, 21, %F0, %F1, %F3);
++40: // 40
+    alphaTime(60, 0, 0);
++60: // 100
+    delete();
+}
+
+script script95 {
+-1:
+    sprite(sprite30);
+    type(8);
+    blendMode(1);
+    alpha(0);
+    alphaTime(30, 0, 64);
+    ins_306(1);
+    layer(2);
+0:
+    fsetDiv(%RANDRADLIMIT, 3.1415927f, 64.0f);
+    angleVel(%RANDRAD, %RANDRAD, %RANDRAD);
+    fsetMul(%F0, %RANDF, 0.45f);
+    fadd(%F0, 0.6f);
+    scale(%F0, %F0);
+    fsetMul(%F0, %RANDF, 128.0f);
+    isetAdd($I0, $F0, 128);
+    color($I0, $I0, 255);
+    fsetMul(%F3, %RANDF, 200.0f);
+    fadd(%F3, 400.0f);
+    fsetMul(%F0, [10019.0f], %F3);
+    fsetMul(%F1, [10020.0f], %F3);
+    fsetMul(%F2, [10021.0f], %F3);
+    fadd(%F0, [10016.0f]);
+    fadd(%F1, [10017.0f]);
+    fadd(%F2, [10018.0f]);
+    fsetMul(%F3, %RANDF2, 300.0f);
+    fadd(%F0, %F3);
+    fsetMul(%F3, %RANDF2, 300.0f);
+    fadd(%F1, %F3);
+    fsetMul(%F3, %RANDF2, 200.0f);
+    fadd(%F2, %F3);
+    pos(%F0, %F1, %F2);
+    fset(%F3, 100.0f);
+    fsetAdd(%F3, %F2, %F3);
+    posTime(300, 21, %F0, %F1, %F3);
++200: // 200
+    alphaTime(60, 0, 0);
++60: // 260
+    delete();
+}
+
+script script96 {
+    alpha(0);
+    layer(16);
++1: // 1
+    iset($I4, 30);
+offset40:
+    scriptNew(script99);
++2: // 3
+    jmpDec($I4, offset40, 1);
++190: // 193
+    delete();
+}
+
+script script97 {
+    alpha(0);
+    layer(16);
++1: // 1
+    iset($I4, 60);
+offset40:
+    scriptNew(script99);
+    jmpDec($I4, offset40, 1);
++1: // 2
+    iset($I4, 60);
+offset88:
+    scriptNew(script99);
+    jmpDec($I4, offset88, 2);
++190: // 192
+    delete();
+}
+
+script script98 {
+    alpha(0);
+    layer(16);
++1: // 1
+    iset($I4, 30);
+offset40:
+    scriptNew(script99);
+    jmpDec($I4, offset40, 1);
++1: // 2
+    iset($I4, 30);
+offset88:
+    scriptNew(script99);
+    jmpDec($I4, offset88, 2);
++190: // 192
+    delete();
+}
+
+script script99 {
+-1:
+    sprite(sprite31);
+    layer(16);
+    type(8);
+    blendMode(1);
+0:
+    rotate(%RANDRAD, %RANDRAD, %RANDRAD);
+    fsetDiv(%F0, %RANDRAD, 32.0f);
+    fsetDiv(%F1, %RANDRAD, 32.0f);
+    fsetDiv(%F2, %RANDRAD, 32.0f);
+    angleVel(%F0, %F1, %F2);
+    colorTime(90, 0, 255, 32, 32);
+    fsetMul(%F0, %RANDF, 3.0f);
+    fadd(%F0, 1.0f);
+    scale(%F0, %F0);
+    fset(%F0, %RANDRAD);
+    fcos(%F1, %F0);
+    fsin(%F2, %F0);
+    fsetMul(%F0, %RANDF2, 128.0f);
+    fadd(%F0, 192.0f);
+    fsetMul(%F3, %F1, %F0);
+    fsetMul(%F0, %F2, %F0);
+    fsetMul(%F1, %RANDF2, 512.0f);
+    pos(0.0f, 0.0f, 0.0f);
+    posTime(90, 4, %F3, %F0, %F1);
+    alpha(0);
+    alphaTime(30, 4, 128);
++60: // 60
+    alphaTime(30, 1, 0);
+    scaleTime(30, 1, 0.0f, 0.0f);
++30: // 90
+    delete();
+}
+
+script script100 {
+-1:
+    sprite(sprite7);
+    layer(16);
+    type(1);
+    blendMode(1);
+    alpha(128);
+    color(255, 192, 128);
+    scale(0.7f, 0.7f);
+    scaleTime(12, 1, 0.0f, 0.0f);
+0:
+    circlePosRand(%F1, %F2, 48.0f, 64.0f);
+    posTime(12, 4, %F1, %F2, 0.0f);
++12: // 12
+    delete();
+}
+
+script script101 {
+    sprite(sprite33);
+    layer(16);
+    type(1);
+    blendMode(1);
+    scale(2.0f, 2.0f);
+    scaleTime(20, 4, 0.0f, 0.0f);
++20: // 20
+    delete();
+}
+
+
+entry entry3 {
+    version: 8,
+    name: "effect/eff_aura.png",
+    format: 5,
+    width: 128,
+    height: 64,
+    memoryPriority: 10,
+    lowResScale: 0,
+    hasData: 1,
+    THTXSize: 16384,
+    THTXFormat: 5,
+    THTXWidth: 128,
+    THTXHeight: 64,
+    THTXZero: 0,
+    sprites: {
+        sprite37: { x: 0, y: 0, w: 48, h: 48 },
+        sprite38: { x: 48, y: 0, w: 48, h: 48 },
+        sprite39: { x: 96, y: 0, w: 8, h: 8 },
+        sprite40: { x: 104, y: 0, w: 8, h: 8 },
+        sprite41: { x: 112, y: 0, w: 8, h: 8 },
+        sprite42: { x: 120, y: 0, w: 8, h: 8 }
+    }
+}
+
+script script102 {
+    sprite(sprite37);
+    blendMode(1);
+    layer(6);
+    anchor(131072);
+    fsetMul(%F2, %RANDF2, 4.0f);
+    pos(%F2, 0.0f, 0.0f);
+    color(128, 32, 128);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.0f);
+    scale(%F0, 0.0f);
+    fsetMul(%F1, %RANDF, 0.5f);
+    fadd(%F1, 1.9f);
+    scaleTime(30, 4, %F0, %F1);
+    alphaTime(30, 1, 0);
++30: // 30
+    delete();
+}
+
+script script103 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(4);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(128, 0, 128);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.6f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 0.7f, 0.7f);
+    alpha(0);
+    alphaTime(30, 4, 255);
++30: // 30
+    delete();
+}
+
+script script104 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(6);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(255, 255, 255);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 1.2f, 1.2f);
+    alpha(0);
+    alphaTime(30, 4, 64);
++30: // 30
+    delete();
+}
+
+script script105 {
+    alpha(0);
+offset12:
+    scriptNew(script102);
++3: // 3
+    scriptNew(script103);
++1: // 4
+    scriptNew(script104);
++2: // 6
+    jmp(offset12, 0);
+    case(1);
++30: // 36
+    delete();
+}
+
+script script106 {
+    sprite(sprite37);
+    blendMode(1);
+    layer(6);
+    anchor(131072);
+    fsetMul(%F2, %RANDF2, 4.0f);
+    pos(%F2, 0.0f, 0.0f);
+    color(128, 32, 32);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.0f);
+    scale(%F0, 0.0f);
+    fsetMul(%F1, %RANDF, 0.5f);
+    fadd(%F1, 1.9f);
+    scaleTime(30, 4, %F0, %F1);
+    alphaTime(30, 1, 0);
++30: // 30
+    delete();
+}
+
+script script107 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(4);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(128, 0, 0);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.6f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 0.7f, 0.7f);
+    alpha(0);
+    alphaTime(30, 4, 255);
++30: // 30
+    delete();
+}
+
+script script108 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(6);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(255, 255, 255);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 1.2f, 1.2f);
+    alpha(0);
+    alphaTime(30, 4, 64);
++30: // 30
+    delete();
+}
+
+script script109 {
+    alpha(0);
+offset12:
+    scriptNew(script106);
++3: // 3
+    scriptNew(script107);
++1: // 4
+    scriptNew(script108);
++2: // 6
+    jmp(offset12, 0);
+    case(1);
++30: // 36
+    delete();
+}
+
+script script110 {
+    sprite(sprite37);
+    blendMode(1);
+    layer(6);
+    anchor(131072);
+    fsetMul(%F2, %RANDF2, 4.0f);
+    pos(%F2, 0.0f, 0.0f);
+    color(32, 32, 160);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.0f);
+    scale(%F0, 0.0f);
+    fsetMul(%F1, %RANDF, 0.5f);
+    fadd(%F1, 1.9f);
+    scaleTime(30, 4, %F0, %F1);
+    alphaTime(30, 1, 0);
++30: // 30
+    delete();
+}
+
+script script111 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(4);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(0, 0, 160);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.6f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 0.7f, 0.7f);
+    alpha(0);
+    alphaTime(30, 4, 255);
++30: // 30
+    delete();
+}
+
+script script112 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(6);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(255, 255, 255);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 1.2f, 1.2f);
+    alpha(0);
+    alphaTime(30, 4, 64);
++30: // 30
+    delete();
+}
+
+script script113 {
+    alpha(0);
+offset12:
+    scriptNew(script110);
++3: // 3
+    scriptNew(script111);
++1: // 4
+    scriptNew(script112);
++2: // 6
+    jmp(offset12, 0);
+    case(1);
++30: // 36
+    delete();
+}
+
+script script114 {
+    sprite(sprite37);
+    blendMode(1);
+    layer(6);
+    anchor(131072);
+    fsetMul(%F2, %RANDF2, 4.0f);
+    pos(%F2, 0.0f, 0.0f);
+    color(32, 128, 128);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.0f);
+    scale(%F0, 0.0f);
+    fsetMul(%F1, %RANDF, 0.5f);
+    fadd(%F1, 1.9f);
+    scaleTime(30, 4, %F0, %F1);
+    alphaTime(30, 1, 0);
++30: // 30
+    delete();
+}
+
+script script115 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(4);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(0, 128, 128);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.6f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 0.7f, 0.7f);
+    alpha(0);
+    alphaTime(30, 4, 255);
++30: // 30
+    delete();
+}
+
+script script116 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(6);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(255, 255, 255);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 1.2f, 1.2f);
+    alpha(0);
+    alphaTime(30, 4, 64);
++30: // 30
+    delete();
+}
+
+script script117 {
+    alpha(0);
+offset12:
+    scriptNew(script114);
++3: // 3
+    scriptNew(script115);
++1: // 4
+    scriptNew(script116);
++2: // 6
+    jmp(offset12, 0);
+    case(1);
++30: // 36
+    delete();
+}
+
+script script118 {
+    sprite(sprite37);
+    blendMode(1);
+    layer(6);
+    anchor(131072);
+    fsetMul(%F2, %RANDF2, 4.0f);
+    pos(%F2, 0.0f, 0.0f);
+    color(32, 128, 32);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.0f);
+    scale(%F0, 0.0f);
+    fsetMul(%F1, %RANDF, 0.5f);
+    fadd(%F1, 1.9f);
+    scaleTime(30, 4, %F0, %F1);
+    alphaTime(30, 1, 0);
++30: // 30
+    delete();
+}
+
+script script119 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(4);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(0, 128, 0);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.6f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 0.7f, 0.7f);
+    alpha(0);
+    alphaTime(30, 4, 255);
++30: // 30
+    delete();
+}
+
+script script120 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(6);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(255, 255, 255);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 1.2f, 1.2f);
+    alpha(0);
+    alphaTime(30, 4, 64);
++30: // 30
+    delete();
+}
+
+script script121 {
+    alpha(0);
+offset12:
+    scriptNew(script118);
++3: // 3
+    scriptNew(script119);
++1: // 4
+    scriptNew(script120);
++2: // 6
+    jmp(offset12, 0);
+    case(1);
++30: // 36
+    delete();
+}
+
+script script122 {
+    sprite(sprite37);
+    blendMode(1);
+    layer(6);
+    anchor(131072);
+    fsetMul(%F2, %RANDF2, 4.0f);
+    pos(%F2, 0.0f, 0.0f);
+    color(128, 128, 32);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.0f);
+    scale(%F0, 0.0f);
+    fsetMul(%F1, %RANDF, 0.5f);
+    fadd(%F1, 1.9f);
+    scaleTime(30, 4, %F0, %F1);
+    alphaTime(30, 1, 0);
++30: // 30
+    delete();
+}
+
+script script123 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(4);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(128, 128, 0);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.6f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 0.7f, 0.7f);
+    alpha(0);
+    alphaTime(30, 4, 255);
++30: // 30
+    delete();
+}
+
+script script124 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(6);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(255, 255, 255);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 1.2f, 1.2f);
+    alpha(0);
+    alphaTime(30, 4, 64);
++30: // 30
+    delete();
+}
+
+script script125 {
+    alpha(0);
+offset12:
+    scriptNew(script122);
++3: // 3
+    scriptNew(script123);
++1: // 4
+    scriptNew(script124);
++2: // 6
+    jmp(offset12, 0);
+    case(1);
++30: // 36
+    delete();
+}
+
+script script126 {
+    sprite(sprite37);
+    blendMode(1);
+    layer(6);
+    anchor(131072);
+    fsetMul(%F2, %RANDF2, 4.0f);
+    pos(%F2, 0.0f, 0.0f);
+    color(160, 128, 32);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.0f);
+    scale(%F0, 0.0f);
+    fsetMul(%F1, %RANDF, 0.5f);
+    fadd(%F1, 1.9f);
+    scaleTime(30, 4, %F0, %F1);
+    alphaTime(30, 1, 0);
++30: // 30
+    delete();
+}
+
+script script127 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(4);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(160, 128, 0);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.6f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 0.7f, 0.7f);
+    alpha(0);
+    alphaTime(30, 4, 255);
++30: // 30
+    delete();
+}
+
+script script128 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(6);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(255, 255, 255);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 1.2f, 1.2f);
+    alpha(0);
+    alphaTime(30, 4, 64);
++30: // 30
+    delete();
+}
+
+script script129 {
+    alpha(0);
+offset12:
+    scriptNew(script126);
++3: // 3
+    scriptNew(script127);
++1: // 4
+    scriptNew(script128);
++2: // 6
+    jmp(offset12, 0);
+    case(1);
++30: // 36
+    delete();
+}
+
+script script130 {
+    sprite(sprite37);
+    blendMode(1);
+    layer(6);
+    anchor(131072);
+    fsetMul(%F2, %RANDF2, 4.0f);
+    pos(%F2, 0.0f, 0.0f);
+    color(128, 128, 144);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.0f);
+    scale(%F0, 0.0f);
+    fsetMul(%F1, %RANDF, 0.5f);
+    fadd(%F1, 1.9f);
+    scaleTime(30, 4, %F0, %F1);
+    alphaTime(30, 1, 0);
++30: // 30
+    delete();
+}
+
+script script131 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(4);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(128, 128, 160);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 1.6f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 0.7f, 0.7f);
+    alpha(0);
+    alphaTime(30, 4, 255);
++30: // 30
+    delete();
+}
+
+script script132 {
+    sprite(sprite38);
+    blendMode(1);
+    layer(6);
+    type(1);
+    rotate(0.0f, 0.0f, %RANDRAD);
+    color(255, 255, 255);
+    fsetMul(%F0, %RANDF, 0.7f);
+    fadd(%F0, 2.0f);
+    scale(%F0, %F0);
+    scaleTime(30, 4, 1.2f, 1.2f);
+    alpha(0);
+    alphaTime(30, 4, 64);
++30: // 30
+    delete();
+}
+
+script script133 {
+    alpha(0);
+offset12:
+    scriptNew(script130);
++3: // 3
+    scriptNew(script131);
++1: // 4
+    scriptNew(script132);
++2: // 6
+    jmp(offset12, 0);
+    case(1);
++30: // 36
+    delete();
+}
+
+script script134 {
+    isetMod($I0, $RAND, 4);
+    ijne($I0, 0, offset72, 0);
+    sprite(sprite39);
+    jmp(offset188, 0);
+offset72:
+    ijne($I0, 1, offset124, 0);
+    sprite(sprite40);
+    jmp(offset188, 0);
+offset124:
+    ijne($I0, 2, offset176, 0);
+    sprite(sprite41);
+    jmp(offset188, 0);
+offset176:
+    sprite(sprite42);
+offset188:
+    layer(2);
+    type(4);
+    blendMode(1);
+    ins_306(1);
+    fsetDiv(%F0, %RANDRAD, 32.0f);
+    angleVel(0.0f, 0.0f, %F0);
+    scale(1.5f, 1.5f);
+    fsetMul(%F0, %RANDF, 255.0f);
+    iset($I0, $F0);
+    color(255, $I0, 0);
+    fsetMul(%F0, [10019.0f], 400.0f);
+    fsetMul(%F1, [10020.0f], 400.0f);
+    fsetMul(%F2, [10021.0f], 400.0f);
+    fadd(%F0, [10016.0f]);
+    fadd(%F1, [10017.0f]);
+    fadd(%F2, [10018.0f]);
+    fsetMul(%F3, %RANDF2, 200.0f);
+    fadd(%F0, %F3);
+    fsetMul(%F3, %RANDF2, 200.0f);
+    fadd(%F1, %F3);
+    fsub(%F1, 200.0f);
+    alpha(0);
+    alphaTime(30, 0, 64);
+    pos(%F0, %F1, %F2);
+    fsetMul(%F3, %RANDF2, 50.0f);
+    fadd(%F0, %F3);
+    fsetMul(%F3, %RANDF2, 60.0f);
+    fadd(%F1, %F3);
+    fadd(%F1, 160.0f);
+    posTime(200, 0, %F0, %F1, %F2);
++100: // 100
+    alphaTime(100, 0, 0);
++100: // 200
+    delete();
+}
+
+script script135 {
+    isetMod($I0, $RAND, 4);
+    ijne($I0, 0, offset72, 0);
+    sprite(sprite39);
+    jmp(offset188, 0);
+offset72:
+    ijne($I0, 1, offset124, 0);
+    sprite(sprite40);
+    jmp(offset188, 0);
+offset124:
+    ijne($I0, 2, offset176, 0);
+    sprite(sprite41);
+    jmp(offset188, 0);
+offset176:
+    sprite(sprite42);
+offset188:
+    layer(28);
+    type(4);
+    blendMode(1);
+    ins_306(1);
+    fsetDiv(%F0, %RANDRAD, 32.0f);
+    angleVel(0.0f, 0.0f, %F0);
+    scale(1.5f, 1.5f);
+    fsetMul(%F0, %RANDF, 255.0f);
+    iset($I0, $F0);
+    color(255, $I0, 0);
+    fsetMul(%F1, [10020.0f], 400.0f);
+    fadd(%F1, 1100.0f);
+    fadd(%F1, [10017.0f]);
+    fsetMod(%F3, %F1, 768.0f);
+    fsub(%F1, %F3);
+    fadd(%F1, 64.0f);
+    fsetMul(%F3, %RANDF2, 64.0f);
+    fadd(%F1, %F3);
+    fsub(%F2, 100.0f);
+    isetMod($I0, $RAND, 2);
+    fsetMul(%F0, %RANDF2, 32.0f);
+    ijne($I0, 0, offset600, 0);
+    fadd(%F0, 176.0f);
+    jmp(offset616, 0);
+offset600:
+    fsub(%F0, 176.0f);
+offset616:
+    alpha(0);
+    alphaTime(30, 0, 255);
+    pos(%F0, %F1, -100.0f);
+    fsetMul(%F3, %RANDF, 64.0f);
+    ijne($I0, 0, offset744, 0);
+    fsub(%F0, %F3);
+    jmp(offset760, 0);
+offset744:
+    fadd(%F0, %F3);
+offset760:
+    fsetMul(%F3, %RANDF2, 120.0f);
+    fadd(%F1, %F3);
+    fsetMul(%F2, %RANDF, 100.0f);
+    fsetSub(%F2, 0.0f, %F2);
+    posTime(200, 0, %F0, %F1, %F2);
++100: // 100
+    alphaTime(100, 0, 0);
++100: // 200
+    delete();
+}
+
+
+entry entry4 {
+    version: 8,
+    name: "effect/efflinegoast.png",
+    format: 5,
+    width: 256,
+    height: 16,
+    memoryPriority: 10,
+    lowResScale: 0,
+    hasData: 1,
+    THTXSize: 8192,
+    THTXFormat: 5,
+    THTXWidth: 256,
+    THTXHeight: 16,
+    THTXZero: 0,
+    sprites: {
+        sprite43: { x: 0, y: 0, w: 256, h: 16 }
+    }
+}
+
+script script136 {
+    sprite(sprite43);
+    type(21);
+    layer(2);
+    stop();
+}
+
+

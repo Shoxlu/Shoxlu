@@ -1,0 +1,465 @@
+#include "main.tecl"
+void MBoss()
+{
+    setBoss(0);
+    $MISS_COUNT = 0;
+    $BOMB_COUNT = 0;
+    $CAPTURE = 1;
+    enmKillAll();
+    timerReset();
+    enmCreate("Ecl_EtBreak_ni", 0.0f, 0.0f, 9999, 0, 0);
+    setBoss(0);
+    anmSelect(4);
+    anmSetMain(0, 0);
+    flagSet(2);
+    setHurtbox(48.0f, 48.0f);
+    setHitbox(48.0f, 48.0f);
+    setInvuln(60);
+    lifeSet(12000);
+    movePosTime(60, 4, 0.0f, 128.0f);
+    $CAPTURE = 1;
+    wait(60);
+    dialogWait();
+    flagClear(2);
+    moveLimit(0.0f, 128.0f, 280.0f, 64.0f);
+    anmSelect(1);
+    anmSetSprite(1, 53);
+    anmSetSprite(2, 117);
+    anmSelect(3);
+    fog(128.0f, 1040319);
+    unless ($SPELL_ID >= 0) goto MBoss_992 @ 0;
+    unless (($SPELL_ID >= 30) && ($SPELL_ID <= 31)) goto MBoss_992 @ 0;
+    lifeSet(3000);
+    @MBossCard1();
+MBoss_992:
+    @MBoss1();
+    goto MBoss_1064 @ 0;
+MBoss_1044:
+    wait(1000);
+MBoss_1064:
+    if (1) goto MBoss_1044 @ 0;
+    delete();
+}
+
+void MBoss1()
+{
+    timerReset();
+    setNext(0, 0, 3000, "MBoss2");
+    stars(1);
+MBoss1_176:
+    anmPlay(1, 63);
+    playSound(54);
+	@MBoss1_at();
+    return;
+}
+
+void MBoss1_at()
+{
+	var A, B, C, D, E, F;
+	diffI($A, 1, 1, 2, 1);
+	@CreatePattern(0, 1, 22, 2, 1, $A, rad(120), 0f, 3f, 2.5f);
+	@CreatePattern(1, 1, 22, 3, 1, $A, rad(240), 0f, 3f, 2.5f);
+	@CreatePattern(2, 1, 22, 0, 1, $A, rad(0), 0f, 3f, 2.5f);
+	$E = 1 + RAND % 7;
+	@CreatePattern(3, 1, 23, $E, 1, 1, rad(140), 0f, 3f, 3f);  
+	etExSet(3, 0, 0, EX_OFFSCREEN, 999999, NEG, NEGF, NEGF);
+	etExSet(3, 1, 0, EX_WAIT, 60 + RAND % 100, NEG, NEGF, NEGF);
+	etExSet(3, 2, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+	etExSub(3, 2, "StarExplode");
+	diffI($D, 20, 40, 80, 125);
+	diffI($F, 6, 8, 10, 12);
+	%A = rad(120);
+	%B = rad(240);
+	%C = rad(0);
+	while(1){
+		times($D)
+		{
+			etOn(0);
+			etOn(1);
+			etOn(2);
+			%A = %A + rad(9);
+			%B = %B + rad(9);
+			%C = %C + rad(9);
+			etAngle(0, %A, 0f);
+			etAngle(1, %B, 0f);
+			etAngle(2, %C, 0f);
+			diffWait(4, 3, 2, 1);
+		}
+		times($D)
+		{
+			etOn(0);
+			etOn(1);
+			etOn(2);
+			%A = %A - rad(9);
+			%B = %B - rad(9);
+			%C = %C - rad(9);
+			etAngle(0, %A, 0f);
+			etAngle(1, %B, 0f);
+			etAngle(2, %C, 0f);
+			diffWait(4, 3, 2, 1);
+		}
+		times($F)
+		{
+			etAngle(3, rad(140), 0f);
+			$E = 1 + RAND % 7;
+			GI0 = $E;
+			etSprite(3, 23, $E);
+			etOffsetAbs(3, 210f + RANDF2 * 40f, RANDF2 * 120f);
+			etOn(3);
+			wait(10);
+		}
+		wait(60);
+		times($F)
+		{
+			etAngle(3, rad(40), 0f);
+			$E = 1 + RAND % 7;
+			GI0 = $E;
+			etSprite(3, 23, $E);
+			etOffsetAbs(3, -210f - RANDF2 * 40f, RANDF2 * 120f);
+			etOn(3);
+			wait(10);
+		}
+		wait(140);
+	}
+}
+		
+void StarExplode()
+{
+	var A;
+	etClear(2f);
+!E
+	1;
+!N 
+	2;
+!H
+	3;
+!L
+	4;
+!E
+	10;
+!N 
+	10;
+!H 
+	10;
+!L
+	12;
+!*
+	$A = 1 + RAND % 14;
+	@CreatePattern(4, 3, 16, $A, [-1], [-2], 0f, 0f, 1f, 2f);
+	etOn(4);
+}
+void MBoss2()
+{
+    var A, B;
+	lifeSet(3000);
+    anmSelect(4);
+    anmSetMain(0, 0);
+    timerReset();
+    killAllAsync();
+    enmKillAll();
+    unless ($TIMEOUT == 0) goto MBoss2_312 @ 0;
+    etCancel(640.0f);
+    goto MBoss2_332 @ 0;
+MBoss2_312:
+    etClear(640.0f);
+MBoss2_332:
+    $MISS_COUNT = 0;
+    $BOMB_COUNT = 0;
+    moveVel(0.0f, 0.0f);
+    moveVelTime(0, 0, 0.0f, 0.0f);
+    movePosTime(0, 0, 0.0f, 0.0f);
+    spellEnd();
+    funcSet(0);
+    reset();
+    playSound(27);
+    setNext(0, 0, 2700, "MBossDead");
+    stars(0);
+    setInvuln(120);
+    dropClear();
+    dropExtra(12, 1);
+    dropExtra(13, 20);
+    dropExtra(1, 20);
+    dropExtra(2, 15);
+    dropArea(64.0f, 64.0f);
+    dropItems();
+    @MBossCard1();
+}
+
+void MBoss2_at()
+{
+    var A, B, C, D;
+    etNew(0);
+    etAim(0, 3);
+    etSprite(0, 10, 2);
+    etCountD(0, 1, 1, 2, 1, 3, 3, 3, 3);
+    etAngle(0, 1.5707964f, 0.032724924f);
+    etSpeedD(0, 1.6f, 1.6f, 2.0f, 2.2f, 1.3f, 1.3f, 1.6f, 1.6f);
+    etEx(0, 1, 2, 1, -999999, -999999.0f, -999999.0f);
+    etEx(0, 0, 1048576, 1, -999999, -999999.0f, -999999.0f);
+    etDist(0, 16.0f);
+    $A = 20;
+    %B = 0.7853982f + (%RANDRAD / _f(30));
+    %C = -0.159f;
+    diffI($D, 10, 20, 20, 20);
+    goto MBoss2_at_1808 @ 0;
+MBoss2_at_604:
+    etSprite(0, 10, 2);
+    etAngle(0, %B, 0.54105204f);
+    etOn(0);
+    %B = %B - %C;
+    wait(1);
+    etSprite(0, 4, 14);
+    etAngle(0, %B, 0.034906585f);
+    etOn(0);
+    %B = %B - %C;
+    wait(1);
+    etSprite(0, 10, 13);
+    etAngle(0, %B, 0.2268928f);
+    etOn(0);
+    %B = %B - %C;
+    wait(1);
+    etSprite(0, 4, 10);
+    etAngle(0, %B, 0.034906585f);
+    etOn(0);
+    %B = %B - %C;
+    wait(1);
+    etSprite(0, 10, 8);
+    etAngle(0, %B, 0.2268928f);
+    etOn(0);
+    %B = %B - %C;
+    wait(1);
+    etSprite(0, 4, 6);
+    etAngle(0, %B, 0.034906585f);
+    etOn(0);
+    %B = %B - %C;
+    wait(1);
+    etSprite(0, 10, 4);
+    etAngle(0, %B, 0.2268928f);
+    etOn(0);
+    %B = %B - %C;
+    wait(1);
+MBoss2_at_1808:
+    if ($D--) goto MBoss2_at_604 @ 0;
+    return;
+}
+
+void MBossCard1()
+{
+    timerReset();
+    killAllAsync();
+    enmKillAll();
+    enmCreate("Ecl_EtBreak", 0.0f, 0.0f, 9999, 0, 0);
+    spellEnd();
+    funcSet(0);
+    reset();
+    playSound(27);
+    moveVel(0.0f, 0.0f);
+    moveVelTime(0, 0, 0.0f, 0.0f);
+    movePosTime(0, 0, 0.0f, 0.0f);
+    $MISS_COUNT = 0;
+    $BOMB_COUNT = 0;
+    anmSetSprite(3, -1);
+    anmSetSprite(4, -1);
+    setNext(0, 0, 2700, "MBossDead");
+    setTimeout(0, "MBossEscape");
+	wait(90);
+!E 
+	1;
+!N 
+	1;
+!H 
+	2;
+!L
+	3;
+!E 
+	17;
+!N 
+	22;
+!H 
+	34;
+!L
+	40;
+!*
+	@CreatePattern(0, 3, 32, 0, [-1], [-2], 0f, 0f, 4f, 4f);
+	etOn(0);
+	wait(20);
+!E 
+	spell(30, 2700, 500000, "Pure Destruction: Fail");
+!N 
+	spell2(30, 2700, 500000, "Pure Destruction 1st Try");
+!H	
+    spell3(30, 2700, 500000, "Pure Destruction 2nd Try");
+!L 
+	spellEx(31, 2700, 500000, "Pure Destruction 3rd Try");
+!*
+    movePosTime(60, 4, 0.0f, 144.0f);
+    moveLimit(0.0f, 128.0f, 280.0f, 64.0f);
+    wait(60);
+    anmPlay(1, 63);
+    goto MBossCard1_924 @ 60;
+MBossCard1_756:
+    @MBossCard1_at();
+	wait(99999);
+MBossCard1_924:
+    if (1) goto MBossCard1_756 @ 60;
+    return;
+}
+
+void MBossCard1_at()
+{
+	var A, B;
+!E
+	4;
+!N 
+	6;
+!H 
+	8;
+!L 
+	10;
+!*
+	$A = [-1];
+	@CreatePattern(1, 1, 28, 0, 1, 1, 0f, 0f, 2f, 2f);
+	etExSet(1, 0, 0, EX_WAIT, 30, NEG, NEGF, NEGF);
+	etExSet(1, 1, 0, EX_VEL, 1, NEG, NEGF,0f);
+	etExSet(1, 2, 0, EX_SPECIAL, NEG, NEG, NEGF, NEGF);
+	etExSub(1, 2, "Pattern1");
+	etExSet(1, 3, 0, EX_WAIT, 300, NEG, NEGF, NEGF);
+	etExSet(1, 4, 0, EX_DELETE, 1, NEG, NEGF, NEGF);
+	while(1){
+!E
+	%B = rad(45);
+!L
+	%B = rad(90);
+!NH
+	%B = 0f;
+!*
+	etAngle(1, %B, 0f);
+	times($A){
+		etOn(1);
+		F0 = REL_X + cos(%B) * (2f * 30f);
+		F1 = REL_Y + sin(%B) * (2f * 30f);
+		@Lasers(%B, F0, F1) async;
+		%B = %B + (rad(360) / _f($A));
+		etAngle(1, %B, 0f);
+	}
+	wait(500);
+	}
+}
+void Lasers(float A, float B, float C)
+{
+	wait(30);
+	@CreatePattern(2, 1, 8, 0, 1, 1, 0f, 0f, 24f, 24f);
+	etAngle(2, %A, 0f);
+	etOffset(2, %B, %C);
+	laserNew(2, 0f, 300f, 0f, 20f);
+!E
+	120;
+!N 
+	100;
+!H 
+	80;
+!L
+	60;
+!E
+	120;
+!N 
+	90;
+!H
+	60;
+!L 
+	30;
+!*
+	laserTiming(2, [-1], 120, [-2], 120, 0);
+	laserStOn(2, 1);
+	%A = %A + rad(90);
+	etAngle(2, %A, 0f);
+	laserStOn(2, 2);
+	%A = %A + rad(90);
+	etAngle(2, %A, 0f);
+	laserStOn(2, 3);
+	%A = %A + rad(90);
+	etAngle(2, %A, 0f);
+	laserStOn(2, 4);
+}
+void Pattern1(float B, float C)
+{
+	var A, D, E, F;
+	flagSet(1);
+	wait(200);
+	diffI($A, 14, 16, 20, 16);
+	diffI($D, 1, 1, 2, 3);
+	diffF(%E, 2f, 2.5f, 2f, 2.5f);
+	diffF(%F, 2f, 2.5f, 2f, 2.5f);
+	@CreatePattern(4, 3, 4, 5, $A, $D, 0f, 0f, %E, %F);
+	times(5)
+	{
+		diffWait(80 + RAND % -60, 60 + RAND % -50, 40 + RAND % -35, 30 + RAND % -30);
+		etOn(4);
+		etAngle(4, RANDRAD, 0f);
+		etSprite(4, 4, (4 + RAND % 4));
+	}
+	wait(30);
+}
+void MBossDead()
+{
+    flagSet(156);
+    anmPlay(1, 25);
+    playSound(5);
+    moveVel(%RANDRAD, 0.4f);
+    enmKillAll();
+    etClearAll();
+    spellEnd();
+    unless ($TIMEOUT == 0) goto MBossDead_452 @ 0;
+    dropClear();
+    dropExtra(10, 2);
+    dropExtra(12, 2);
+    dropExtra(11, 10);
+    dropExtra(13, 10);
+    dropExtra(3, 1);
+    dropExtra(2, 20);
+    dropArea(48.0f, 48.0f);
+    dropItems();
+MBossDead_452:
+    setScreenShake(30, 12, 0);
+    anmPlay(1, 25);
+    anmPlay(1, 97);
+    playSound(5);
+    setBoss(-1);
+    delete();
+    delete();
+}
+
+void MBossEscape()
+{
+    setNext(0, -1, 0, "");
+    setNext(1, -1, 0, "");
+    spellEnd();
+    moveLimitReset();
+    enmKillAll();
+    unless ($TIMEOUT == 0) goto MBossEscape_280 @ 0;
+    etCancel(640.0f);
+    goto MBossEscape_300 @ 0;
+MBossEscape_280:
+    etClear(640.0f);
+MBossEscape_300:
+    lifeSet(100000);
+    setChapter(0);
+    setBoss(-1);
+    flagSet(16);
+    movePosTime(60, 4, -224.0f, 64.0f);
+    wait(60);
+    delete();
+    delete();
+}
+
+void TraceEnemyPos()
+{
+    var A;
+    goto TraceEnemyPos_100 @ 0;
+TraceEnemyPos_60:
+    moveEnmRel($A);
+    wait(1);
+TraceEnemyPos_100:
+    if (1) goto TraceEnemyPos_60 @ 0;
+    return;
+}

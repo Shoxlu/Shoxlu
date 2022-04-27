@@ -1,0 +1,75 @@
+entry entry0{
+	version: 8,
+    name: "stgenm/stage01/menm1.png",
+    format: 5,
+    width: 256,
+    height: 256,
+    memoryPriority: 10,
+    lowResScale: 0,
+    hasData: 1,
+    THTXSize: 131072,
+    THTXFormat: 5,
+    THTXWidth: 256,
+    THTXHeight: 256,
+    THTXZero: 0,
+    sprites: {
+		sprite0: { x: 0, y: 0, w: 35, h: 60 },
+		sprite1: { x: 35, y: 0, w: 35, h: 60 }
+	}
+}
+script script0 {
+	scale(1.4f, 1.4f);
+loop:
+	sprite(sprite0);
++1:
+	jmp(loop, 0);
+}
+
+script script1 {
+    flipX();
+	scale(1.4f, 1.4f);
+loop:
++1:
+    sprite(sprite1);
+	jmp(loop, 0);
+}
+
+script script2 {
+	scale(1.4f, 1.4f);
+loop:
++1:
+	sprite(sprite1);
+	jmp(loop, 0);
+}
+script script3 {
+    flipX();
+	scale(1.4f, 1.4f);
+loop:
++1:
+    sprite(sprite1);
+	jmp(loop, 0);
+}
+script script4 {
+    flipX();
+	scale(1.4f, 1.4f);
+loop:
++1:
+    sprite(sprite1);
+	jmp(loop, 0);
+}
+
+script script5 {
+	scale(1.4f, 1.4f);
+loop:
++1:
+	sprite(sprite1);
+	jmp(loop, 0);
+}
+script script6 {
+	scale(1.4f, 1.4f);
+    flipX();
+loop:
++1:
+    sprite(sprite1);
+	jmp(loop, 0);
+}
