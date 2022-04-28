@@ -1,9 +1,7 @@
 {
-        "dependencies": [
-                {
-				"archive": "repos/nmlgc/base_tsa/",
-				"archive": "repos/exphp/bullet_cap/",
-				"archive": "repos/Shoxlu/ShoxBazar/"
-				}
-        ]
+    "id": "ShoxBazar",
+    "servers": [
+        "https://raw.githubusercontent.com/Shoxlu/Shoxlu"
+    ],
+    "title": "idk (don't play this thing)"
 }
