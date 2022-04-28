@@ -2,11 +2,10 @@
 	"contact": "Shoxlu#4245",
 	"id": "Shoxlu",
 	"patches": {
-		// "CdIBeurreSalé(th15)": "Praises of Buttered Heavens, a mod created by Team Brest Elisabeth"
-		"ShoxBazar": "idk, tests"
+		"ShoxBazar": "idk, tests(don't play that plz)"
 	},
 	"servers": [
-		""
+		"https://raw.githubusercontent.com/Shoxlu/Shoxlu"
 	],
 	"title": "Some projects."
 }
