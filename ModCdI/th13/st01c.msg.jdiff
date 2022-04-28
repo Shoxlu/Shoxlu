@@ -1,0 +1,110 @@
+{
+    "0": {
+        "34_0": {
+            "lines": [
+                "Qu'est-ce que faisait cette fée ici ?",
+                "dans un endroit pareil..."
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Eh ! Salut toi !"
+            ]
+        },
+        "110_0": {
+            "lines": [
+                "Qu'est-ce que tu dis Sanae ?"
+            ]
+        },
+        "118_0": {
+            "lines": [
+                "Oh, je parlais juste à voix haute.",
+                "Tu aurais pas une certaine Yuyuko ?"
+            ]
+        },
+        "126_0": {
+            "lines": [
+                "Yuyuko ? Non...",
+                "Enfin si, elle se goinfrait de nourriture"
+            ]
+        },
+        "134_0": {
+            "lines": [
+                "Ah...",
+                "Je vois."
+            ]
+        },
+        "142_0": {
+            "lines": [
+                "Et toi, qu'est-ce que tu fais ici ?!",
+                "Une fée ne devrait pas être là !"
+            ]
+        },
+        "150_0": {
+            "lines": [
+                "Je me suis perdu en cherchant mon amie",
+                "Tu ne l'aurais pas vue ?"
+            ]
+        },
+        "158_0": {
+            "lines": [
+                "Elle a les cheveux bleus et est redoutable !"
+            ]
+        },
+        "166_0": {
+            "lines": [
+                "Je ne crois pas avoir rencontré de fée redoutable."
+            ]
+        },
+        "174_0": {
+            "lines": [
+                "Bon pas grave.",
+                "Une partie ?"
+            ]
+        }
+    },
+    "1": {
+        "30_0": {
+            "lines": [
+                "Pfiou, toi en tous cas, tu rigoles pas !"
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "(Cette fée n'était pas tellement différente des autres)"
+            ]
+        },
+        "46_0": {
+            "lines": [
+                "Il y a un problème ?"
+            ]
+        },
+        "54_0": {
+            "lines": [
+                "Disons que je n'étais pas vraiment là pour ça, mais dis moi,",
+                "tu sais peut-être quelque chose à propos de ces esprits ?"
+            ]
+        },
+        "62_0": {
+            "lines": [
+                "Euh..."
+            ]
+        },
+        "70_0": {
+            "lines": [
+                "Je ne sais rien de ces trucs effrayants..."
+            ]
+        },
+        "78_0": {
+            "lines": [
+                "J'ai un peu peur maintenant, même si Cirno sera là pour me sauver...",
+                "Je crois qu'ils se dirigent vers le temple là-bas."
+            ]
+        },
+        "86_0": {
+            "lines": [
+                "Hein ?"
+            ]
+        }
+    }
+}

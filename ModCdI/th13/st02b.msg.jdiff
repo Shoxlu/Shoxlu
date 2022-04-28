@@ -1,0 +1,98 @@
+{
+    "0": {
+		"34_0": { 
+            "lines": [
+                "Cet endroit est plein de",
+                "Youkai, c'est incroyable"
+            ]
+        },
+        "42_0": {
+			"lines": [
+                "Il y avait même un youkai",
+				"qui croyait que c'était Halloween" 
+            ]
+        },
+		"50_0": {
+            "lines": [
+                "Salutations"
+            ]
+        },
+		"118_0": {
+            "lines": [
+                "Oh mais c'est Tachy !"
+            ]
+        },
+		"126_0": {
+            "lines": [
+                "Salut Pihey"
+            ]
+        },
+		"134_0": {
+            "lines": [
+                "Qu'est-ce que tu fais ici ?"
+            ]
+        },
+		"142_0": {
+            "lines": [
+                "Je cherche un modérateur",
+                "Le Café est détenu par plein de fantômes"
+            ]
+        },
+		"150_0": {
+            "lines": [
+                "Ah..."
+            ]
+        },
+		"158_0": {
+            "lines": [
+                "Je crois que Silyeh est plus loin"
+            ]
+        },
+        "166_0": {
+			"lines": [
+                "On m'a demandé de garder cet endroit",
+                "Alors battons-nous ! Go go go go !"
+            ]
+        }
+    },
+    "1": {
+		"30_0": {
+            "lines": [
+                "Se faire agresser par un fan de Sakuya",
+                "je n'avais aucune chance de perdre"
+            ]
+        },
+		"38_0": {
+            "lines": [
+                "Mais..."
+            ]
+        },
+		"46_0": {
+            "lines": [
+                "Bon ducoup, tu vas m'emmener voir Silyeh ou non ?",
+                "tu n'as pas vraiment le choix maintenant"
+            ]
+        },
+		"54_0": {
+            "lines": [
+                "Bon d'accord,",
+                "Mais...Je ne peux pas t'emmener directement à elle"
+            ]
+        },
+		"62_0": {
+            "lines": [
+                "Je risquerai de me faire tuer"
+            ]
+        },
+         "70_0": {
+            "lines": [
+                "(Un fan de Sakuya en moins c'est pas si mal)"
+            ]
+        },
+        "78_0": {
+            "lines": [
+                "Allons-y."
+            ]
+        }
+    }
+}

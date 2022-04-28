@@ -1,0 +1,40 @@
+
+void etOnAuto()
+{
+    var A, B, C;
+etOnAuto_36:
+    unless $C-- goto etOnAuto_144 @ 0;
+    etOn($A);
+    wait($B);
+    goto etOnAuto_36 @ 0;
+etOnAuto_144:
+    return;
+}
+
+void merlin_effCharge()
+{
+    var A, B, C, D, E, F, G;
+    unless (($B > 0) && ($B <= 3)) goto merlin_effCharge_876 @ 0;
+    playSound(54);
+    $D = $C + 1;
+    %E = 6.2831855f / _f($A);
+    %F = 0.0f;
+    $G = $A;
+merlin_effCharge_440:
+    unless $A-- goto merlin_effCharge_876 @ 0;
+    if ($G % 2) goto merlin_effCharge_748 @ 0;
+    unless ($A % 2) goto merlin_effCharge_696 @ 0;
+    anmPlayRotate(1, $C, %F);
+    goto merlin_effCharge_724 @ 0;
+merlin_effCharge_696:
+    anmPlayRotate(1, $D, %F);
+merlin_effCharge_724:
+    goto merlin_effCharge_776 @ 0;
+merlin_effCharge_748:
+    anmPlayRotate(1, $C, %F);
+merlin_effCharge_776:
+    %F = %F + %E;
+    goto merlin_effCharge_440 @ 0;
+merlin_effCharge_876:
+    return;
+}

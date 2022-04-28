@@ -1,0 +1,116 @@
+entry entry0 {
+    version: 8,
+    name: "face/enemy3/face03act.png",
+    format: 5,
+    width: 333,
+    height: 512,
+    memoryPriority: 0,
+    lowResScale: 0,
+    hasData: 1,
+    THTXSize: 340992,
+    THTXFormat: 5,
+    THTXWidth: 333,
+    THTXHeight: 512,
+    THTXZero: 0,
+    sprites: {
+        sprite0: { x: 0, y: 0, w: 333, h: 512 }
+    }
+}
+
+script script0 {
+-1:
+    sprite(sprite0);
+    layer(6);
+	scale(0.3f, 0.3f);
+0:
+	scaleTime(7, 0, 1.0f, 1.0f);
+    type(2);
+    pos(0.0f, 224.0f, -80.0f);
+    color(0, 0, 0);
+    colorTime(30, 0, 255, 255, 255);
++7:
+    posTime(30, 0, 0.0f, 224.0f, 0.0f);
+	scaleTime(120, 0, 1.4f, 1.4f);
++90: // 120
+    colorTime(30, 0, 0, 0, 0);
++30: // 150
+    delete();
+}
+
+entry entry1 {
+    version: 8,
+    name: "face/enemy3/face03bct.png",
+    format: 5,
+    width: 333,
+    height: 512,
+    memoryPriority: 0,
+    lowResScale: 0,
+    hasData: 1,
+    THTXSize: 340992,
+    THTXFormat: 5,
+    THTXWidth: 333,
+    THTXHeight: 512,
+    THTXZero: 0,
+    sprites: {
+        sprite1: { x: 0, y: 0, w: 333, h: 512 }
+    }
+}
+
+script script1 {
+-1:
+    sprite(sprite1);
+    layer(6);
+	scale(0.3f, 0.3f);
+0:
+	scaleTime(7, 0, 1.0f, 1.0f);
+    type(2);
+    pos(0.0f, 224.0f, -80.0f);
+    color(0, 0, 0);
+    colorTime(30, 0, 255, 255, 255);
++7:
+    posTime(30, 0, 0.0f, 224.0f, 0.0f);
+	scaleTime(120, 0, 1.4f, 1.4f);
++90: // 120
+    colorTime(30, 0, 0, 0, 0);
++30: // 150
+    delete();
+}
+
+entry entry2 {
+    version: 8,
+    name: "face/enemy3/face03cct.png",
+    format: 5,
+    width: 333,
+    height: 512,
+    memoryPriority: 0,
+    lowResScale: 0,
+    hasData: 1,
+    THTXSize: 340992,
+    THTXFormat: 5,
+    THTXWidth: 333,
+    THTXHeight: 512,
+    THTXZero: 0,
+    sprites: {
+        sprite2: { x: 0, y: 0, w: 333, h: 512 }
+    }
+}
+
+script script2 {
+-1:
+    sprite(sprite2);
+    layer(6);
+	scale(0.3f, 0.3f);
+0:
+	scaleTime(7, 0, 1.0f, 1.0f);
+    type(2);
+    pos(0.0f, 224.0f, -80.0f);
+    color(0, 0, 0);
+    colorTime(30, 0, 255, 255, 255);
++7:
+    posTime(30, 0, 0.0f, 224.0f, 0.0f);
+	scaleTime(120, 0, 1.4f, 1.4f);
++90: // 120
+    colorTime(30, 0, 0, 0, 0);
++30: // 150
+    delete();
+}
