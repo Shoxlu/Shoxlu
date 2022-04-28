@@ -1,1 +1,0 @@
-call thecl.exe -c 13 -m Th13map.txt st07bs.tecl st07bs.ecl
