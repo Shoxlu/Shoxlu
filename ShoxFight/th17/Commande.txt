@@ -1,3 +1,0 @@
-thecl.exe -c 17 -m Th13map.txt st07bs.tecl st07bs.ecl
-thanm -c -m v8.txt front.anm front.manm
-thecl -c 17 -m Th13map.txt st01bs.tecl st01bs.ecl
