@@ -1,7 +1,7 @@
 {
     "id": "ShoxBazar",
     "servers": [
-        "https://raw.githubusercontent.com/Shoxlu/Shoxlu"
+        "https://mirrors.thpatch.net/Shoxlu/"
     ],
     "title": "idk (don't play this thing)"
 }

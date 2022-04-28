@@ -5,7 +5,7 @@
 		"ShoxBazar": "idk, tests(don't play that plz)"
 	},
 	"servers": [
-		"https://raw.githubusercontent.com/Shoxlu/Shoxlu"
+		"https://mirrors.thpatch.net/Shoxlu/"
 	],
 	"title": "Some projects."
 }
