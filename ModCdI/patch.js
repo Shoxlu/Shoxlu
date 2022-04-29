@@ -1,5 +1,5 @@
 {
-    "id": "ShoxBazar",
+    "id": "ModCdi",
     "servers": [
         "https://mirrors.thpatch.net/Shoxlu/ModCdi"
     ],
