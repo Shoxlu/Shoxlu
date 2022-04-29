@@ -9,7 +9,7 @@
       "archive": "repos/ExpHP/bullet_cap/",
 	  "archive": "repos/Shoxlu/ModCdI/"
 	],
-    "id": "ModCdi",
+    "id": "ModCdI",
     "servers": [
         "https://mirrors.thpatch.net/Shoxlu/ModCdI"
     ],
