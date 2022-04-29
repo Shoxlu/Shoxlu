@@ -1,7 +1,6 @@
 {
 	"dependencies": [
 		"nmlgc/base_tsa",
-		"Shoxlu/ShoxBazar",
 		"repos/exphp/bullet_cap/"
 	],
     "id": "ShoxBazar",

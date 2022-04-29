@@ -6,8 +6,7 @@
       "archive": "repos/ExpHP/base_exphp/",
       "archive": "repos/ExpHP/anm_leak/",
       "archive": "repos/ExpHP/sprite_death_fix/",
-      "archive": "repos/ExpHP/bullet_cap/",
-	  "archive": "repos/Shoxlu/ModCdI/"
+      "archive": "repos/ExpHP/bullet_cap/"
 	],
     "id": "ModCdI",
     "servers": [
