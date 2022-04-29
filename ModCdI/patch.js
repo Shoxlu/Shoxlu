@@ -8,7 +8,7 @@
 		"archive": "repos/ExpHP/sprite_death_fix/",
 		"archive": "repos/ExpHP/bullet_cap/"
 	],
-    "id": "ModCdI",
+	"id": "ModCdI",
     "servers": [
         "https://mirrors.thpatch.net/Shoxlu/ModCdI"
     ],
