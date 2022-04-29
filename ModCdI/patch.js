@@ -1,4 +1,8 @@
 {
+	"dependencies": [
+		"nmlgc/base_tsa",
+		"repos/exphp/bullet_cap/"
+	],
     "id": "ModCdi",
     "servers": [
         "https://mirrors.thpatch.net/Shoxlu/ModCdi"
