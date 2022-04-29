@@ -2,7 +2,6 @@
 	"dependencies": [
       "archive": "repos/nmlgc/base_tsa/",
       "archive": "repos/nmlgc/script_latin/",
-      "archive": "repos/thpatch/lang_en/",
       "archive": "repos/thpatch/lang_fr/",
       "archive": "repos/Shoxlu/ModCdI",
       "archive": "repos/ExpHP/base_exphp/",
