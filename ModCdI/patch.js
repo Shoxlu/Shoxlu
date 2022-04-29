@@ -3,7 +3,7 @@
       "archive": "repos/nmlgc/base_tsa/",
       "archive": "repos/nmlgc/script_latin/",
       "archive": "repos/thpatch/lang_fr/",
-      "archive": "repos/Shoxlu/ModCdI",
+      "archive": "repos/Shoxlu/ModCdI/",
       "archive": "repos/ExpHP/base_exphp/",
       "archive": "repos/ExpHP/anm_leak/",
       "archive": "repos/ExpHP/sprite_death_fix/",
