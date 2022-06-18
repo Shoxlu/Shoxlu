@@ -1,6 +1,7 @@
 {
 	"dependencies": [
 		"nmlgc/base_tsa",
+		"nmlgc/script_latin",
 		"repos/exphp/bullet_cap/"
 	],
     "id": "FestivalCreaCdI",
