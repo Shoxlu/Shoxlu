@@ -1,0 +1,354 @@
+{
+    "2": {
+        "184_0": {
+            "lines": [
+                "Oooh, encore toi ?"
+            ]
+        },
+        "308_0": {
+            "lines": [
+                "J'ai entendu dire que tu as mis notre maîtresse en colère."
+            ]
+        },
+        "432_0": {
+            "lines": [
+                "L'examen est terminé !",
+                "Va-t'en d'ici ! Du balai !"
+            ]
+        }
+    },
+    "0": {
+        "34_0": {
+            "lines": [
+                "Hé ! Il y a quelqu'un ?!"
+            ]
+        },
+        "102_0": {
+            "lines": [
+                "Oh, c'est toi ?"
+            ]
+        },
+        "140_0": {
+            "lines": [
+                "Tu sembles un peu perdue, tu cherches quelque chose ?",
+                "Il ne se passe rien ici pour l'instant."
+            ]
+        },
+        "148_0": {
+            "lines": [
+                "Je peux t'aider ?"
+            ]
+        },
+        "156_0": {
+            "lines": [
+                "'fait très froid depuis peu, c'est bizarre.",
+                "J'suis un peu inquiète."
+            ]
+        },
+        "164_0": {
+            "lines": [
+                "J'ai suivi la première piste."
+            ]
+        },
+        "172_0": {
+            "lines": [
+                "Je suis revenue ici,",
+                "j'espère que ce n'est pas pour rien."
+            ]
+        },
+        "180_0": {
+            "lines": [
+                "Tu t'attendais à ça de ma part.",
+                "Suis-je si prévisible ?"
+            ]
+        },
+        "188_0": {
+            "lines": [
+                "Je n'avais pas d'autre idée."
+            ]
+        },
+        "196_0": {
+            "lines": [
+                "Et il semble effectivement se tramer",
+                "un truc louche par ici."
+            ]
+        },
+        "204_0": {
+            "lines": [
+                "J'aime l'hiver certes, mais j'aime aussi",
+                "profiter un peu du printemps."
+            ]
+        },
+        "212_0": {
+            "lines": [
+                "Tu sais,",
+                "tu peux profiter ici."
+            ]
+        },
+        "220_0": {
+            "lines": [
+                "Toi qui es si curieuse, tu y gagnerais."
+            ]
+        },
+        "228_0": {
+            "lines": [
+                "Tu n'es pas curieuse de savoir ce que donnerait",
+                "la floraison du Saigyou Ayakashi ?"
+            ]
+        },
+        "236_0": {
+            "lines": [
+                "Oh, si bien sûr que je serais intéressée.",
+                "On pourrait voir toute la beauté de la magie."
+            ]
+        },
+        "244_0": {
+            "lines": [
+                "Mais je ne perds pas la face,",
+                "je veux me battre."
+            ]
+        },
+        "252_0": {
+            "lines": [
+                "Comme ça je pourrai à la fois voir ce qui m'intéresse",
+                "et me défouler comme y'a un bail."
+            ]
+        },
+        "260_0": {
+            "lines": [
+                "L'hiver continuera un peu plus longtemps, ",
+                "j'ai soif de danmaku moi."
+            ]
+        },
+        "268_0": {
+            "lines": [
+                "Je n'en attendais pas moins.",
+                "Tu dois avoir encore progressé depuis le temps."
+            ]
+        },
+        "276_0": {
+            "lines": [
+                "Tu as une philosphie singulière."
+            ]
+        },
+        "284_0": {
+            "lines": [
+                "Même dans un incident tu trouves une,",
+                "occasion de t'amuser."
+            ]
+        },
+        "292_0": {
+            "lines": [
+                "Mais au moins toi tu sauras profiter du spectable,",
+                "ce que j'apprécie."
+            ]
+        },
+        "300_0": {
+            "lines": [
+                "Bref, ne nous tarissons-pas en discussions."
+            ]
+        },
+        "308_0": {
+            "lines": [
+                "Confrontons magie humaine et puissance d'une saison !",
+                "Il est temps pour moi de prendre ma revanche !"
+            ]
+        }
+    },
+    "1": {
+        "34_0": {
+            "lines": [
+                "Allez ! J'ai gagné maintenant, non ?!"
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Magnifique ! ",
+                "Tu as réussi l'épreuve !"
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "Fiou, c'etait dur.",
+                "Mais d'une manière ou d'une autre, j'ai reussi."
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "Maintenant, je peux enfin dormir sur mes deux oreilles..."
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "Cela étant fait, tu es engagée !",
+                "Je t'autorise à travailler pour moi."
+            ]
+        },
+        "74_0": {
+            "lines": [
+                "Donc, qui préfères-tu remplacer ?",
+                "Tereida en charge de la force vitale, ou Nishida ",
+                "en charge de la force mentale ?"
+            ]
+        },
+        "82_0": {
+            "lines": [
+                "Pour l'instant, tu peux choisir n'importe laquelle des deux."
+            ]
+        },
+        "90_0": {
+            "lines": [
+                "Je ne vais pas travailler pour toi.",
+                "Ne te l'ai-je pas déjà dit ?"
+            ]
+        },
+        "98_0": {
+            "lines": [
+                "Mais, hum, si j'acceptais,",
+                "qu'arriverait-il aux deux autres ?"
+            ]
+        },
+        "106_0": {
+            "lines": [
+                "Si tu prends le relais, je les relâcherais",
+                "et les rendrais humaines à nouveau."
+            ]
+        },
+        "114_0": {
+            "lines": [
+                "Bien que si tu n'acceptes pas le travail,",
+                "elles resteront comme elles le sont pour toujours."
+            ]
+        },
+        "122_0": {
+            "lines": [
+                "Ce ne sont que des pantins animés par ",
+                "ta magie alors, hein... ?"
+            ]
+        },
+        "130_0": {
+            "lines": [
+                "Eh bien, je ne veux toujours pas prendre leur place.",
+                "Paaas du tooout."
+            ]
+        },
+        "138_0": {
+            "lines": [
+                "Ceci dit, penses-tu pouvoir arrêter l'incident ",
+                "des quatre saisons ?"
+            ]
+        },
+        "146_0": {
+            "lines": [
+                "Si la forêt reste plongée dans l'hiver plus longtemps,",
+                "je ne veux même pas penser à ma facture de chauffage."
+            ]
+        },
+        "154_0": {
+            "lines": [
+                "L'incident des quatre saisons est un effet secondaire",
+                "des portes dérobées."
+            ]
+        },
+        "162_0": {
+            "lines": [
+                "Mais je suppose que cela peut être la dernière ",
+                "fois que j'utilise mes portes sur la terre des Illusions."
+            ]
+        },
+        "170_0": {
+            "lines": [
+                "Je suis sûre que j'ai déjà fait passer mon message."
+            ]
+        },
+        "178_0": {
+            "lines": [
+                "Hein ? Un message à qui ?"
+            ]
+        },
+        "186_0": {
+            "lines": [
+                "À tout le monde vivant dans la terre des Illusions, et particulièrement les autres sages."
+            ]
+        },
+        "194_0": {
+            "lines": [
+                "Donc, en gros, tu frimais pour montrer ta puissance ?"
+            ]
+        },
+        "202_0": {
+            "lines": [
+                "Pff, tu parles d'une égocentrique."
+            ]
+        },
+        "210_0": {
+            "lines": [
+                "Tu réalises que les dieux ont besoin de faire ",
+                "ça, pas vrai ?"
+            ]
+        },
+        "218_0": {
+            "lines": [
+                "Ah, c'est vrai.",
+                "Nous avons quelques autres gens comme ça."
+            ]
+        },
+        "226_0": {
+            "lines": [
+                "Bon, peu importe. L'incident va se calmer",
+                "maintenant, pas vrai ?"
+            ]
+        },
+        "234_0": {
+            "lines": [
+                "Il n'a pas trop causé de dégâts,",
+                "alors ça ira pour cette fois."
+            ]
+        },
+        "242_0": {
+            "lines": [
+                "En échange, dis à tout le monde que je suis ",
+                "celle qui a résolu l'incident, d'accord ?"
+            ]
+        },
+        "250_0": {
+            "lines": [
+                "Oh oh ! Tu veux montrer ta puissance, hein ?"
+            ]
+        },
+        "258_0": {
+            "lines": [
+                "Exactement.",
+                "Ça te pose un problème ?"
+            ]
+        },
+        "266_0": {
+            "lines": [
+                "Non, aucun.",
+                "Ça ne me dérange pas, mais..."
+            ]
+        },
+        "274_0": {
+            "lines": [
+                "C'est juste que, euh... non rien."
+            ]
+        },
+        "282_0": {
+            "lines": [
+                "Quoi qu'il arrive, j'attendrai patiemment ",
+                "que tu changes d'avis."
+            ]
+        },
+        "290_0": {
+            "lines": [
+                "Je te le répètes, je n'en veux pas de ce travail."
+            ]
+        },
+        "298_0": {
+            "lines": [
+                "En plus, c'est assez effrayant à quelle vitesse ton",
+                "ton à changé lorsque tu as perdu."
+            ]
+        }
+    }
+}
