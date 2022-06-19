@@ -4,7 +4,7 @@
 		"nmlgc/script_latin",
 		"repos/exphp/bullet_cap/"
 	],
-    "id": "FestivalCreaCdI",
+    "id": "FestivalCreaCdIYuyu",
     "servers": [
         "https://mirrors.thpatch.net/Shoxlu/FestivalCreationCdI"
     ],
