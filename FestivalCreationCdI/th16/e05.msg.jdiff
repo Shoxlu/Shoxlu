@@ -1,0 +1,193 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$Hatate  $Aya  >La montagne des Youkais."
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "Montagne la plus grande de la terre des Illusions. Abrite beaucoup de yokais, y compris des tengus."
+            ]
+        },
+        "36_0": {
+            "lines": [
+                "Félicitations !",
+                "Vous avez terminé le jeu sans continues !"
+            ]
+        },
+        "35_0": {
+            "lines": [
+                "Fin n°5 : Le Modèle même d'un Journaliste"
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "<r$Hatate  >« Donc, tu es sûre qu'elle a dit être une Déesse des Entraves ? »"
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<r$Aya  >« Sûre. Je croyais que c'était important. »"
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<r$Hatate  >« Hmm... C'est une histoire dérangeante, après tout. »"
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<r$Hatate  >« Si qui que ce soit a recueilli de la foi et s'est montrée, ",
+                "<l$> elle a peut-être essayé de se débarrasser des tengus,"
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "<r$Aya  >« Non, elle était pas aussi hostile que ça."
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "<l$> Même si c'est vrai qu'elle a agi comme si notre rencontre était une gêne. »"
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "<l$> et si elle se montre personnellement, ceci en lui-même était peut-être pour faire disparaître les tengus... »"
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "<r$Hatate  >« Mais quand même, c'est pas tous les jours que tu me consultes à propos de quelque chose. »"
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "<r$Aya  >« Au début, j'enquêtais simplement sur l'Incident des Saisons,",
+                "<l$> mais si les tengus sont vraiment menacés, alors je ne peux pas faire un article sur ça. »"
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "<r$Hatate  >« Et voilà, tu caches encore la vérité parce que ça t'arrange. »"
+            ]
+        },
+        "12_0": {
+            "lines": [
+                "<r$Aya  >« Mais ne suis-je pas une journaliste modèle ?"
+            ]
+        },
+        "13_0": {
+            "lines": [
+                "<l$> Si je n'écris pas d'article, alors je peux consulter n'importe qui. »"
+            ]
+        },
+        "14_0": {
+            "lines": [
+                "<r$Hatate  >« Ne tourne pas autour du pot, tu veux juste profiter de mon pouvoir de pensographie. »"
+            ]
+        },
+        "15_0": {
+            "lines": [
+                "<r$Aya  >« Bien sûr que oui."
+            ]
+        },
+        "16_0": {
+            "lines": [
+                "<l$> En fait, je me suis battue contre le cerveau de tout ça,",
+                "<l$> mais j'ai perdu, malheureusement."
+            ]
+        },
+        "17_0": {
+            "lines": [
+                "<l$> J'étais prise dans son piège depuis le début, lui permettant de me confisquer toutes mes armes. »"
+            ]
+        },
+        "18_0": {
+            "lines": [
+                "<r$Aya  >« Quand j'étais au bout du rouleau, elle s'est enfuie avant que je comprenne ce qui s'était passé. »"
+            ]
+        },
+        "19_0": {
+            "lines": [
+                "<r$Hatate  >« C'est rare. Elle a fait en sorte qu'une fille combative comme toi réclame sa maman ? »"
+            ]
+        },
+        "20_0": {
+            "lines": [
+                "<r$Aya  >« Je suis une fille plutôt sociable, merci beaucoup. »"
+            ]
+        },
+        "21_0": {
+            "lines": [
+                "<r$Aya  >« Mais maintenant je ne sais pas où elle est, ou ce qu'elle fait"
+            ]
+        },
+        "22_0": {
+            "lines": [
+                "<l$> C'est là que tu interviens. Avec ta pensographie, je pourrais avoir une piste. »"
+            ]
+        },
+        "23_0": {
+            "lines": [
+                "<r$Hatate  >« Bien sûr, mais.. Tu ne sais pas où elle est, non ? »"
+            ]
+        },
+        "24_0": {
+            "lines": [
+                "<r$Aya  >« Ne t'inquiète pas, il y a un moyen."
+            ]
+        },
+        "25_0": {
+            "lines": [
+                "<l$> Il y avait un indice dans la saison que j'ai équipée. »"
+            ]
+        },
+        "26_0": {
+            "lines": [
+                "<r$Hatate  >« I-Il y a une porte sur ton dos !? »"
+            ]
+        },
+        "27_0": {
+            "lines": [
+                "Aya recommença à utiliser la saison qui était soi-disant enfermée."
+            ]
+        },
+        "28_0": {
+            "lines": [
+                "C'était censé être un piège ennemi, mais c'était la seule chose qui la reliait encore à son ennemie."
+            ]
+        },
+        "29_0": {
+            "lines": [
+                "Aya avait l'intention de rentrer dans la porte dès qu'une riposte serait prête."
+            ]
+        },
+        "30_0": {
+            "lines": [
+                "Ce n'était pas parce qu'elle était frustrée."
+            ]
+        },
+        "31_0": {
+            "lines": [
+                "Ce n'était pas non plus car elle voulait sauver les tengus."
+            ]
+        },
+        "32_0": {
+            "lines": [
+                "Alors, pourquoi Aya agissait ?"
+            ]
+        },
+        "33_0": {
+            "lines": [
+                "Parce qu'elle voulait écrire un article."
+            ]
+        },
+        "34_0": {
+            "lines": [
+                "Elle était sûre de pouvoir faire un article à propos des tengus évitant de justesse une crise."
+            ]
+        }
+    }
+}

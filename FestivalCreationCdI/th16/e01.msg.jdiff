@@ -1,0 +1,179 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$Aunn  $Reimu  >Le sanctuaire Hakurei."
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "Un temple localisé à l'extrême Est de la terre des Illusions."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "<r$Aunn  >« Maintenant que tu es de retour, Reimu, le printemps ",
+                "<l$> va bientôt se terminer au temple, pas vrai ? »"
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<r$Reimu  >« Je l'espère. »"
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<r$Aunn  >« Tu n'as pas l'air confiante.",
+                "<l$> Tu as pourtant rencontré la faiseuse de troubles, non ? »"
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<r$Reimu  >« Bien sur que oui.",
+                "<l$> Je me suis assurée qu'elle n'implique pas les fées dans ses affaires. »"
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "<r$Aunn  >« Qu'elle n'implique pas les fées ? »"
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "<r$Reimu  >« Elle les rendaient folles furieuses,",
+                "<l$> ce qui, on dirait, a mis les saisons sens dessus dessous. »"
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "<r$Reimu  >« Maintenant que je l'ai arrêtée,",
+                "<l$> je pense que les saisons devraient reprendre leur cours. »"
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "<r$Aunn  >« Hmm... On dirait que tu me caches quelque chose. »"
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "<r$Reimu  >« A vrai dire... Elle ne m'a rien promis du tout.",
+                "<l$> Je lui ai juste dit d’arrêter en plein milieu du combat. »"
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "<r$Reimu  >« On dirait que je suis tombée dans son piège et ",
+                "<l$> qu'elle a pu s'enfuir. »"
+            ]
+        },
+        "12_0": {
+            "lines": [
+                "<r$Aunn  >« Oh, c'est assez inhabituel de ta part, Reimu. »"
+            ]
+        },
+        "13_0": {
+            "lines": [
+                "<r$Reimu  >« Elle pouvait à priori ouvrir des portes afin de se déplacer ou elle souhaitait en un instant,",
+                "<l$> donc elle a disparu avant que je ne réalise ce qu'il se passait. »"
+            ]
+        },
+        "14_0": {
+            "lines": [
+                "<r$Aunn  >« Je suis sûre que tout va rentrer dans l'ordre. »"
+            ]
+        },
+        "15_0": {
+            "lines": [
+                "<r$Reimu  >« ? »"
+            ]
+        },
+        "16_0": {
+            "lines": [
+                "<r$Aunn  >« Après tout, tu finis toujours par gagner, n'est-ce pas Reimu ? »"
+            ]
+        },
+        "17_0": {
+            "lines": [
+                "<r$Reimu  >« J'espère que tu as raison, mais... »"
+            ]
+        },
+        "18_0": {
+            "lines": [
+                "<r$Reimu  >« Si je ne m'occupe pas de ces mystérieuses portes dérobées,",
+                "<l$> qui sait ou elle pourra se cacher ? Ça m'inquiète. »"
+            ]
+        },
+        "19_0": {
+            "lines": [
+                "<r$Aunn  >« Des portes dérobées... Oh ! »"
+            ]
+        },
+        "20_0": {
+            "lines": [
+                "<r$Reimu  >« Cependant, j'ai réussi à la trouver en entrant dans la porte dérobée",
+                "<l$> d'un Jizo que j'ai rencontré dans la forêt. »"
+            ]
+        },
+        "21_0": {
+            "lines": [
+                "<r$Aunn  >« Dans ce cas, ça ne devrait pas être trop dur de la retrouver.",
+                "<l$> Après tout, tu as quelque chose sur ton dos... »"
+            ]
+        },
+        "22_0": {
+            "lines": [
+                "Aunn montra le dos de Reimu du doigt."
+            ]
+        },
+        "23_0": {
+            "lines": [
+                "Une mystérieuse porte y était attachée."
+            ]
+        },
+        "24_0": {
+            "lines": [
+                "Mais Reimu ne fut pas surprise."
+            ]
+        },
+        "25_0": {
+            "lines": [
+                "Ses adversaires se moquaient bien de plonger ",
+                "le climat de la terre des Illusions dans le chaos."
+            ]
+        },
+        "26_0": {
+            "lines": [
+                "Il ne s'inquiétaient pas d’être à découvert,",
+                "mais préféraient garder un œil sur elle."
+            ]
+        },
+        "27_0": {
+            "lines": [
+                "Mais c'était maintenant sa chance."
+            ]
+        },
+        "28_0": {
+            "lines": [
+                "Reimu avait juré d'entrer à nouveau dans une porte dérobée, afin de ",
+                "combattre à nouveau ce mystérieux dieu caché."
+            ]
+        },
+        "30_0": {
+            "lines": [
+                "Fin No.01 — Décidée à en découdre"
+            ]
+        },
+        "31_0": {
+            "lines": [
+                "Félicitations !",
+                "Vous avez terminé le jeu sans continues !"
+            ]
+        },
+        "29_0": {
+            "lines": [
+                "Mais cette fois, en équipant une autre sous-saison..."
+            ]
+        }
+    }
+}

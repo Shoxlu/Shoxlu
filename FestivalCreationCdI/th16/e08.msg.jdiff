@@ -1,0 +1,67 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$Marisa  >La forêt de la Magie."
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "La forêt de la terre des Illusions, remplie ",
+                "d'étranges mystères."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "La maison de Marisa s'y trouve."
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "Essayez de ne pas utiliser de continues la prochaine fois !"
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "Vous avez terminé le jeu ! Félicitations !"
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "Fin No. 08 — Était-ce un refus ?"
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<r$Marisa  >« Mmm... Quoi que je fasse, je ne lui arrivait pas à la cheville."
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<l$> Afin de la vaincre, j'ai besoin de plus d'informations. »"
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<r$Marisa  >« Des portes dérobées, des portes dérobées..."
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "<l$> Je suppose que tout ce que je peux faire, ",
+                "<l$> c'est d'en trouver une et de sauter dedans. »"
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "Elle pensait que son arme avait été scellée,",
+                "mais avant qu'elle ne le sache, sa cible s'était enfuie."
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "Marisa décida de se mettre en route pour combattre à nouveau."
+            ]
+        }
+    }
+}

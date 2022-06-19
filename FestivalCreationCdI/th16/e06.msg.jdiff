@@ -1,0 +1,64 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$Aya  >La montagne des Youkais."
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "Montagne la plus grande de la terre des Illusions. Abrite beaucoup de yokais, y compris des tengus."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "<r$Aya  >« On dirait qu'elle s'est enfuie."
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<l$> Ces portes de derrière sont vraiment un ennui. Elle peut s'enfuir vers n'importe quel endroit. »"
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<r$Aya  >« Peut-être que j'aurais dû la vaincre plus vite ?"
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<l$> Ensuite, j'ai besoin du contre parfait avant que j'essaie à nouveau. »"
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "Le cerveau derrière tout ça était un ennemi des tengus."
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "Cependant, on dirait qu'elle s'était enfuie avant le coup de grâce."
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "Aya se dit alors qu'elle devrait la vaincre plus rapidement la prochaine fois."
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "Fin N°6 : Porte vers partout"
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "Vous avez terminé le jeu ! Félicitations !"
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "Essayez de ne pas utiliser de continues la prochaine fois !"
+            ]
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$Reimu  >Le sanctuaire Hakurei."
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "Un sanctuaire situé dans la périphérie de l'Est."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "<r$Reimu  >« Hein ? Quoi ?"
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<l$> Quand suis-je arrivée au temple ? »"
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<r$Reimu  >« Je vois, elle a utilisé une de ses portes dérobées pour s'enfuir."
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<l$> C'est pas vrai ! Je vais devoir en finir plus rapidement ",
+                "<l$> la prochaine fois pour qu'elle ne s'échappe pas ! »"
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "Vous avez terminé le jeu ! Félicitations !"
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "Essayez de ne pas utiliser de continues la prochaine fois !"
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "Fin No.02 — Défaite abrupte"
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "Elle pensait que son arme avait été scellée,",
+                "mais avant qu'elle ne le sache, sa cible s'était enfuie."
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "Reimu livra alors bataille de nouveau."
+            ]
+        }
+    }
+}
