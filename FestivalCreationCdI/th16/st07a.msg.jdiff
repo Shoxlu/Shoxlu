@@ -153,240 +153,54 @@
     "1": {
         "34_0": {
             "lines": [
-                "Je l'ai vaincue ?"
+                "C'était quoi ça ?"
             ]
         },
         "42_0": {
             "lines": [
-                "J'ai été vaincue !"
+                "Ma dernière surprise."
             ]
         },
         "50_0": {
             "lines": [
-                "Bien sûr, c'est tout à fait normal pour la prêtresse Hakurei.",
-                "Et dire que tu as esquivé toutes mes attaques..."
+                "Je voulais finir de manière grandiose le spectacle.",
+                "Mais tu as réussi à tout esquiver, bravo à toi."
             ]
         },
         "58_0": {
             "lines": [
-                "Bon, j'ai gagné pour de bon maintenant."
+                "Héhé, une victoire de plus."
             ]
         },
         "66_0": {
             "lines": [
-                "Donc abandonne tes plans diaboliques sur le champ !"
+                "Tu vas pouvoir remettre tout à la normale !"
             ]
         },
         "74_0": {
             "lines": [
-                "Hmmm, que vais-je faire maintenant ?"
+                "Si c'est ton souhait."
             ]
         },
         "82_0": {
             "lines": [
-                "Je n'ai toujours pas trouvé de successeur pour mes servants ou quoi que ce soit..."
+                "Je suis un peu déçue, ça n'a pas fonctionné, au moins je sais maintenant..."
             ]
         },
         "90_0": {
             "lines": [
-                "Et sans leurs successeurs, je ne pourrais pas relâcher ces deux filles de sitôt.",
-                "Pauvres petite choses..."
+                "Et j'ai fait venir pas mal de personnes pour pas grand-chose.",
+                "Enfin mon amie savait sûrement déjà que ça ne donnerait rien."
             ]
         },
         "98_0": {
             "lines": [
-                "Essaie d'embaucher des gens sans mettre le bazar dans les saisons."
+                "Tu aurais pu lui demander avant, pour ne pas recréer des problèmes."
             ]
         },
         "106_0": {
             "lines": [
-                "Avec des tracts, par exemple. Ou bien, des entretiens..."
-            ]
-        },
-        "114_0": {
-            "lines": [
-                "Moi, une déesse cachée ? Faire ça ?",
-                "Je veux pas."
-            ]
-        },
-        "122_0": {
-            "lines": [
-                "Bon, ça ira.",
-                "Je crois que je vais laisser ces deux-là travailler encore quelques temps."
-            ]
-        },
-        "130_0": {
-            "lines": [
-                "Et puis, pourquoi les youkais veulent-ils toujours faire tout un spectacle?"
-            ]
-        },
-        "138_0": {
-            "lines": [
-                "Vous devenez aussi bien trop amicaux avec moi dès que vous perdez."
-            ]
-        },
-        "146_0": {
-            "lines": [
-                "Je ne suis pas un youkai, je suis une déesse !"
-            ]
-        },
-        "154_0": {
-            "lines": [
-                "D'ailleurs..."
-            ]
-        },
-        "162_0": {
-            "lines": [
-                "À propos de cette technique d'\"utiliser la frontière entre les saisons comme porte dérobée\"..."
-            ]
-        },
-        "170_0": {
-            "lines": [
-                "Tu n'as pas trouvé ça par toi-même, n'est-ce pas ?"
-            ]
-        },
-        "178_0": {
-            "lines": [
-                "Une méthode qui utilise les frontières comme ça, ça me rappelle ",
-                "beaucoup une certaine personne que je connais plutôt bien."
-            ]
-        },
-        "186_0": {
-            "lines": [
-                "...Qui sait ?"
-            ]
-        },
-        "194_0": {
-            "lines": [
-                "Honnêtement, je ne comprends pas toute la logique derrière cela non plus..."
-            ]
-        },
-        "202_0": {
-            "lines": [
-                "Qu'est-ce que c'est que tout ça ? ",
-                "Des portes dans le dos des gens, des armes saisonnières, une force de vie déchaînée..."
-            ]
-        },
-        "210_0": {
-            "lines": [
-                "Si tu veux mon avis, c'est impossible toute cette théorie youkai ridicule !"
-            ]
-        },
-        "218_0": {
-            "lines": [
-                "Pas youkai ! Déesse !"
-            ]
-        },
-        "226_0": {
-            "lines": [
-                "C'est pourtant naturel que tout cela dépasse l'entendement humain."
-            ]
-        },
-        "234_0": {
-            "lines": [
-                "Ouais, peut-être."
-            ]
-        },
-        "242_0": {
-            "lines": [
-                "Mais de mon point de vue, je dirais que tu es également de \"notre côté\"."
-            ]
-        },
-        "250_0": {
-            "lines": [
-                "Peu importe.",
-                "Il est temps que je rentre."
-            ]
-        },
-        "258_0": {
-            "lines": [
-                "...Euh, quelle porte je dois prendre pour rentrer à la maison ?"
-            ]
-        },
-        "266_0": {
-            "lines": [
-                "Si tu veux aller au sanctuaire Hakurei, je te conseillerais ",
-                "la seconde porte au fond et la 40ème porte à droite."
-            ]
-        },
-        "274_0": {
-            "lines": [
-                "Merci.",
-                "Bon, tu as interêt à retourner les saisons à la normale !"
-            ]
-        },
-        "286_0": {
-            "lines": [
-                "...Je vois.",
-                "Elle me fait croire qu'elle sait ce que je trame ?"
-            ]
-        },
-        "294_0": {
-            "lines": [
-                "Finalement, prétendre que je cherchais des successeurs à mes ",
-                "servantes, et faire tout un spectacle semble avoir payé."
-            ]
-        },
-        "302_0": {
-            "lines": [
-                "On dirait que la terre des Illusions que nous avons créée fonctionne toujours aussi bien."
-            ]
-        },
-        "310_0": {
-            "lines": [
-                "Honnêtement, on dirait qu'elle fonction même trop bien, au ",
-                "point où personne ne peut complètement la contrôler..."
-            ]
-        },
-        "318_0": {
-            "lines": [
-                "Mais ça aussi, les sages le voulaient."
-            ]
-        },
-        "326_0": {
-            "lines": [
-                "Euuuh..."
-            ]
-        },
-        "334_0": {
-            "lines": [
-                "Tu as dit 40ème à droite, mais tu voulais dire ma droite, ou la tienne ?"
-            ]
-        },
-        "342_0": {
-            "lines": [
-                "Même le haut et le bas sont un peu louches ici."
-            ]
-        },
-        "350_0": {
-            "lines": [
-                "Oooh, désolé pour ça."
-            ]
-        },
-        "358_0": {
-            "lines": [
-                "Là, la 16ème porte à ma gauche semble la meilleure..."
-            ]
-        },
-        "366_0": {
-            "lines": [
-                "Qu'est-ce que tu dirais que je vienne avec toi, par sécurité ?"
-            ]
-        },
-        "374_0": {
-            "lines": [
-                "Oui, s'il te plaît..."
-            ]
-        },
-        "382_0": {
-            "lines": [
-                "Tant qu'on y est, pourquoi ne pas te rejoindre pour boire ",
-                "un peu et voir les cerisiers en fleurs au sanctuaire ?"
-            ]
-        },
-        "390_0": {
-            "lines": [
-                "Ah, nous allons tellement nous amuser..."
+                "J'aimerais être tranquille moi parfois..."
             ]
         }
     }

@@ -107,66 +107,66 @@
                 "Tu te moques de moi en plus ?"
             ]
         },
-        "268_0": {
+        "252_0": {
             "lines": [
                 "Tu vas voir !",
                 "Rend-moi le printemps !"
             ]
         },
-        "276_0": {
+        "260_0": {
             "lines": [
                 "Ah, j'aurais pu te rendre",
                 "plus forte avec sinon."
             ]
         },
-        "284_0": {
+        "268_0": {
             "lines": [
                 "Tu veux vraiment le prendre par la force ?"
             ]
         },
-        "292_0": {
+        "276_0": {
             "lines": [
                 "Au moins ça aura le mérite d'être intéressant",
                 "si tu y mets toute ton énergie."
             ]
         },
-        "300_0": {
+        "284_0": {
             "lines": [
                 "Allez.",
                 "Je te récompenserai si tu gagnes."
             ]
         },
-        "308_0": {
+        "292_0": {
             "lines": [
                 "Tu es drôle comme fée.",
                 "Je sens que tu vas bien me divertir"
             ]
         },
-        "316_0": {
+        "300_0": {
             "lines": [
                 "Oh ! Vraiment ?",
                 "Je vais te battre tu vas voir,"
             ]
         },
-        "324_0": {
+        "308_0": {
             "lines": [
                 "vu que je suis trop forte !",
                 "Tremble face à la grande Cirno !"
             ]
         },
-        "332_0": {
+        "316_0": {
             "lines": [
                 "On y croirait presque tellement tu en es convaincue.",
                 "On va dire que je te crois."
             ]
         },
-        "340_0": {
+        "324_0": {
             "lines": [
                 "Et je ne refuse pas un défi,",
                 "alors allons-y."
             ]
         },
-        "348_0": {
+        "332_0": {
             "lines": [
                 "Face à ton pouvoir glacial je vais opposer",
                 "celui d'un printemps vivifiant !"
@@ -177,43 +177,43 @@
         "34_0": {
             "lines": [
                 "J'ai gagné !",
-                "Mon long parcours pour être la plus forte est enfin fini !"
+                "J'ai réglé l'incident donc je suis la plus forte !"
             ]
         },
         "42_0": {
             "lines": [
-                "Splendide !",
-                "Tout simplement magnifique !"
+                "Impressionnant !",
+                "Je ne m'y attendais pas."
             ]
         },
         "50_0": {
             "lines": [
-                "Tu es la première fée à avoir atteint une",
-                "maîtrise parfaite de la porte sur ton dos."
+                "Qu'une fée ait pu me faire face ça m'épate.",
+                "Je ne suis pas déçue."
             ]
         },
         "58_0": {
             "lines": [
-                "Mais j'ai une question à propos de",
-                "la façon dont tu as combattu."
+                "Mais tu n'avais pas l'air de trop",
+                "savoir ce que tu faisais ici."
             ]
         },
         "66_0": {
             "lines": [
-                "Tu es parvenue à prendre le dessus en tirant",
-                "ton pouvoir de la frontière entre les saisons."
+                "Tu t'es directement dit que c'était moi,",
+                "soit tu es très perspicace soit tu ne réfléchis pas."
             ]
         },
         "74_0": {
             "lines": [
-                "Mais il semblerait que tu ne sois pas",
-                "particulièrement consciente de cela."
+                "Je ne dirai pas vers quelle hypothèse",
+                "je penche le plus."
             ]
         },
         "82_0": {
             "lines": [
-                "La porte sur mon dos ?",
-                "La frontière entre les saisons ? De quoi tu parles ?"
+                "Tu te poses trop de questions.",
+                "On s'en fiche de pourquoi je t'ai battue."
             ]
         },
         "90_0": {
@@ -224,148 +224,35 @@
         },
         "98_0": {
             "lines": [
-                "Hmm, elle n'a pas l'air de jouer la comédie."
+                "J'abandonne l'idée de te comprendre."
             ]
         },
         "106_0": {
             "lines": [
-                "Dans ce cas tu n'es réellement qu'une imbécile."
+                "Tu as l'air très naïve, ça peut t'apporter des soucis."
             ]
         },
         "114_0": {
             "lines": [
-                "Ton utilisation de la frontière entre les saisons ne ",
-                "serait donc qu'une simple coïncidence ? Ou peut-être..."
+                "Réfléchis-y un peu plus la prochaine fois,",
+                "si tu en es capable."
             ]
         },
         "122_0": {
             "lines": [
-                "Mais c'est quoi cette histoire de frontière entre les saisons ?"
+                "Je peux rentrer chez moi ?"
             ]
         },
         "130_0": {
             "lines": [
-                "Quand une saison fait la transition vers une autre, il existe un moment",
-                "n'appartenant ni au printemps, ni à l'été, ni à l'automne, ni à l'hiver."
+                "Rien ne t'oblige à rester, je vais m'occuper de rendre le printemps",
+                "au monde des vivants."
             ]
         },
         "138_0": {
             "lines": [
-                "Durant ce moment, le pouvoir de la nature s'affaiblit ",
-                "et l'énergie mentale l'emporte sur la force vitale."
-            ]
-        },
-        "146_0": {
-            "lines": [
-                "Et pour une quelconque raison, tu as choisi de me défier",
-                "durant ce moment, le pire moment possible pour une fée."
-            ]
-        },
-        "154_0": {
-            "lines": [
-                "Que ce soit une coïncidence ou le destin, ce fait m'a",
-                "empêchée de voler ton pouvoir et t'éjecter de force."
-            ]
-        },
-        "162_0": {
-            "lines": [
-                "C'est ce qui m'a d'abord surprise,",
-                "puis ensuite intriguée."
-            ]
-        },
-        "170_0": {
-            "lines": [
-                "Choisi...?",
-                "Mais j'ai rien choisi."
-            ]
-        },
-        "178_0": {
-            "lines": [
-                "D'ailleurs, par quelle porte es-tu entrée ?"
-            ]
-        },
-        "186_0": {
-            "lines": [
-                "Par celle sur le dos de Larva."
-            ]
-        },
-        "194_0": {
-            "lines": [
-                "C'est une fée machaon."
-            ]
-        },
-        "202_0": {
-            "lines": [
-                "Une fée machaon, c'est bien ça ?",
-                "Je vois..."
-            ]
-        },
-        "210_0": {
-            "lines": [
-                "Normalement, ça aurait dû être une porte d'été."
-            ]
-        },
-        "218_0": {
-            "lines": [
-                "C'est possible qu'elle ne soit pas du tout une fée papillon,",
-                "mais une déesse Tokoyo."
-            ]
-        },
-        "226_0": {
-            "lines": [
-                "Une déesse faisant partie de mes ennemis."
-            ]
-        },
-        "234_0": {
-            "lines": [
-                "Auquel cas j'ai du mal à imaginer que ce soit une simple coïncidence."
-            ]
-        },
-        "242_0": {
-            "lines": [
-                "Mais peu importe. Ça ne change pas le fait que",
-                "j'ai découvert une fée intéressante."
-            ]
-        },
-        "250_0": {
-            "lines": [
-                "Qu'en dis-tu ?",
-                "Veux-tu essayer de travailler pour moi ?"
-            ]
-        },
-        "258_0": {
-            "lines": [
-                "Travailler ?",
-                "Pourquoi ?"
-            ]
-        },
-        "266_0": {
-            "lines": [
-                "Je cherche un successeur pour mes deux servantes."
-            ]
-        },
-        "274_0": {
-            "lines": [
-                "Tout ce que le travail exige est que tu danses et fasse un énorme stupide vacarme.",
-                "C'est sans précédent mais peut-être que même une fée ferait l'affaire."
-            ]
-        },
-        "282_0": {
-            "lines": [
-                "Un travail, hein ?",
-                "Pas vraiment envie..."
-            ]
-        },
-        "290_0": {
-            "lines": [
-                "Les seuls emplois pour fées que j'ai vu sont ceux où",
-                "elles se font contrôler comme des esclaves."
-            ]
-        },
-        "298_0": {
-            "lines": [
-                "Eh bien, réfléchis-y.",
-                "Nous avons tout le temps devant nous."
+                "Je vais demander à ma jardinière de t'accompagner,",
+                "au moins je suis sûre que tu trouveras la sortie."
             ]
         }
     }
