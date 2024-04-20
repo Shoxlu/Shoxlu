@@ -2,6 +2,7 @@
 	"contact": "Shoxlu#4245",
 	"id": "Shoxlu",
 	"patches": {
+		"PoBHDemo": "Touhou - Praises of Buttered Heavens(DEMO). Un mod créé avec tout une bande d'amis comme Lance, Tachy, Day, Yvel, Baptoast, Melly et Lunil (et plein d'autres gens par ci par là) ! Un projet collaboratif autour du beurre et plein d'autres choses !(th15)",
 		"Th19ExAttackResAnimFix": "A mod that fixes the Ex attack animation that is offset for resolutions different than 1280x960.",
 		"Th19FixOrinLV2": "Fixes the Orin's lv2 bug, killing her when she uses it too high.",
 		"ModCdI": "My first mod ever, for th13 (unfinished, probably) based on some people on the Café des Illusions discord server",

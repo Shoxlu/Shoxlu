@@ -1,0 +1,7 @@
+{
+  "binhacks": {
+
+  },
+  "codecaves": {
+  }
+}
