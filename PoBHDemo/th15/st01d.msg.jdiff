@@ -1,0 +1,196 @@
+{
+// S: Bien le bonjour à toi étrangère !
+// GR: «Bien le bonjour à toi» ? De quel droit te permets-tu de me tutoyer ?
+// S: Bah… Et toi alors, de quel droit tu te permet de me tutoyer ?
+// GR: -! Quelle audace, une vulgaire humaine telle que toi s’autorise à me parler ainsi. 
+// GR: soupir Cela fait bien trop longtemps que je n’ai pas corrigé d’humains ingrats
+// S: Pour ta gouverne je ne suis pas une humaine, je suis Shox, une déesse itinérante !
+// GR: Keumant ? Tu oses te proclamer égale à moi ?!
+// S: Mais je-
+// GR: Prépares toi à payer cher cet affront !!!
+// S: Cette spell m'est dédiée, je sais que c'est narcissique... 
+// S: Si tu arrives à passer ça, tu pourras continuer, mais fais attention... 
+// S: Wow, tu as l'air expérimenté, voyons ce que tu dis de ce pouvoir là !
+
+    "0": {
+        "34_0": {
+            "lines": [
+                "Bien le bonjour à toi étrangère !"
+            ]
+        },
+        "132_0": {
+            "lines": [
+                " «Bien le bonjour à toi» ?", 
+				"De quel droit te permets-tu de me tutoyer ?"
+            ]
+        },
+        "140_0": {
+            "lines": [
+                "Bah… Et toi alors, de quel droit",
+				"tu te permet de me tutoyer ?"
+            ]
+        },
+        "170_0": {
+            "lines": [
+                "-! Quelle audace, une vulgaire humaine",
+                "telle que toi s’autorise à me parler ainsi. "
+            ]
+        },
+        "178_0": {
+            "lines": [
+                "*soupir* Cela fait bien trop longtemps ",
+                "que je n'ai pas corrigé d'humains ingrats"
+            ]
+        },
+        "186_0": {
+            "lines": [
+                "Pour ta gouverne",
+				"je ne suis pas une humaine."
+            ]
+        },
+        "194_0": {
+            "lines": [
+				"Je suis Shoxla, une déesse itinérante !",
+            ]
+        },
+        "202_0": {
+            "lines": [
+				"Keumant ? Tu oses te proclamer égale à moi ?!"
+            ]
+        },
+        "210_0": {
+            "lines": [
+				"Mais je-"
+            ]
+        },
+        "218_0": {
+            "lines": [
+                "Prépares toi à payer cher cet affront !!!"
+            ]
+        }
+    },
+	// Dialogue de Défaite
+// S: Roh là là vous êtes vraiment soupe au lait ici, si j’avais su, je serais allée voir ailleurs. Ouille…
+// GR: Hmph, voilà qui devrait d’apprendre l’humilité, espèce de misérable effrontée. Apprends à ne pas te prendre pour une déesse à l’avenir
+// S: MAIS J’EN SUIS UNE !
+    "1": {
+        "34_0": {
+            "lines": [
+                "Roh là là vous êtes vraiment",
+				"soupe au lait ici,"
+            ]
+        },
+		"42_0": {
+            "lines": [
+				"Si j'avais su, je serais", 
+				"allée voir ailleurs. Ouille…"
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "Hmph, voilà qui devrait",
+				"t'apprendre l'humilité."
+            ]
+        },
+		"58_0": {
+            "lines": [
+                "Espèce de misérable effrontée."
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "Apprends à ne pas te prendre",
+				"pour une déesse à l'avenir"
+            ]
+        },
+        "74_0": {
+			"lines": [
+                "MAIS J'EN SUIS UNE !"
+            ]
+        }
+    },
+	"2": {
+        "34_0": {
+            "lines": [
+                "Cette spell m'est dédiée."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Oui c'est un peu narcissique."
+            ]
+        }
+    },
+	"3": {
+        "34_0": {
+            "lines": [
+                "Si tu arrives à passer ça, tu pourras continuer."
+            ]
+        },
+		"38_0": {
+            "lines": [
+                "Voyons voir ce que tu dis de ça !"
+            ]
+        }
+    },
+	"4": {
+        "34_0": {
+            "lines": [
+                "Wow, tu as l'air expérimenté."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Voyons ce que tu dis de ce pouvoir là !"
+            ]
+        }
+    },
+	"5": {
+        "34_0": {
+            "lines": [
+                "Salut ! Bienvenue dans ce nouveau mod !"
+            ]
+        },
+        "64_0": {
+            "lines": [
+                "J'espère que tu ne vas pas", 
+				"passer mes dialogues..."
+            ]
+        },
+        "94_0": {
+            "lines": [
+                "Cela pourrait s'avérer utile..."
+            ]
+        },
+        "124_0": {
+            "lines": [
+                "Bref, ici, la règle c'est..."
+            ]
+        },
+        "154_0": {
+            "lines": [
+                "Ah mais attends,", 
+				"je ne viens même pas de ce monde..."
+            ]
+        },
+        "184_0": {
+            "lines": [
+                "Je vais te laisser voir ça avec",
+                "les fées qui trainent aux alentours..."
+            ]
+        }
+    },
+	"6": {
+        "34_0": {
+            "lines": [
+                "Intéressant..."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Je vais essayer de faire ce que", 
+				"ce peuple appelle des \"danmakus\"..."
+            ]
+        }
+    }
+}
