@@ -1,7 +1,7 @@
 {
 	"dependencies": [
 		"nmlgc/base_tsa",
-		"repos/ExpHP/bullet_cap/",
+		"ExpHP/bullet_cap/",
 		"nmlgc/script_latin"
 		
 	],
