@@ -13,4 +13,10 @@
 	"26": "Signe primitif : « Être mono-neuronal »",
     "28": "Signe primitif : « Être bi-neuronal »",
     "29": "Signe primitif : « Neurone unique et infini »",
+	"30": "Frontière de la sagesse : « Spirale autodestructrice »",
+    "32": "Frontière de la sagesse : « Spirale destructrice incommensurable »",
+	"34": "Signe du chaos : « Floraison imprévue »",
+    "36": "Signe du chaos : « Floraison imprévue et fatale »",
+    "37": "Signe du chaos : « Fleurs d'annihilation »",
+    "38": "« A vaincre sans péril, on triomphe sans gloire »",
 }
