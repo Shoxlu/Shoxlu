@@ -6,5 +6,5 @@
     "servers": [
         "https://mirrors.thpatch.net/Shoxlu/Th19FixOrinLV2"
     ],
-    "title": "Fixes the Orin's lv2 bug, killing her when she uses it too high."
+    "title": "(Th19) Fixes the Orin's lv2 bug, killing her when she uses it too high."
 }

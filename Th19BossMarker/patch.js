@@ -6,5 +6,5 @@
     "servers": [
         "https://mirrors.thpatch.net/Shoxlu/Th19BossMarker"
     ],
-    "title": "Adds a boss marker like in previous games (for both player)."
+    "title": "(Th19) Adds a boss marker like in previous games (for both player)."
 }
