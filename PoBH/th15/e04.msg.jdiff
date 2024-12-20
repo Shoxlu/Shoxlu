@@ -1,0 +1,211 @@
+{
+    "0": {
+        "38_0": {
+            "lines": [
+                "Fin n°4 : La résolution du lapin lunaire"
+            ]
+        },
+        "39_0": {
+            "lines": [
+                "Vous avez terminé le jeu ! Félicitations !"
+            ]
+        },
+        "0_0": {
+            "lines": [
+                "<ts$Reisen  $Marisa  >La maison de Marisa."
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "Elle est située au milieu de la terre des Illusions, dans la Forêt de la Magie, endroit rempli d’impuretés."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "<r$Reisen  >« Hein ? Le plan a échoué ? »"
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<r$Marisa  >« Bah, qu'il ait fonctionné ou non…"
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<l$> J’avais pas compris ce qu'était censé être le plan, à la base. »"
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<r$Reisen  >« Le plan était de poursuivre les lapins lunaires."
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "<l$> Tu as au moins compris cela, non ?"
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "<l$> Je n’aurais jamais dû compter sur toi. »"
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "<r$Marisa  >« Déjà, pourquoi tu m’as confié cet \"élixir bleu outremer\", là ? »"
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "<r$Reisen  >« Je ne l’ai pas donné seulement à toi."
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "<l$> Il a aussi été distribué à d’autres humains. »"
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "<r$Reisen  >« Toutefois, ces autres humains n’ont pas voulu l'utiliser."
+            ]
+        },
+        "12_0": {
+            "lines": [
+                "<l$> Bon, il peut peut-être causer quelques effets secondaires… »"
+            ]
+        },
+        "13_0": {
+            "lines": [
+                "<r$Marisa  >« Quoi, y'a des effets secondaires ?! »"
+            ]
+        },
+        "14_0": {
+            "lines": [
+                "<r$Reisen  >« À cause de ceux-ci, tu es la seule à l’avoir pris si allégrement."
+            ]
+        },
+        "15_0": {
+            "lines": [
+                "<l$> Ton échec est plutôt décevant. »"
+            ]
+        },
+        "16_0": {
+            "lines": [
+                "<r$Marisa  >« Attends, attends. »"
+            ]
+        },
+        "17_0": {
+            "lines": [
+                "<r$Marisa  >« Comme t’as dit, j’ai accepté de prendre l’élixir, mais je l’ai jamais bu. »"
+            ]
+        },
+        "18_0": {
+            "lines": [
+                "<r$Reisen  >« Hein ? »"
+            ]
+        },
+        "40_0": {
+            "lines": [
+                "Victoire par soi-même."
+            ]
+        },
+        "19_0": {
+            "lines": [
+                "<r$Reisen  >« Donc, tu ne n’as pas utilisé l’élixir, et tu as attaqué la capitale Lunaire, perdu et pris la fuite pour revenir ici ? »"
+            ]
+        },
+        "20_0": {
+            "lines": [
+                "<r$Marisa  >« J’me suis pas enfuie ! J’suis allée jusqu’au bout. »"
+            ]
+        },
+        "23_0": {
+            "lines": [
+                "<r$Marisa  >« Bah, c’est parce que j’ai reçu un objet rare.\""
+            ]
+        },
+        "24_0": {
+            "lines": [
+                "<l$> Je l'ai ajouté à ma collection de trésors."
+            ]
+        },
+        "25_0": {
+            "lines": [
+                "<l$> Ce serait du gaspillage de l’boire. »"
+            ]
+        },
+        "21_0": {
+            "lines": [
+                "<r$Reisen  >« Mais, n’étais-tu pas heureuse quand tu as reçu l’élixir ?"
+            ]
+        },
+        "22_0": {
+            "lines": [
+                "<l$> Quelle sorte de réaction était-ce alors !? »"
+            ]
+        },
+        "26_0": {
+            "lines": [
+                "<r$Reisen  >« Haaaa, les humains sont finis, maîtresse."
+            ]
+        },
+        "27_0": {
+            "lines": [
+                "<l$> Ça ne vaut même pas la peine d’en discuter."
+            ]
+        },
+        "28_0": {
+            "lines": [
+                "<l$> On dirait que je n’ai pas le choix. Je vais devoir y aller moi-même… »"
+            ]
+        },
+        "29_0": {
+            "lines": [
+                "<r$Marisa  >« Quoi ? Si tu pouvais y aller par toi-même ",
+                "<l$> t’aurais dû faire ça dès le début. »"
+            ]
+        },
+        "30_0": {
+            "lines": [
+                "<r$Reisen  >« Mais je n’ai pas envie de prendre cet élixir ! »"
+            ]
+        },
+        "31_0": {
+            "lines": [
+                "Marisa n’a pas tout dévoilé à propos de ce qui s'est produit dans la capitale Lunaire."
+            ]
+        },
+        "32_0": {
+            "lines": [
+                "Il y avait beaucoup de choses qu’elle n’arrivait pas à comprendre, ",
+                "et elle pensa avant tout qu’elle s’était fait duper par Reisen."
+            ]
+        },
+        "33_0": {
+            "lines": [
+                "Toutefois, après avoir rencontré cette dernière, elle conclut que ce n’était pas le cas."
+            ]
+        },
+        "34_0": {
+            "lines": [
+                "Il semble que Reisen aussi est dans le noir."
+            ]
+        },
+        "35_0": {
+            "lines": [
+                "Marisa se dit qu’elle avait fait le bon choix en ne buvant pas l’élixir."
+            ]
+        },
+        "36_0": {
+            "lines": [
+                "Après tout, la seule personne qui connait la vérité à propos de l’élixir est celle qui l’a préparé, Eirin."
+            ]
+        },
+        "37_0": {
+            "lines": [
+                "Et Marisa ne voulait rien savoir d’un plan si douteux."
+            ]
+        }
+    }
+}

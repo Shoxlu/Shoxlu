@@ -1,0 +1,146 @@
+{
+    "0": {
+        "34_0": {
+            "lines": [
+                "Cette day s'est foutue de moi !"
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Je ne comprends rien à cet endroit..."
+            ]
+        },
+
+        "152_0": {
+            "lines": [
+                "Nous pourrions peut-être nous dire bonjour en premier lieu..."
+            ]
+        },
+		"160_0":{
+			"lines":[
+				"Je suis Kagummi, yokai des opposés tempérés."
+			]
+		},
+		"168_0":{
+			"lines":[
+				"Woaaah, ça me ferait presque froid dans le dos."
+			]
+		},
+        "176_0": {
+            "lines": [
+                "C'est toi qui es derrière tout cet endroit ?"
+            ]
+        },
+        "184_0": {
+            "lines": [
+                "Mais non ! Je suis prise au piège, tout comme toi."
+            ]
+        },
+		"192_0":{
+			"lines":[
+				"Et qui es-tu au fait ?"
+			]
+		},
+		"200_0":{
+			"lines":[
+				"Qu'est-ce que ça peut bien te faire ?",
+				"Tu ne t'en souviendras plus une fois t'être prise une bonne raclée."
+			]
+		},
+        "208_0": {
+            "lines": [
+                "Donc tu ne sais pas où se trouve la lune ?"
+            ]
+        },
+        "216_0": {
+            "lines": [
+                "Je la cherche, tout comme toi."
+            ]
+        },
+        "224_0": {
+            "lines": [
+                "Quoi ?!"
+            ]
+        },
+        "232_0": {
+            "lines": [
+                "Feur."
+            ]
+        },
+        "240_0": {
+            "lines": [
+                "Eh bien oui."
+            ]
+        },
+        "248_0": {
+            "lines": [
+                "Je crois que tu viens de passer d'amie à ennemie"
+            ]
+        },
+        "256_0": {
+            "lines": [
+                "Prépare toi, car ici et maintenant tu vas avoir le",
+                "privilège d'affronter la sainte Déesse du beurre salé !"
+            ]
+        }
+    },
+    "1": {
+        "42_0": {
+            "lines": [
+                "Tu n'y vas pas de main morte..."
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "Elle m'avait prévenue qu'une personne ",
+				"surpuissante se dresserait contre moi.."
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "Par qui as-tu été prévenue ?"
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "Tu comprendras bientôt..."
+            ]
+        },
+        "74_0": {
+            "lines": [
+                "Arrête de tourner autour du pot !"
+            ]
+        },
+        "82_0": {
+            "lines": [
+                "Et puisque nous y sommes, cette fameuse personne",
+				"ne saurait-elle pas où est la Lune ?"
+            ]
+        },
+        "90_0": {
+            "lines": [
+                "Non, sinon je ne serais déjà plus ici."
+            ]
+        },
+        "98_0": {
+            "lines": [
+                "Oh mais j'aperçois la Lune par là bas !"
+            ]
+        },
+        "106_0": {
+            "lines": [
+                "Cette day n'a donc pas voulu me piéger ?"
+            ]
+        },
+        "114_0": {
+            "lines": [
+                "Je te laisse y aller d'abord alors..."
+            ]
+        },
+        "122_0": {
+            "lines": [
+                "Bien évidemment."
+            ]
+        }
+	}
+}

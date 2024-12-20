@@ -1,0 +1,207 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$Mariphaine  $Reinaëlle  $Eiringo  >Sanctuaire du beurre salé"
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "Un sanctuaire situé sur une grande colline."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "Ici vivent les adeptes d'un beurre au goût exhausté."
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<r$Mariphaine  >« Alors tu n'en sais pas plus ? »"
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Non, je cherche toujours le coupable. »"
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<r$Mariphaine  >« Il ne s'est plus rien passé depuis au moins. »"
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "<r$Reinaëlle  >« C'est tout de même frustrant de ne pas savoir. »"
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "<r$Mariphaine  >« Je dois rendre service à Satanae si je veux continuer d'avoir un toit. »"
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Tu ne lui as pas dit que tu pensais bien faire ? »"
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "<r$Mariphaine  >« J'ai essayé mais elle n'a rien voulu savoir et je l'ai entendue pleurer toute seule,",
+                "<l$> elle a l'air davantage démoralisée qu'énervée. »"
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Ah... bon, je vais continuer à chercher un peu de mon côté. »"
+            ]
+        },
+        "12_0": {
+            "lines": [
+                "<r$Mariphaine  >« Bonne chance à toi pour comprendre tout ce bordel. »"
+            ]
+        },
+        "13_0": {
+            "lines": [
+                "Reinaëlle, toujours intriguée, sortit du sanctuaire pour réfléchir."
+            ]
+        },
+        "14_0": {
+            "lines": [
+                "Devant le bâtiment attendait une déesse, intelligente pour une fois."
+            ]
+        },
+        "15_0": {
+            "lines": [
+                "<r$Eiringo  >« Notre détective serait-elle dans une impasse ? »"
+            ]
+        },
+        "16_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Qu'est-ce que tu fais là toi ? »"
+            ]
+        },
+        "17_0": {
+            "lines": [
+                "<r$Eiringo  >« Je ne fais que prendre des nouvelles. »"
+            ]
+        },
+        "18_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Je suis sûre que tu es dans le coup aussi. »"
+            ]
+        },
+        "19_0": {
+            "lines": [
+                "<r$Eiringo  >« Hahaha, pas vraiment. »"
+            ]
+        },
+        "20_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Ça se voit que tu caches des choses. »"
+            ]
+        },
+        "21_0": {
+            "lines": [
+                "<r$Eiringo  >« On le fait tous, non ? »"
+            ]
+        },
+        "22_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Sauf que toi tu sembles mieux comprendre la situation. »"
+            ]
+        },
+        "23_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Je vois bien que sous cette expédition se cache quelque chose."
+            ]
+        },
+        "24_0": {
+            "lines": [
+                "<l$> Je me demande à quel point tu es au courant des rouages de cet incident. »"
+            ]
+        },
+        "25_0": {
+            "lines": [
+                "<r$Eiringo  >« Je connais des gens qui pourraient lancer ce genre de rumeur. »"
+            ]
+        },
+        "26_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Qui ça ? »"
+            ]
+        },
+        "27_0": {
+            "lines": [
+                "<r$Eiringo  >« Oh, plein de gens aimeraient profiter de la cuisine sans se battre pour du beurre. »"
+            ]
+        },
+        "28_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Serait-ce une humaine férue de littérature ? »"
+            ]
+        },
+        "29_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Certaines parties de l'incident sont plus étranges que la rumeur elle-même. »"
+            ]
+        },
+        "30_0": {
+            "lines": [
+                "<r$Eiringo  >« Je pensais plutôt à une déesse culinaire qui compte parmi mes amis."
+            ]
+        },
+        "31_0": {
+            "lines": [
+                "<l$> Cependant il est possible que d'autres gens aient voulu mettre la main à la pâte. »"
+            ]
+        },
+        "32_0": {
+            "lines": [
+                "Reinaëlle n'avait pas appris grand-chose,",
+                "à part un indice sur qui a lancé la rumeur."
+            ]
+        },
+        "33_0": {
+            "lines": [
+                "Cette déesse du cidre n'avait pas l'air dangereuse,"
+            ]
+        },
+        "34_0": {
+            "lines": [
+                "bien qu'elle parlait beaucoup pour dire assez peu au final."
+            ]
+        },
+        "35_0": {
+            "lines": [
+                "Au moins elle ne mettait pas d'huile sur le feu."
+            ]
+        },
+        "36_0": {
+            "lines": [
+                "Jouer la détective ne lui avait pas déplu, mais elle se dit"
+            ]
+        },
+        "37_0": {
+            "lines": [
+                "qu'elle profiterait bien du calme retrouvé pour se reposer."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Fin n°1 : Gardienne du bon sens"
+            ]
+        },
+        "39_0": {
+            "lines": [
+                "Jeu terminé ! Félicitations !"
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "<r$Mariphaine  >« J'avoue que tout ça est chelou, mais j'peux pas trop,",
+                "<l$> m'en occuper en ce moment. »"
+            ]
+        }
+    }
+}

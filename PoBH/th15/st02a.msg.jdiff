@@ -1,0 +1,116 @@
+{
+    "0": {
+        "30_0": {
+            "lines": [
+                "Arrête toi là !"
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Je devrais te dire la même chose.",
+				"T'es devenue folle ma pauvre amie !"
+            ]
+        },
+        "46_0": {
+            "lines": [
+                "Moi ? Folle ?",
+				"Je fais ça pour arrêter Satanae !"
+            ]
+        },
+        "54_0": {
+            "lines": [
+                "Mais, Mariphaine, c'est moi, Reinaëlle !"
+            ]
+        },
+        "62_0": {
+            "lines": [
+                "Reinaëlle ?! Toi aussi tu veux aller sur la Lune ?"
+            ]
+        },
+        "70_0": {
+            "lines": [
+                "Oui, je dois rattraper God Reimu."
+            ]
+        },
+        "78_0": {
+            "lines": [
+                "Ah oui, je l'ai croisé..."
+            ]
+        },
+        "86_0": {
+            "lines": [
+                "Mais je ne te laisserais pas y aller !"
+            ]
+        },
+        "94_0": {
+            "lines": [
+                "Mais pourquoi ?"
+            ]
+        },
+        "102_0": {
+            "lines": [
+                "Il n'y a rien sur cette Lune !"
+            ]
+        },
+        "110_0": {
+            "lines": [
+                "Je dois absolument rattraper God Reimu, dégage de là !"
+            ]
+        },
+        "118_0": {
+            "lines": [
+                "Non je te ne laisserais pas passer !"
+            ]
+        },
+        "126_0": {
+            "lines": [
+                "Je passerai de toutes façons !"
+            ]
+        },
+        "134_0": {
+            "lines": [
+                "Jamais !"
+            ]
+        }
+    },
+    "1": {
+        "34_0": {
+            "lines": [
+                "C'est bon je peux passer maintenant ?"
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Tu es devenue forte..."
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "Alors, par où est partie God Reimu ?"
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "En direction du sanctuaire,",
+				"elle a parlé d'un yokai capable de l'emmener là bas..."
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "Je te laisse, je vais aller fouetter d'autres chats."
+            ]
+        },
+        "74_0": {
+            "lines": [
+                "Hein ?!"
+            ]
+        }
+    },
+	"2": {
+        "0_0": {
+            "lines": [
+                "Que la révolte commence !"
+            ]
+        }
+    }
+}

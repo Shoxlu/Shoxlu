@@ -1,0 +1,260 @@
+{
+    "2": {
+        "50_0": {
+            "lines": [
+                "Tiens !",
+                "Voilà notre dernière invitée."
+            ]
+        },
+        "180_0": {
+            "lines": [
+                "Allez les fées, ",
+                "on continue !"
+            ]
+        },
+        "330_0": {
+            "lines": [
+                "Voici un nouveau chapitre :",
+                "« Le songe face à l'illusoire » !"
+            ]
+        }
+    },
+    "0": {
+        "34_0": {
+            "lines": [
+                "Bon, je ne suis sûrement plus très loin."
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Par contre s'il y a des fées ici c'est qu'elle n'est",
+                "pas la première à être passée par cet endroit."
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "Ces fées sont bizarres, elles sont agitées et dégagent",
+				"une aura très perturbante."
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "C'est sûrement le responsable de tout ça qui nous attendait,",
+                "en fin de compte."
+            ]
+        },
+        "156_0": {
+            "lines": [
+                "Tu n'es pas loin de la vérité."
+            ]
+        },
+        "164_0": {
+            "lines": [
+                "Cependant, je ne suis pas la coupable.",
+                "J'ai participé à ma manière."
+            ]
+        },
+        "172_0": {
+            "lines": [
+                "Ah, la fille de tout à l'heure.",
+                "Tu es une déesse ?"
+            ]
+        },
+        "180_0": {
+            "lines": [
+                "Non ! Je suis une simple humaine qui adore les histoires,",
+                "Lance !"
+            ]
+        },
+        "188_0": {
+            "lines": [
+                "Je suis heureuse de pouvoir enfin rencontrer notre détective",
+                "habillée en prêtresse."
+            ]
+        },
+        "196_0": {
+            "lines": [
+                "Pardon ?",
+                "Tu te moques de moi ?"
+            ]
+        },
+        "204_0": {
+            "lines": [
+                "Pas du tout.",
+                "Tu as simplement l'air perspicace."
+            ]
+        },
+        "212_0": {
+            "lines": [
+                "Ça se voit depuis le début que quelque chose cloche,",
+                "même si apparemment peu de gens s'en sont soucié."
+            ]
+        },
+        "220_0": {
+            "lines": [
+                "D'abord il y a cette rumeur absurde de sel lunaire."
+            ]
+        },
+        "228_0": {
+            "lines": [
+                "Puis tout le monde se rue dans le monde des rêves car",
+                "une « gentille » a dit que c'était le bon chemin."
+            ]
+        },
+        "236_0": {
+            "lines": [
+                "Et enfin une succession de rencontres « fortuites » nous permet",
+                "d'aller sur la Lune encore plus vite que tous les autres."
+            ]
+        },
+        "244_0": {
+            "lines": [
+                "C'est comme si quelqu'un nous avait balisé le chemin",
+				"pour être sûr qu'on allait venir jusqu'ici."
+            ]
+        },
+        "252_0": {
+            "lines": [
+                "Ai-je raison ?"
+            ]
+        },
+        "260_0": {
+            "lines": [
+                "Oui, félicitations !"
+            ]
+        },
+        "268_0": {
+            "lines": [
+                "Je suis impressionnée, tu as tout compris."
+            ]
+        },
+        "276_0": {
+            "lines": [
+                "Et c'est exactement la raison pour laquelle",
+                "tu ne dois pas aller plus loin."
+            ]
+        },
+        "284_0": {
+            "lines": [
+                "Tu ne seras qu'une entrave si tu continues.",
+                "Les autres ont besoin de leur leçon."
+            ]
+        },
+        "292_0": {
+            "lines": [
+                "Il est temps de finir cette histoire.",
+                "En garde !"
+            ]
+        }
+    },
+    "1": {
+        "34_0": {
+            "lines": [
+                "Argh..."
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "C'est terminé maintenant.",
+                "Rends-toi."
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "C'est frustrant..."
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "Même avec mes meilleures cartes je n'ai pas pu gagner."
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "Je me déçois, faire le maximum ne m'a quand-même pas",
+                "permis de gagner..."
+            ]
+        },
+        "74_0": {
+            "lines": [
+                "..."
+            ]
+        },
+        "82_0": {
+            "lines": [
+                "Je ne sais pas quoi te dire."
+            ]
+        },
+        "90_0": {
+            "lines": [
+                "Eh bien vas-y alors, j'imagine."
+            ]
+        },
+        "98_0": {
+            "lines": [
+                "Il n'y a plus de piège de ta part j'espère ?"
+            ]
+        },
+        "106_0": {
+            "lines": [
+                "Et s'il y a quelque chose que tu ne m'as pas dit j'aimerais",
+                "que tu le fasses tout de suite."
+            ]
+        },
+        "114_0": {
+            "lines": [
+                "Je n'ai rien à ajouter, il n'y a plus d'obstacle après moi."
+            ]
+        },
+        "122_0": {
+            "lines": [
+                "Le reste de l'histoire t'appartient désormais."
+            ]
+        },
+        "130_0": {
+            "lines": [
+                "D'accord..."
+            ]
+        },
+        "138_0": {
+            "lines": [
+                "Eh bien je vais y aller alors, je dois la raisonner."
+            ]
+        },
+        "146_0": {
+            "lines": [
+                "J'espère que rien ne lui est arrivé, si on lui a tendu",
+                "un piège elle a dû s'y jeter sans hésiter."
+            ]
+        },
+        "154_0": {
+            "lines": [
+                "Non, il n'y a rien du tout.",
+                "Je n'ai fait que vous guider."
+            ]
+        },
+        "162_0": {
+            "lines": [
+                "Ce qu'il se passe là-bas ne dépend que de vous."
+            ]
+        },
+        "170_0": {
+            "lines": [
+                "... Mais je sais pas vraiment quoi faire.",
+                "J'ai plus la force de me battre."
+            ]
+        },
+        "178_0": {
+            "lines": [
+                "Pour commencer,",
+                "que dirais-tu de m'emmener voir cette... amie ?"
+            ]
+        },
+        "186_0": {
+            "lines": [
+                "J'ai l'impression d'avoir perdu de vue mon objectif",
+                "en arrivant ici."
+            ]
+        }
+    }
+}

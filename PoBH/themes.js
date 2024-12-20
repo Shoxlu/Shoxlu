@@ -1,0 +1,21 @@
+{
+    "th15_01": "Le Vent de l'Ouest Rencontre Celui de l'Est.",
+    "th15_02": "Au-Dessus des Paysages de Verdure.",
+    "th15_03": "Altération Informatique des Réalités.",
+    "th15_04": "Champ de Bataille où les Hérétiques sont Châtiés.",
+    "th15_05": "Magie Immaculée de l'Ordre du Beurre Doux.",
+    "th15_06": "Voyage Stellaire ~ A La Recherche Du Divin Sel.",
+    "th15_07": "Existense Élusive ~ Abattre l'Ennemi !",
+    "th15_08": "Les Portes Menant à des Horizons Tumultueux.",
+    "th15_09": "Le Blizzard Obstruant le Soleil, se Lève.",
+    "th15_10": "La Course Lunaire.",
+    "th15_11": "Tranquilité Laitière",
+    "th15_12": "Le Destin est Salé.",
+	"th15_13": "La Farine est pour les Plats éphémères.",
+    "th15_14": "Le Capriccio de Dana ~ Cream Battle.",
+    "th15_17": "La Lune que l'on voit du Sanctuaire.",
+    "th15_18": "La Fin, ou est-ce bien elle ?",
+    "th15_15": "Buffet Démoniaque de la Cuisine Etoilée.",
+    "th15_16": "Désacralisation des Chocolatines.",
+
+}

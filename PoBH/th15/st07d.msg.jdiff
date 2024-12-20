@@ -1,0 +1,337 @@
+{
+    "2": {
+        "184_0": {
+            "lines": [
+                "Oh, voilà une déesse."
+            ]
+        },
+        "308_0": {
+            "lines": [
+                "Je dois t'arrêter un instant."
+            ]
+        },
+        "432_0": {
+            "lines": [
+                "Je préfère m'assurer que tu es",
+                "toujours capable de mener un combat divin."
+            ]
+        }
+    },
+    "0": {
+        "214_0": {
+            "lines": [
+                "Il vous aura fallu du temps pour comprendre ce qui se passe."
+            ]
+        },
+        "222_0": {
+            "lines": [
+                "J'ai pensé que vous vous en rendriez compte tout de suite..."
+            ]
+        },
+        "230_0": {
+            "lines": [
+                "Après tout un dieu n'est rien sans ses croyants."
+            ]
+        },
+        "268_0": {
+            "lines": [
+                "Tu es la responsable de la rumeur hein ?"
+            ]
+        },
+        "276_0": {
+            "lines": [
+                "J'ai mis du temps à me dire qu'un truc clochait mais..."
+            ]
+        },
+        "284_0": {
+            "lines": [
+                "Maintenant que je sais ça va barder !"
+            ]
+        },
+        "292_0": {
+            "lines": [
+                "Que fais-tu avec mes fidèles ?"
+            ]
+        },
+        "300_0": {
+            "lines": [
+                "Pourquoi sont-ils toujours ici ?"
+            ]
+        },
+        "308_0": {
+            "lines": [
+                "Ces gens sont tous allés dans le monde des rêve."
+            ]
+        },
+        "316_0": {
+            "lines": [
+                "C'était assez évident, c'est le passage le plus simple",
+                "pour aller sur la Lune."
+            ]
+        },
+        "324_0": {
+            "lines": [
+                "Je n'allais pas rater cette occasion de leur donner une petite leçon."
+            ]
+        },
+        "332_0": {
+            "lines": [
+                "Votre guerre est une offense à la cuisine elle-même."
+            ]
+        },
+        "340_0": {
+            "lines": [
+                "Et son côté religieux n'a pas plus à une autre demoiselle",
+                "que je vais te présenter tout de suite."
+            ]
+        },
+        "452_0": {
+            "lines": [
+                "Oh, on parle de moi ?"
+            ]
+        },
+        "460_0": {
+            "lines": [
+                "On va enfin faire quelque chose d'amusant ?",
+                "J'ai hâte !"
+            ]
+        },
+        "468_0": {
+            "lines": [
+                "Voilà notre ennemie, celle qui déshonore la cuisine",
+                "et néglige ses fidèles."
+            ]
+        },
+        "476_0": {
+            "lines": [
+                "Oh, elle ?",
+                "Elle a mis du temps à venir, c'est pas sympa."
+            ]
+        },
+        "484_0": {
+            "lines": [
+                "On a mis du temps à mettre au point un plan",
+				"mais t'es quand même en retard."
+            ]
+        },
+        "492_0": {
+            "lines": [
+                "Qui êtes-vous au fait ?"
+            ]
+        },
+        "500_0": {
+            "lines": [
+                "Je suis un vampire, je m'appelle Remivel.",
+                "Les dieux me craignent à cause de mon pouvoir."
+            ]
+        },
+        "508_0": {
+            "lines": [
+                "Et elle c'est Melhina, déesse de la cuisine !",
+                "Même si c'est surtout une grande amie !"
+            ]
+        },
+        "516_0": {
+            "lines": [
+                "Oh, c'est une rencontre intéressante pour moi !"
+            ]
+        },
+        "524_0": {
+            "lines": [
+                "Et cette déesse doit être la personne",
+				"dont a parlé ce yokai des températures."
+            ]
+        },
+        "532_0": {
+            "lines": [
+                "Oh, tu connais Kagummi aussi ?",
+                "Je commence à t'apprécier."
+            ]
+        },
+        "540_0": {
+            "lines": [
+                "Reste concentrée sur notre mission.",
+                "Je te rappelle que c'est une ennemie."
+            ]
+        },
+        "548_0": {
+            "lines": [
+                "Et puis elle a été méchante avec Kagummi."
+            ]
+        },
+        "556_0": {
+            "lines": [
+                "Naaaan ?",
+                "Elle a vraiment fait ça...?"
+            ]
+        },
+        "564_0": {
+            "lines": [
+                "C'est pas sympa du tout !",
+                "Elle ne devrait pas être une déesse."
+            ]
+        },
+        "572_0": {
+            "lines": [
+                "Bon bah je crois qu'on n'a pas le choix.",
+                "Amusons-nous un peu avec elle."
+            ]
+        },
+        "580_0": {
+            "lines": [
+                "C'est vraiment obligé ?"
+            ]
+        },
+        "588_0": {
+            "lines": [
+                "Les temps ont changé, et puis il ne faut pas me sous-estimer."
+            ]
+        },
+        "596_0": {
+            "lines": [
+                "On s'est cassés les pieds à attendre ici,",
+				"alors il est temps de se défouler un peu."
+            ]
+        },
+        "604_0": {
+            "lines": [
+                "J'ai l'occasion d'affronter une déesse, c'est trop cool !"
+            ]
+        },
+        "612_0": {
+            "lines": [
+                "Le combat d'aujourd'hui s'annonce captivant :"
+            ]
+        },
+        "620_0": {
+            "lines": [
+                "Des déesses, un vampire, du danmaku...",
+                "...Et du fun !"
+            ]
+        }
+    },
+    "1": {
+        "34_0": {
+            "lines": [
+                "Deux contre une ? Vous n'avez honte de rien ?"
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Oh allez, c'était juste une blague.",
+                "On a perdu."
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "Pour ma part je me suis amusée."
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "Moi de même."
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "Je ne sais pas si je peux dire que c'était réciproque."
+            ]
+        },
+        "74_0": {
+            "lines": [
+                "Quel est votre objectif au final...?"
+            ]
+        },
+        "82_0": {
+            "lines": [
+                "On en avait marre de votre guerre donc on a lancé cette rumeur...",
+				"Et vous y avez cru...haha."
+            ]
+        },
+        "90_0": {
+            "lines": [
+                "Ahem.",
+                "On voulait vous piéger pour que vous arrêtiez."
+            ]
+        },
+        "98_0": {
+            "lines": [
+                "T'as dit que c'était fini ?"
+            ]
+        },
+        "106_0": {
+            "lines": [
+                "Oui, tout s'est calmé."
+            ]
+        },
+        "114_0": {
+            "lines": [
+                "Vous pourriez pas relâcher les fidèles maintenant ?",
+                "J'espère qu'ils vont bien."
+            ]
+        },
+        "122_0": {
+            "lines": [
+                "J'espère que vous ne leur avez pas fait de mal.",
+				"Je ne vous le pardonnerais pas."
+            ]
+        },
+        "130_0": {
+            "lines": [
+                "On ne leur a pas fait de mal du tout.",
+                "Melhina leur a juste fait des cours de cuisine."
+            ]
+        },
+        "138_0": {
+            "lines": [
+                "Haha, oui, c'est assez embarrassant.",
+                "On s'ennuyait donc j'ai cuisiné pour eux et j'ai expliqué."
+            ]
+        },
+        "146_0": {
+            "lines": [
+                "Ils ne se débrouillent pas trop mal."
+            ]
+        },
+        "154_0": {
+            "lines": [
+                "Le pouvoir de la cuisine n'est pas à sous-estimer,",
+                "un bon repas peut faire beaucoup de bien."
+            ]
+        },
+        "162_0": {
+            "lines": [
+                "Ouf.",
+                "Tant mieux."
+            ]
+        },
+        "170_0": {
+            "lines": [
+                "Bon !",
+                "Je vais tout de suite aller les chercher et on va sortir de là."
+            ]
+        },
+        "178_0": {
+            "lines": [
+                "Allons les raccompagner ensemble, je leur dois des excuses."
+            ]
+        },
+        "186_0": {
+            "lines": [
+                "Vous pouvez aussi faire un tour dans ma boulangerie,",
+                "je vous ferai un prix."
+            ]
+        },
+        "194_0": {
+            "lines": [
+                "Trop bien !"
+            ]
+        },
+        "202_0": {
+            "lines": [
+                "C'est noté !",
+                "Je me dois de goûter ça de toute façon."
+            ]
+        }
+    }
+}

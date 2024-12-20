@@ -1,0 +1,118 @@
+{
+    "0": {
+        "34_0": {
+            "lines": [
+                "Quel bazar...",
+                "Ces hérétiques sont vraiment trop bruyants."
+            ]
+        },
+        "102_0": {
+            "lines": [
+                "Oh, tiens, qui va donc là ?",
+                "Une déesse !"
+            ]
+        },
+        "144_0": {
+            "lines": [
+                "Mais pas Satanae..."
+            ]
+        },
+        "152_0": {
+            "lines": [
+                "Ma présence est bien plus importante",
+                "que celle d'une traîtresse."
+            ]
+		},
+        "160_0": {
+            "lines": [
+                "Je ne me suis pas révoltée",
+                "pour bouffer du sel."
+            ]
+        },
+        "168_0": {
+            "lines": [
+                "Enfin, je ne suis pas contre boire",
+                "quelques larmes de déesses."
+            ]
+        },
+        "176_0": {
+            "lines": [
+                "Tu vas de blasphème en blasphème,",
+                "vile humaine, traîtresse parmi les traîtres."
+            ]
+        },
+        "184_0": {
+            "lines": [
+                "Je vais devoir t'écraser pour me calmer."
+            ]
+        },
+        "192_0": {
+            "lines": [
+                "Essaie pour voir, idiote.",
+            ]
+        },
+        "200_0": {
+            "lines": [
+                "Je ne me retiendrai pas non plus contre toi."
+            ]
+		}
+    },
+    "1": {
+        "34_0": {
+            "lines": [
+                "Voilà une bonne chose de faite.",
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Je suis désolée, mes compagnons.",
+				"J'ai fait de mon mieux..."
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "Je peux les convertir, ça leur réussira mieux."
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "Sûrement pas !",
+				"On voulait raisonner Satanae, pas retourner notre veste."
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "Ça peut avoir un certain style.",
+            ]
+        },
+        "74_0": {
+            "lines": [
+                "...",
+            ]
+        },
+        "82_0": {
+            "lines": [
+                "Je crois que je n'en tirerai rien de plus.",
+            ]
+        },
+        "90_0": {
+            "lines": [
+                "Tant pis, je vais aller faire",
+                "une visite de courtoisie dans votre sanctuaire."
+            ]
+        },
+        "98_0": {
+            "lines": [
+                "Y'en a pas une pour rattraper l'autre."
+            ]
+        }
+    },
+	"2": {
+        "0_0": {
+            "lines": [
+                "Repoussez la déesse coûte que coûte !"
+            ]
+        }
+    }
+}
+}

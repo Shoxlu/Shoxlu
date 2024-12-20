@@ -1,0 +1,234 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$Kanako  $Sanae  $Suwako  >Sanctuaire Moriya"
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "Un sanctuaire relativement récent sur la montagne des Youkais."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "<r$Kanako  >\"Tu n'es même pas capable d'éviter ça ?!"
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<l$> Fais un nouveau tour du lac en courant!\""
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<r$Sanae  >\"Oui ! J'y vais !\""
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "Peu après..."
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "<r$Kanako  >\"Trop lent !"
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "<l$> Prépare toi pour le prochain danmaku !\""
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "<r$Sanae  >\"Pouf Pouf... Laissez-moi me reposer un peu.\""
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "<r$Kanako  >\"C'est à cause de cette attitude que tu ne fais pas le poids face aux Lunariens !"
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "<l$> Tu veux revenir complètement déglinguée comme tu l'étais la dernière fois ?!\""
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "<r$Sanae  >\"Non, mais...\""
+            ]
+        },
+        "12_0": {
+            "lines": [
+                "<r$Sanae  >\"Nous ne vivons pas dans un ère où les équipes de sports et autres ne gagnent qu'avec leur volonté uniquement...\""
+            ]
+        },
+        "13_0": {
+            "lines": [
+                "<r$Kanako  >\"Tu ne comprends pas !"
+            ]
+        },
+        "14_0": {
+            "lines": [
+                "<l$> C'est le fait qu'il ne s'agisse justement pas de cette ère qui la rend plus valeureuse !\""
+            ]
+        },
+        "15_0": {
+            "lines": [
+                "<r$Kanako  >\"Le danmaku repose sur les tripes !"
+            ]
+        },
+        "16_0": {
+            "lines": [
+                "<l$> Si tu ne peux pas l'éviter, tu n'as rien dans les tripes ! Compris ?!\""
+            ]
+        },
+        "17_0": {
+            "lines": [
+                "<r$Sanae  >\"Oui...\""
+            ]
+        },
+        "18_0": {
+            "lines": [
+                "<r$Suwako  >\"Nous avons les résultats des analyses.\""
+            ]
+        },
+        "19_0": {
+            "lines": [
+                "<r$Kanako  >\"Comment ça s'est passé ?\""
+            ]
+        },
+        "20_0": {
+            "lines": [
+                "<r$Sanae  >\"Pouf pouf pouf... Analyses ?\""
+            ]
+        },
+        "21_0": {
+            "lines": [
+                "<r$Suwako  >\"L'analyse de l'\"Élixir Ultramarin\", bien sûr."
+            ]
+        },
+        "22_0": {
+            "lines": [
+                "<l$> Pendant que Sanae était sur la Lune, nous observions cet élixir.\""
+            ]
+        },
+        "23_0": {
+            "lines": [
+                "<r$Sanae  >\"Oh, c'est pour ça que je n'ai pas pu l'emporter sur la Lune\""
+            ]
+        },
+        "24_0": {
+            "lines": [
+                "<r$Suwako  >\"Cependant, il s'agissait plutôt d'une bonne décision."
+            ]
+        },
+        "25_0": {
+            "lines": [
+                "<l$> Cette potion possède en effet des effets secondaires.\""
+            ]
+        },
+        "26_0": {
+            "lines": [
+                "<r$Kanako  >\"Ho-ho, des effets secondaires ?\""
+            ]
+        },
+        "27_0": {
+            "lines": [
+                "<r$Suwako  >\"Pendant que tu vois le futur, une purification du passé est observable."
+            ]
+        },
+        "28_0": {
+            "lines": [
+                "<l$> Si un ancien dieu indigène l'utilisait...\""
+            ]
+        },
+        "29_0": {
+            "lines": [
+                "<r$Kanako  >\"Ce serait une mort instantanée.\""
+            ]
+        },
+        "30_0": {
+            "lines": [
+                "<r$Suwako  >\"Oui, cette potion a une forte influence sur les être vivants sur Terre.\""
+            ]
+        },
+        "31_0": {
+            "lines": [
+                "<r$Sanae  >\"Hein ? Donc si je l'avais utilisée, ça aurait été dangereux ?\""
+            ]
+        },
+        "32_0": {
+            "lines": [
+                "<r$Suwako  >\"Et bien, rien de mortel ne serait arrivé.\""
+            ]
+        },
+        "33_0": {
+            "lines": [
+                "<r$Suwako  >\"En fait... cela n'aurait rien eu de mortel, probablement, mais toute ton impureté aurait été effacée, te laissant comme une humaine pure.\""
+            ]
+        },
+        "34_0": {
+            "lines": [
+                "<r$Sanae  >\"N'est-ce pas une bonne chose ?\""
+            ]
+        },
+        "35_0": {
+            "lines": [
+                "La différence entre les Terriens et les Lunariens est qu'ils sont impurs, contrairement à ces derniers."
+            ]
+        },
+        "36_0": {
+            "lines": [
+                "Les Lunariens sont d'anciens Terriens ayant renié leurs impureté."
+            ]
+        },
+        "37_0": {
+            "lines": [
+                "L'impureté, comme l'ont dit les Lunariens, est le concept de vie et de mort."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Pour perdre son impureté, il faut alors perdre et sa vie, et sa mort."
+            ]
+        },
+        "39_0": {
+            "lines": [
+                "Ainsi, les gens de la Lune ne pouvaient plus vivre sur la Terre vivante."
+            ]
+        },
+        "40_0": {
+            "lines": [
+                "L'Élixir Ultramarin affaibli l'influence de la vie et de la mort. C'est certain."
+            ]
+        },
+        "41_0": {
+            "lines": [
+                "Sans le concept de \"vie supplémentaires\", les erreurs ne semblent pas si lourdes."
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Continuer d'utiliser l'Élixir Ultramarin peut être dangereux."
+            ]
+        },
+        "43_0": {
+            "lines": [
+                "Fin N°6 : La victoire au danmaku à travers les tripes"
+            ]
+        },
+        "44_0": {
+            "lines": [
+                "Vous avez terminé le jeu! Félicitations!"
+            ]
+        },
+        "45_0": {
+            "lines": [
+                "Mode Legacy terminé avec au moins une mort."
+            ]
+        }
+    }
+}

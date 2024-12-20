@@ -1,0 +1,197 @@
+{
+    "0": {
+        "68_0": {
+            "lines": [
+                "Ah enfin !"
+            ]
+        },
+        "106_0": {
+            "lines": [
+                "Hm ? Qui va là ?"
+            ]
+        },
+        "114_0": {
+            "lines": [
+                "Oh ! Euh… toutes mes excuses, ", 
+				"je ne voulais pas te surprendre."
+            ]
+        },
+        "122_0": {
+            "lines": [
+                "C’est juste que ça fait deux fois que",
+				"je me fais rétamer, et je suis un peu lassée."
+            ]
+        },
+        "130_0": {
+            "lines": [
+                "Pourtant tu n’as pas l’air d’être « rétamée » comme ",
+				"tu le prétends, tu n’as même pas de larme horizontale.",
+            ]
+        },
+        "138_0": {
+            "lines": [
+                "C’est parce que j’ai refusé d’utiliser un continue ",
+				"du coup j’ai préféré reload ma savefile voilà tout !"
+            ]
+        },
+        "146_0": {
+            "lines": [
+                "C’est quoi un comptine-nude ?"
+            ]
+        },
+        "154_0": {
+            "lines": [
+                "Mais non, un «continue» ! ",
+				"C’est euh… compliqué à expliquer hahaha…"
+            ]
+        },
+        "162_0": {
+            "lines": [
+                "Mouais… en tout cas je sais ce qui ",
+				"sera moins compliqué à expliquer"
+            ]
+        },
+        "170_0": {
+            "lines": [
+                "-?"
+            ]
+        },
+        "178_0": {
+            "lines": [
+                "LA RACLÉE QUE TU VAS TE PRENDRE !"
+            ]
+        },
+        "186_0": {
+            "lines": [
+                "Qu’est-ce-que- ? "
+            ]
+        }
+    },
+    "1": {
+        "34_0": {
+            "lines": [
+                "Hmph. Un jeu d’enfant !"
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "Aïe… mais pourquoi ?"
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "Parce que accessoirement je suis Satan. ",
+                "Tu sais, le mal, le mal bla-bla-bla"
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "De la méchanceté gratuite donc… Je devrais m’y faire...",
+                "J’ai l’impression que c’est monnaie courante ici…"
+            ]
+        },
+        "74_0": {
+            "lines": [
+                "Pas vraiment, c’est jute qu’a cause ",
+                "de la guerre sainte tout le monde est un peu à cran."
+            ]
+        },
+        "82_0": {
+            "lines": [
+                "Dans ce cas je tire ma révérence pour le moment.",
+                "On se revoit dans le stage extra !"
+            ]
+        },
+        "90_0": {
+            "lines": [
+                "LoLK"
+            ]
+        }
+		
+    },
+	"2": {
+        "34_0": {
+            "lines": [
+                "Cette spell m'est dédiée."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Oui c'est un peu narcissique."
+            ]
+        }
+    },
+	"3": {
+        "34_0": {
+            "lines": [
+                "Si tu arrives à passer ça, tu pourras continuer."
+            ]
+        },
+		"38_0": {
+            "lines": [
+                "Voyons voir ce que tu dis de ça !"
+            ]
+        }
+    },
+	"4": {
+        "34_0": {
+            "lines": [
+                "Wow, tu as l'air expérimentée."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Voyons ce que tu dis de ce pouvoir là !"
+            ]
+        }
+    },
+	"5": {
+        "34_0": {
+            "lines": [
+                "Salut ! Bienvenue dans ce nouveau mod !"
+            ]
+        },
+        "64_0": {
+            "lines": [
+                "J'espère que tu ne vas pas", 
+				"passer mes dialogues..."
+            ]
+        },
+        "94_0": {
+            "lines": [
+                "Cela pourrait s'avérer utile..."
+            ]
+        },
+        "124_0": {
+            "lines": [
+                "Bref, ici, la règle c'est..."
+            ]
+        },
+        "154_0": {
+            "lines": [
+                "Ah mais attends,", 
+				"je ne viens même pas de ce monde..."
+            ]
+        },
+        "184_0": {
+            "lines": [
+                "Je vais te laisser voir ça avec",
+                "les fées qui trainent aux alentours..."
+            ]
+        }
+    },
+	"6": {
+        "34_0": {
+            "lines": [
+                "Intéressant..."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Je vais essayer de faire ce que", 
+				"ce peuple appelle des \"danmakus\"..."
+            ]
+        }
+    }
+}
+}

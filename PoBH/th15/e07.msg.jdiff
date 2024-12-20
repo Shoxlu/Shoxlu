@@ -1,0 +1,210 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$Mariphaine  $God-Reimu  >Village des humains."
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "La plaque tournante du commerce et de la gastronomie de Gensokyo."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "<r$Mariphaine  >« Voilà pour la livraison du jour."
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<l$> Je pense que c'est suffisant pour ce que vous avez estimé,"
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<l$> même s'il y a pas mal de monde en ce moment. »"
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<r$Mariphaine  >« Vous vous en sortez ? »"
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "<r$God-Reimu  >« Oui, on fait comme on peut."
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "<l$> Ça se stabilise au niveau de clients, on commence à fidéliser. »"
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "<r$Mariphaine  >« Tant mieux, on vous fera une grosse commande pour fêter ça."
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "<l$> Ça serait possible ? »"
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "<r$God-Reimu  >« Oulà attendez un peu, on vient à peine d'ouvrir la boulangerie. »"
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "<r$God-Reimu  >« Satanae veut déjà organiser une fête ? »"
+            ]
+        },
+        "12_0": {
+            "lines": [
+                "<r$Mariphaine  >« Oui, elle est assez excitée depuis que ça a ouvert."
+            ]
+        },
+        "13_0": {
+            "lines": [
+                "<l$> Je ne sais pas ce que tu lui as fait mais ça a été efficace. »"
+            ]
+        },
+        "14_0": {
+            "lines": [
+                "<r$Mariphaine  >« Maintenant elle met un point d'honneur à vous approvisionner."
+            ]
+        },
+        "15_0": {
+            "lines": [
+                "<l$> Elle hésite même à investir dans la production de farine."
+            ]
+        },
+        "16_0": {
+            "lines": [
+                "<l$> Je crois qu'elle tient plus à ce commerce que toi. »"
+            ]
+        },
+        "17_0": {
+            "lines": [
+                "<r$God-Reimu  >« Y'a pas moyen, c'est moi qui ai eu l'idée. »"
+            ]
+        },
+        "18_0": {
+            "lines": [
+                "<r$Mariphaine  >« Vu comme elle t'a aidé je pense que ça lui tient à cœur."
+            ]
+        },
+        "19_0": {
+            "lines": [
+                "<l$> Au moins on est sûrs que le beurre est de première qualité. »"
+            ]
+        },
+        "20_0": {
+            "lines": [
+                "<r$God-Reimu  >« Il ne l'était pas avant ? »"
+            ]
+        },
+        "21_0": {
+            "lines": [
+                "<r$Mariphaine  >« On va dire que c'était plus compliqué avant."
+            ]
+        },
+        "22_0": {
+            "lines": [
+                "<l$> Elle était très autoritaire mais abandonnait vite. »"
+            ]
+        },
+        "23_0": {
+            "lines": [
+                "<r$God-Reimu  >« Elle n'a pas beaucoup changé alors, elle a parfois du mal à s'imposer. »"
+            ]
+        },
+        "24_0": {
+            "lines": [
+                "<r$Mariphaine  >« Elle n'avait rien d'autre en tête que te dépasser."
+            ]
+        },
+        "25_0": {
+            "lines": [
+                "<l$> On voyait qu'elle angoissait, son complexe était évident. »"
+            ]
+        },
+        "26_0": {
+            "lines": [
+                "<r$Mariphaine  >« Je ne l'ai jamais vue aussi démunie que ce jour-là,",
+                "<l$> quand la rumeur du sel lunaire a atteint ses oreilles."
+            ]
+        },
+        "27_0": {
+            "lines": [
+                "<l$> Sa décision d'aller sur la Lune n'était qu'un moyen de cacher sa détresse."
+            ]
+        },
+        "28_0": {
+            "lines": [
+                "<l$> Elle a mis peut-être en danger ses fidèles pour son propre ego. »"
+            ]
+        },
+        "29_0": {
+            "lines": [
+                "<r$God-Reimu  >« Maintenant que je sais ça ça me fait un peu de la peine."
+            ]
+        },
+        "30_0": {
+            "lines": [
+                "<l$> J'ai peut-être été un peu dure avec elle quand elle m'avait parlé de beurre doux,"
+            ]
+        },
+        "31_0": {
+            "lines": [
+                "<l$> je ne déteste pas ça mais j'avais peur de perdre ma place. »"
+            ]
+        },
+        "32_0": {
+            "lines": [
+                "<r$Mariphaine  >« Vous êtes pareilles toutes les deux, c'est fou. »"
+            ]
+        },
+        "33_0": {
+            "lines": [
+                "<r$God-Reimu  >« Arrête, Reinaëlle me le dit déjà assez… »"
+            ]
+        },
+        "34_0": {
+            "lines": [
+                "<r$Mariphaine  >« C'est parce que nous sommes perspicaces c'est tout, héhé. »"
+            ]
+        },
+        "35_0": {
+            "lines": [
+                "God Reimu ne le dit pas ouvertement mais elle était soulagée."
+            ]
+        },
+        "36_0": {
+            "lines": [
+                "Il n'y avait pas de sel sur la Lune, mais elle s'était rendue compte que ce n'était pas si important."
+            ]
+        },
+        "37_0": {
+            "lines": [
+                "Au final, peu importe si c'est du beurre doux, du beurre salé ou des croissants, ça se laisse manger."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Fin n°4 : Le beurre et l'argent du beurre."
+            ]
+        },
+        "39_0": {
+            "lines": [
+                "Vous avez terminé le jeu ! Félicitations !"
+            ]
+        },
+        "40_0": {
+            "lines": [
+                "Un petit croissant c'est sympa aussi parfois."
+            ]
+        }
+    }
+}

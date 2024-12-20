@@ -1,0 +1,220 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$VodkAlice  $Day  >La maison de VodkAlice."
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "Située dans la Forêt de la Magie, un endroit à la cuisine très variée."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "<r$VodkAlice  >« Fiou, c'était fatigant."
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<l$> Je devrais prendre des vacances, franchement."
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<l$> Au moins c'était pour faire une bonne action. »"
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<r$VodkAlice  >« Enfin maintenant que j'y réfléchis y'a un truc bizarre.",
+                "<l$> Personne ne m'a dit à quoi j'ai servi dans cette histoire. »"
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "<r$VodkAlice  >« Au final j'ai appris une seule chose."
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "<l$> Forcer sur l'alcool c'est vraiment une idée de merde."
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "<l$> Et ça m'a pris beaucoup de temps pour l'admettre. »"
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "<r$VodkAlice  >« Ma puissance est censée reposer sur ça certes."
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "<l$> Mais j'veux plus m'en servir maintenant."
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "<l$> Au final l'alcool c'est peut-être plus dangereux que n'importe quelle autre magie… »"
+            ]
+        },
+        "12_0": {
+            "lines": [
+                "<r$Day  >« Bonjour à tous ! »"
+            ]
+        },
+        "13_0": {
+            "lines": [
+                "<r$VodkAlice  >« Haa !, tu m’as fait peur ! Qu'est-ce'tu fous là !? »"
+            ]
+        },
+        "14_0": {
+            "lines": [
+                "<r$Day  >« Comment était ce voyage sur la Lune ? »"
+            ]
+        },
+        "15_0": {
+            "lines": [
+                "<r$VodkAlice  >« J'avais mal à la tête vers la fin mais je me sentais mieux. »"
+            ]
+        },
+        "16_0": {
+            "lines": [
+                "<r$Day  >« Hoho, il t'est arrivé quelque chose en chemin ? »"
+            ]
+        },
+        "17_0": {
+            "lines": [
+                "<r$VodkAlice  >« Bah j'ai décuvé c'tout. Pourquoi ? »"
+            ]
+        },
+        "18_0": {
+            "lines": [
+                "<r$Day  >« C'est assez étonnant venant de ta part c'est tout. »"
+            ]
+        },
+        "19_0": {
+            "lines": [
+                "<r$VodkAlice  >« Je commençais à manquer de bouteilles et puis j'étais trop concentrée. »"
+            ]
+        },
+        "20_0": {
+            "lines": [
+                "<r$Day  >« Mais donc tu étais concentrée malgré ton ivresse ? C'est impressionnant. »"
+            ]
+        },
+        "21_0": {
+            "lines": [
+                "<r$VodkAlice  >« J'ai l'habitude, ce n'est pas ma première mission."
+            ]
+        },
+        "22_0": {
+            "lines": [
+                "<l$> C'est cependant la première fois que j'prends ça autant au sérieux. »"
+            ]
+        },
+        "23_0": {
+            "lines": [
+                "<r$Day  >« C'est une plutôt bonne nouvelle si tu veux mon avis. »"
+            ]
+        },
+        "24_0": {
+            "lines": [
+                "<r$Day  >« L'alcool est dangereux et ça se voit assez vite quand même."
+            ]
+        },
+        "25_0": {
+            "lines": [
+                "<l$> Il vaudrait mieux faire attention avec à l'avenir. »"
+            ]
+        },
+        "26_0": {
+            "lines": [
+                "<r$VodkAlice  >« Attends. Mais ça te regarde pas en fait. »"
+            ]
+        },
+        "27_0": {
+            "lines": [
+                "<r$VodkAlice  >« J'me sens déjà assez conne comme ça, pourquoi tu viens me faire la morale… ? »"
+            ]
+        },
+        "28_0": {
+            "lines": [
+                "<r$Day  >« Oh, je voulais simplement prendre des nouvelles."
+            ]
+        },
+        "29_0": {
+            "lines": [
+                "<l$> Tant que t'as la santé… »"
+            ]
+        },
+        "30_0": {
+            "lines": [
+                "<r$VodkAlice  >« Je vais essayer… »"
+            ]
+        },
+        "31_0": {
+            "lines": [
+                "<r$Day  >« Bien, fais en sorte de ne pas être le dindon de la force la prochaine fois."
+            ]
+        },
+        "40_0": {
+            "lines": [
+                "Fin n°2 : La cause de tous les maux (de tête)"
+            ]
+        },
+        "41_0": {
+            "lines": [
+                "Vous avez terminé le jeu ! Félicitations !"
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Histoire finie sans coma éthylique."
+            ]
+        },
+        "32_0": {
+            "lines": [
+                "<l$> Sur ce, je vais aller me faire de bonnes pâtes sans beurre. »"
+            ]
+        },
+        "33_0": {
+            "lines": [
+                "VodkAlice était confuse par cet échange avec l'énigmatique déesse."
+            ]
+        },
+        "34_0": {
+            "lines": [
+                "Au moins cette dernière ne semblait pas avoir de mauvaises intentions."
+            ]
+        },
+        "35_0": {
+            "lines": [
+                "Elles s'étaient à peine vues mais Day prenait quand même de ses nouvelles."
+            ]
+        },
+        "36_0": {
+            "lines": [
+                "VodkAlice pensa à quelque chose."
+            ]
+        },
+        "37_0": {
+            "lines": [
+                "Son aventure n'avait pas servi à grand-chose, Satanae aurait réalisé son erreur seule."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Le but était-il en réalité de mettre la magicienne face à sa consommation abusive ?"
+            ]
+        },
+        "39_0": {
+            "lines": [
+                "L'idée, bien qu'incertaine, lui faisait froid dans le dos. Elle décida d'arrêter l'alcool."
+            ]
+        }
+    }
+}
