@@ -41,7 +41,7 @@
     "88G": "« Symbole de l'ordre traditionnel »",
 	"88S": "« Terre de mémoires ancestrales »",
     "90G": "« Bénédiction du kouign amann »",
-	"90S": "« Protetion du Mont Saint-Michel »",
+	"90S": "« Protection du Mont Saint-Michel »",
 	"94G": "Autorité Divine « Grand Ordre du Beurre Salé »",
 	"94S": "Autorite Divine « Grand Ordre du Beurre Doux »",
     "98G": "« Tempête divine »",
