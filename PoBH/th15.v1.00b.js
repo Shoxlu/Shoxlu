@@ -558,5 +558,9 @@
             addr: "0x43E147",
             code: "E9 [codecave:Fix_snapshot_music_c] C3",
         },
+        Change_Replay_Names: {
+            addr: "0x4CD01C",
+            code: "52 65 69 6E 61 65 6C 00 56 2E 41 6C 69 63 65 00 53 61 74 61 6E 61 65 00 47 2E 52 65 69 6D 75 00",
+        },
     },
 }
