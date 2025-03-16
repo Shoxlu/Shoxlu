@@ -5,7 +5,7 @@
 		"nmlgc/script_latin"
 		
 	],
-    "id": "PoBHDemo",
+    "id": "PoBH",
     "servers": [
         "https://mirrors.thpatch.net/Shoxlu/PoBH"
     ],
