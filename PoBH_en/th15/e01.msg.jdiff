@@ -1,0 +1,207 @@
+{
+    "0": {
+        "0_0": {
+            "lines": [
+                "<ts$Mariphaine  $Reinaëlle  $Eiringo  >Salted butter shrine"
+            ]
+        },
+        "1_0": {
+            "lines": [
+                "A shrine located on a huge hill."
+            ]
+        },
+        "2_0": {
+            "lines": [
+                "Here live the followers of an enhanced taste of butter."
+            ]
+        },
+        "3_0": {
+            "lines": [
+                "<r$Mariphaine  >« So you don't know more about it? »"
+            ]
+        },
+        "4_0": {
+            "lines": [
+                "<r$Reinaëlle  >« No, I'm still looking for the culprit. »"
+            ]
+        },
+        "5_0": {
+            "lines": [
+                "<r$Mariphaine  >« At least nothing happened since. »"
+            ]
+        },
+        "6_0": {
+            "lines": [
+                "<r$Reinaëlle  >« It's still frustrating to don't know though. »"
+            ]
+        },
+        "8_0": {
+            "lines": [
+                "<r$Mariphaine  >« I have to help Satanae if I want to have a roof over my head. »"
+            ]
+        },
+        "9_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Didn't you tell her that you thought to be doing the right thing? »"
+            ]
+        },
+        "10_0": {
+            "lines": [
+                "<r$Mariphaine  >« I tried but she didn't want to listen and after that I heard her crying,",
+                "<l$> she seems more downcast than angry. »"
+            ]
+        },
+        "11_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Ah... right, I'm going to do researches on my side. »"
+            ]
+        },
+        "12_0": {
+            "lines": [
+                "<r$Mariphaine  >« Good luck to you to understand this mess. »"
+            ]
+        },
+        "13_0": {
+            "lines": [
+                "Reinaëlle, still intrigued, got out of the shrine to think."
+            ]
+        },
+        "14_0": {
+            "lines": [
+                "In front of the building was waiting a goddess, a smart one this time."
+            ]
+        },
+        "15_0": {
+            "lines": [
+                "<r$Eiringo  >« Could our detective be in a deadlock? »"
+            ]
+        },
+        "16_0": {
+            "lines": [
+                "<r$Reinaëlle  >« What are you doing here? »"
+            ]
+        },
+        "17_0": {
+            "lines": [
+                "<r$Eiringo  >« I am just getting news. »"
+            ]
+        },
+        "18_0": {
+            "lines": [
+                "<r$Reinaëlle  >« I'm sure you're involved too. »"
+            ]
+        },
+        "19_0": {
+            "lines": [
+                "<r$Eiringo  >« Hahaha, not really. »"
+            ]
+        },
+        "20_0": {
+            "lines": [
+                "<r$Reinaëlle  >« You're obviously hiding things. »"
+            ]
+        },
+        "21_0": {
+            "lines": [
+                "<r$Eiringo  >« Don't we all? »"
+            ]
+        },
+        "22_0": {
+            "lines": [
+                "<r$Reinaëlle  >« But you seem to understand the situation better. »"
+            ]
+        },
+        "23_0": {
+            "lines": [
+                "<r$Reinaëlle  >« I'm well aware that this is something deeper behind this journey."
+            ]
+        },
+        "24_0": {
+            "lines": [
+                "<l$> I wonder how much you know about the gears of this incident. »"
+            ]
+        },
+        "25_0": {
+            "lines": [
+                "<r$Eiringo  >« I know some people likely to spread this kind of rumor. »"
+            ]
+        },
+        "26_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Who? »"
+            ]
+        },
+        "27_0": {
+            "lines": [
+                "<r$Eiringo  >« Oh, many people would like to cook without fighting over butter. »"
+            ]
+        },
+        "28_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Could it be a human keen of literature? »"
+            ]
+        },
+        "29_0": {
+            "lines": [
+                "<r$Reinaëlle  >« Some parts of the incident are more strange than the rumor itself. »"
+            ]
+        },
+        "30_0": {
+            "lines": [
+                "<r$Eiringo  >« I was rather thinking of a culinary goddess among my friends."
+            ]
+        },
+        "31_0": {
+            "lines": [
+                "<l$> Though it's possible that other people wanted to get their hands dirty. »"
+            ]
+        },
+        "32_0": {
+            "lines": [
+                "Reinaëlle hadn't learnt a lot,",
+                "except an hint about the person behind the rumor."
+            ]
+        },
+        "33_0": {
+            "lines": [
+                "This cider goddess didn't look dangerous,"
+            ]
+        },
+        "34_0": {
+            "lines": [
+                "though she talked a lot to say a few things at last."
+            ]
+        },
+        "35_0": {
+            "lines": [
+                "At least she didn't add fuel to the fire."
+            ]
+        },
+        "36_0": {
+            "lines": [
+                "Playing the detective hadn't been displeasing but she"
+            ]
+        },
+        "37_0": {
+            "lines": [
+                "thought she would like to rest now."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Ending No.1 : Keeper of common sense"
+            ]
+        },
+        "39_0": {
+            "lines": [
+                "You have completed the game! Congratulations!"
+            ]
+        },
+        "7_0": {
+            "lines": [
+                "<r$Mariphaine  >« I admit this is weird, but I can't really",
+                "<l$> handle it for now. »"
+            ]
+        }
+    }
+}

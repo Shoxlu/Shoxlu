@@ -1,0 +1,223 @@
+{
+    "0": {
+        "34_0": {
+            "lines": [
+                "Hey you, stop right there."
+            ]
+        },
+		"132_0": {
+            "lines": [
+                "I'm Shoxla!", 
+				"Nice to meet you."
+            ]
+        },
+        "140_0": {
+            "lines": [
+                "I need to try out my", 
+				"new fighting skills!"
+            ]
+        },
+        "170_0": {
+            "lines": [
+                "You'll be the perfect dummy!"
+            ]
+        },
+        "178_0": {
+            "lines": [
+                "Go away, I have bigger fishes to fry."
+            ]
+        },
+        "186_0": {
+            "lines": [
+                "I don't care about your new skills..."
+            ]
+        },
+        "194_0": {
+            "lines": [
+				"Really? I thought that",
+				"it was peacful here..."
+            ]
+        },
+        "202_0": {
+            "lines": [
+                "Wait,",
+				"She's frying fishes up here?!"
+            ]
+        },
+        "210_0": {
+            "lines": [
+                "All of Gensokyo is in danger..."
+            ]
+        },
+        "218_0": {
+            "lines": [
+                "Religious strives have never", 
+				"brought anything good to anyone..."
+            ]
+        },
+        "226_0": {
+            "lines": [
+                "Oh I see."
+            ]
+        },
+        "234_0": {
+            "lines": [
+                "Well then, go through my weak danmakus"
+            ]
+        },
+        "242_0": {
+            "lines": [
+                "and you'll be able to defeat",
+				"the dreadful ennemies I met..."
+            ]
+        },
+        "250_0": {
+            "lines": [
+                "Let's see what you",
+				"can do, weak human!"
+            ]
+        }
+    },
+    "1": {
+        "34_0": {
+            "lines": [
+                "Urgh... You're strong."
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "It's you who are weak actually."
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "However I must admit that for a beginner,",
+				"you are not too bad."
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "At last, making spell-cards",
+				"is not so difficult."
+				
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "If we know how to program the danmakus correctly",
+				"it's really a child's play."
+            ]
+        },
+        "74_0": {
+            "lines": [
+                "Program the danmakus?",
+				"What the hell are you talking about?"
+            ]
+        },
+        "82_0": {
+            "lines": [
+				"Oops, I did it again."
+            ]
+        },
+        "90_0": {
+            "lines": [
+                "I broke the fourth wall..."
+            ]
+        },
+        "98_0": {
+            "lines": [
+                "Gensokyo has welcomed many unhinged people,",
+				"but you..."
+            ]
+        },
+        "106_0": {
+            "lines": [
+				"You truly are one of a kind..."
+            ]
+        }
+    },
+	"2": {
+        "34_0": {
+            "lines": [
+                "This spell is dedicated to me."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Yes, it's a bit narcissistic."
+            ]
+        }
+    },
+	"3": {
+        "34_0": {
+            "lines": [
+                "If you are able to beat this, I'll let you continue."
+            ]
+        },
+		"38_0": {
+            "lines": [
+                "Let's see what you think about this!"
+            ]
+        }
+    },
+	"4": {
+        "34_0": {
+            "lines": [
+                "Wow, you seems experienced."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Let's see what you think about this power!"
+            ]
+        }
+    },
+	"5": {
+        "34_0": {
+            "lines": [
+                "Salut ! Bienvenue dans ce nouveau mod !"
+            ]
+        },
+        "64_0": {
+            "lines": [
+                "J'espère que tu ne vas pas", 
+				"passer mes dialogues..."
+            ]
+        },
+        "94_0": {
+            "lines": [
+                "Cela pourrait s'avérer utile..."
+            ]
+        },
+        "124_0": {
+            "lines": [
+                "Bref, ici, la règle c'est..."
+            ]
+        },
+        "154_0": {
+            "lines": [
+                "Ah mais attends,", 
+				"je ne viens même pas de ce monde..."
+            ]
+        },
+        "184_0": {
+            "lines": [
+                "Je vais te laisser voir ça avec",
+                "les fées qui trainent aux alentours..."
+            ]
+        }
+    },
+	"6": {
+        "34_0": {
+            "lines": [
+                "Interesting..."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "I'll try to make what", 
+				"this folk calls \"danmakus\"..."
+            ]
+        }
+    }
+}

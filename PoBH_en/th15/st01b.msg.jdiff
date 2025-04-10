@@ -1,0 +1,165 @@
+{
+    "0": {
+        "90_0": {
+            "lines": [
+                "Hey you! Stop right there!"
+            ]
+        },
+        "124_0": {
+            "lines": [
+                "*Hic* Oh, if it's not Miss officer, ", 
+				"nice evening huh?"
+            ]
+        },
+        "132_0": {
+            "lines": [
+                "But we are in the middle of the day..."
+            ]
+        },
+        "140_0": {
+            "lines": [
+                "I'm not an officer, I just wanted to try out",
+                "these \"danmakus\" that everyone seems to use."
+            ]
+        },
+        "148_0": {
+            "lines": [
+                "Y-you're not a pig? Hic"
+            ]
+        },
+        "156_0": {
+            "lines": [
+                "No, I'm Shoxla, a wandering goddess.",
+                "I need someone to try my danmakus on."
+            ]
+        },
+        "164_0": {
+            "lines": [
+                "Then if you're not a cop..."
+            ]
+        },
+        "172_0": {
+            "lines": [
+                "Then?"
+            ]
+        },
+        "180_0": {
+            "lines": [
+                "I CAN ELIMINATE YOU WITH NO WORRIES!"
+            ]
+        },
+    },
+    "1": {
+		"34_0": {
+            "lines": [
+				"Ouch, ouch, ouch..."
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "Pffff... Too easy! Hic"
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "You truly are fearsome, I admit my loss..."
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "I-I said I would eliminate you but...",
+                "I would feel guilty to slaughter a weak think like y-you..."
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "*Sob*",
+				"We'll settle this one day..."
+            ]
+        }
+    },
+	"2": {
+        "34_0": {
+            "lines": [
+                "This spell is dedicated to me."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Yes, it's a bit narcissistic."
+            ]
+        }
+    },
+	"3": {
+        "34_0": {
+            "lines": [
+                "If you are able to beat this, I'll let you continue."
+            ]
+        },
+		"38_0": {
+            "lines": [
+                "Let's see what you think about this!"
+            ]
+        }
+    },
+	"4": {
+        "34_0": {
+            "lines": [
+                "Wow, you seems experienced."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Let's see what you think about this power!"
+            ]
+        }
+    },
+	"5": {
+        "34_0": {
+            "lines": [
+                "Salut ! Bienvenue dans ce nouveau mod !"
+            ]
+        },
+        "64_0": {
+            "lines": [
+                "J'espère que tu ne vas pas", 
+				"passer mes dialogues..."
+            ]
+        },
+        "94_0": {
+            "lines": [
+                "Cela pourrait s'avérer utile..."
+            ]
+        },
+        "124_0": {
+            "lines": [
+                "Bref, ici, la règle c'est..."
+            ]
+        },
+        "154_0": {
+            "lines": [
+                "Ah mais attends,", 
+				"je ne viens même pas de ce monde..."
+            ]
+        },
+        "184_0": {
+            "lines": [
+                "Je vais te laisser voir ça avec",
+                "les fées qui trainent aux alentours..."
+            ]
+        }
+    },
+	"6": {
+        "34_0": {
+            "lines": [
+                "Interesting..."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "I'll try to make what", 
+				"this folk calls \"danmakus\"..."
+            ]
+        }
+    }
+}

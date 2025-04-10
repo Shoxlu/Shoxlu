@@ -1,0 +1,179 @@
+{
+    "0": {
+        "34_0": {
+            "lines": [
+                "Greetings stranger!"
+            ]
+        },
+        "132_0": {
+            "lines": [
+                "\"stranger\"?", 
+				"How dare you call me a stranger?"
+            ]
+        },
+        "140_0": {
+            "lines": [
+                "Huh... What about you,",
+				"why are you so oversensitive?"
+            ]
+        },
+        "170_0": {
+            "lines": [
+                "-!You have guts if you dare",
+                "talk to me like that."
+            ]
+        },
+        "178_0": {
+            "lines": [
+                "*sigh* It's been a while since",
+                "I had to correct ungrateful humans."
+            ]
+        },
+        "186_0": {
+            "lines": [
+                "For your information",
+				"I'm not a human."
+            ]
+        },
+        "194_0": {
+            "lines": [
+				"I am Shoxla, a wandering goddess!",
+            ]
+        },
+        "202_0": {
+            "lines": [
+				"Wut? You dare challenge me?!"
+            ]
+        },
+        "210_0": {
+            "lines": [
+				"But I-"
+            ]
+        },
+        "218_0": {
+            "lines": [
+                "You'll regret this offence, prepare yourself!!!"
+            ]
+        }
+    },
+    "1": {
+        "34_0": {
+            "lines": [
+                "Damn, you guys really are",
+				"short tempered."
+            ]
+        },
+		"42_0": {
+            "lines": [
+				"If I had known, I would", 
+				"have gone somewhere else. Urgh..."
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "Hmph, this should",
+				"teach you to be humble."
+            ]
+        },
+		"58_0": {
+            "lines": [
+                "You miserable brat."
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "Learn to not consider yourself",
+				"as a goddess now."
+            ]
+        },
+        "74_0": {
+			"lines": [
+                "BUT I AM ONE!"
+            ]
+        }
+    },
+	"2": {
+        "34_0": {
+            "lines": [
+                "This spell is dedicated to me."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Yes, it's a bit narcissistic."
+            ]
+        }
+    },
+	"3": {
+        "34_0": {
+            "lines": [
+                "If you are able to beat this, I'll let you continue."
+            ]
+        },
+		"38_0": {
+            "lines": [
+                "Let's see what you think about this!"
+            ]
+        }
+    },
+	"4": {
+        "34_0": {
+            "lines": [
+                "Wow, you seems experienced."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "Let's see what you think about this power!"
+            ]
+        }
+    },
+	"5": {
+        "34_0": {
+            "lines": [
+                "Salut ! Bienvenue dans ce nouveau mod !"
+            ]
+        },
+        "64_0": {
+            "lines": [
+                "J'espère que tu ne vas pas", 
+				"passer mes dialogues..."
+            ]
+        },
+        "94_0": {
+            "lines": [
+                "Cela pourrait s'avérer utile..."
+            ]
+        },
+        "124_0": {
+            "lines": [
+                "Bref, ici, la règle c'est..."
+            ]
+        },
+        "154_0": {
+            "lines": [
+                "Ah mais attends,", 
+				"je ne viens même pas de ce monde..."
+            ]
+        },
+        "184_0": {
+            "lines": [
+                "Je vais te laisser voir ça avec",
+                "les fées qui trainent aux alentours..."
+            ]
+        }
+    },
+	"6": {
+        "34_0": {
+            "lines": [
+                "Interesting..."
+            ]
+        },
+        "38_0": {
+            "lines": [
+                "I'll try to make what", 
+				"this folk calls \"danmakus\"..."
+            ]
+        }
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "0": {
+        "34_0": {
+            "lines": [
+                "What a mess...",
+                "There heretics are too noisy."
+            ]
+        },
+        "102_0": {
+            "lines": [
+                "Oh, my, my, my, what do we have there?",
+                "A goddess!"
+            ]
+        },
+        "144_0": {
+            "lines": [
+                "But it's not Satanae..."
+            ]
+        },
+        "152_0": {
+            "lines": [
+                "My presence is for more important",
+                "than a traitor's one."
+            ]
+		},
+        "160_0": {
+            "lines": [
+                "I didn't start an uprising",
+                "to eat salt."
+            ]
+        },
+        "168_0": {
+            "lines": [
+                "Well, I'm not against drinking",
+                "some goddesses' tears."
+            ]
+        },
+        "176_0": {
+            "lines": [
+                "You are sinking in your blasphemy, vile",
+                "human, traitor among the traitors."
+            ]
+        },
+        "184_0": {
+            "lines": [
+                "I'll need to crush you to calm down."
+            ]
+        },
+        "192_0": {
+            "lines": [
+                "Give it a try, idiot.",
+            ]
+        },
+        "200_0": {
+            "lines": [
+                "I won't hold back against you as well."
+            ]
+		}
+    },
+    "1": {
+        "34_0": {
+            "lines": [
+                "That's a good thing done.",
+            ]
+        },
+        "42_0": {
+            "lines": [
+                "I'm sorry, my fellow rebels.",
+				"I done the most I could..."
+            ]
+        },
+        "50_0": {
+            "lines": [
+                "I can convert them, that will be more successful for them."
+            ]
+        },
+        "58_0": {
+            "lines": [
+                "No way!",
+				"We wanted to get her in her right mind, not change sides."
+            ]
+        },
+        "66_0": {
+            "lines": [
+                "Yes but so you'll hear the full album.",
+            ]
+        },
+        "74_0": {
+            "lines": [
+                "...",
+            ]
+        },
+        "82_0": {
+            "lines": [
+                "I think I won't anything more from you.",
+            ]
+        },
+        "90_0": {
+            "lines": [
+                "Nevermind, I'll do a courtesy visit",
+                "in your shrine."
+            ]
+        },
+        "98_0": {
+            "lines": [
+                "Well I guess it can't be helped."
+            ]
+        }
+    },
+	"2": {
+        "0_0": {
+            "lines": [
+                "Repel the goddess at any cost!"
+            ]
+        }
+    }
+}
+}
