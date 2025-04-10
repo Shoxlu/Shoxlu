@@ -7,7 +7,7 @@
     ],
     "patches": {
 		"PoBH": "(PoBH th15) Touhou - Praises of Buttered Heavens. Un mod créé avec tout une bande d'amis comme Lance, Tachy, Day, Yvel, Kagummi, Melly, Lunil et Utopia (et quelques interventions supplémentaires) ! Un projet collaboratif autour du beurre et plein d'autres choses ! (th15) ",
-		"PoBH_en": "(PoBH Lang_en th15) Touhou - Praises of Buttered Heavens. Translation of a mod created \
+		"PoBH_en": "(PoBH_en th15) Touhou - Praises of Buttered Heavens. Translation of a mod created \
 		with a lot a friends such as Lance, Tachy, Day, Yvel, Baptoast, Melly, Lunil et Utopia (and some\
 		other friends) ! A collaborative project about butter and a lot of other things ! Contact lance_la_miko on discord for translation problem. (th15)",
         
