@@ -16,6 +16,7 @@
         "PoBH_en": "(PoBH_en th15) Touhou - Praises of Buttered Heavens. Translation of a mod created with a lot a friends such as Lance, Tachy, Day, Yvel, Baptoast, Melly, Lunil et Utopia (and some other friends) ! A collaborative project about butter and a lot of other things ! Contact lance_la_miko on discord for translation problem. (th15)",
         "Th19BossMarker": "(Th19) Adds a boss marker like in previous games (for both player).",
         "Th19ExAttackResAnimFix": "(Th19) A mod that fixes the Ex attack animation that is offset for resolutions different than 1280x960. (It happens only to a few characters such as Chiyari.)",
-        "Th19FixOrinLV2": "(Th19) Fixes the Orin's lv2 bug, killing her when she uses it too high."
+        "Th19FixOrinLV2": "(Th19) Fixes the Orin's lv2 bug, killing her when she uses it too high.",
+        "adonis_compat":"Fixes a variety of bug in touhou games (to be completed) (Only available for th9)."
     }
 }
