@@ -1,6 +1,7 @@
 {
   "dependencies": [
-    "nmlgc/base_tsa"
+    "nmlgc/base_tsa",
+    "Shoxlu/adonis_compat"
   ],
   "id": "Fixes",
   "servers": [
