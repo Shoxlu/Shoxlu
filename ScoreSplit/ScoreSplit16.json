@@ -1,0 +1,338 @@
+{
+    // Input COFF file
+    "input": "../obj/final.obj", //I hate python
+    // Output JSON file
+    "output": "../../th16.js",
+    // Codecave name prefix
+    "prefix": "ScoreSplit",
+    // COMDAT jank workaround
+    "merge_comdat": false,
+    // External symbol addresses
+    "externs": {
+        "_g_window": {
+            "addr": ""
+        },
+        "?th_OpenFile@@YIPAXPBDPAHH@Z": {
+            "addr": ""
+        },
+        "?register_music@@YGHHPAD@Z": {
+            "addr": ""
+        },
+        "?create_damage_source_circle_@zPlayer@@AAQHHPAUzFloat3@@MMMMHH@Z": {
+            "addr": ""
+        },
+        "?create_damage_source_rectangle_@zPlayer@@CQHHHPAUzFloat3@@MMMMMMMHH@Z": {
+            "addr": ""
+        },
+        "?create_damage_source_rectangle_@zPlayer@@CQHHHPAUzFloat3@@MMMMMMHHH@Z": {
+            "addr": ""
+        },
+        "?sub_41E850_cancels_bullets@zBulletManager@@CQXHHPAUzFloat3@@PAUzFloat2@@HMMMM@Z": {
+            "addr": ""
+        },
+        "?ClearRadiusBombStupid@zBulletManager@@CQXHHPAUzFloat3@@HMMM@Z": {
+            "addr": ""
+        },
+        "?cancel@zBullet@@QAEXH@Z": {
+            "addr": ""
+        },
+        "?sub_420400@zSpellcard@@QAEXHPADHHHH@Z": {
+            "addr": ""
+        },
+        "?get_vm_with_id@zAnmManager@@QAEPAUzAnmVm@@H@Z": {
+            "addr": ""
+        },
+        "?ecl_get_int_arg__trampoline@zEnemyData@@QAEHH@Z": {
+            "addr": ""
+        },
+        "?draw_text2@@YAIPAUzAnmManager@@PAUzAnmFastVm@@KHHHPADHZZ":{
+            "addr": "0x46DC20"
+        },
+        "?allocate_vm@zAnmManager@@SIPAUzAnmVm@@XZ":{
+            "addr": "0x46F600"
+        },
+        "?allocate_vm@zAnmManager@@SAPAUzAnmVm@@XZ":{
+            "addr": "0x46F600"
+        },
+        "?ascii_sprintf_408260@@YIHHHPAUzAsciiManager@@PAUzFloat3@@PAD@Z":{
+            "addr": "0x408260"
+        },
+        "?ascii_sprintf_408260@@YAHPAUzAsciiManager@@PAUzFloat3@@PBDZZ":{
+            "addr": "0x408260"
+        },
+            "_PLAYER_PTR": {
+            "addr": ""
+        },
+        "_BOMB_PTR": {
+            "addr": ""
+        },
+        "_BULLET_MANAGER_PTR": {
+            "addr": ""
+        },
+        "_SPELLCARD_PTR": {
+            "addr": ""
+        },
+        "_LASER_MANAGER_PTR": {
+            "addr": ""
+        },
+        "_ANM_MANAGER_PTR": {
+            "addr": "0x4c0f48"
+        },
+        "_ASCII_MANAGER_PTR": {
+            "addr": "0x4A6D98"
+        },
+        "_hDlg": {
+            "addr": ""
+        },
+        "_GLOBALS": {
+            "addr": "0x4A5790"
+        }
+    },
+    // DLL imports
+    "imports": {
+        "jansson.dll": {
+            "json_string_value": {
+                "alias": "_json_string_value"
+            },
+            "json_object_get": {
+                "alias": "_json_object_get"
+            },
+            "json_integer_value": {
+                "alias": "_json_integer_value"
+            },
+            "json_loads": {
+                "alias": "_json_loads"
+            },
+            "json_delete": {
+                "alias": "_json_delete"
+            },
+            "json_dumps": {
+                "alias": "_json_dumps"
+            },
+            "json_object_set_new": {
+                "alias": "_json_object_set_new"
+            },
+            "json_string": {
+                "alias": "_json_string"
+            },
+            "json_integer": {
+                "alias": "_json_integer"
+            },
+            "json_object": {
+                "alias": "_json_object"
+            }
+        },
+        "winmm.dll": {
+            "timeGetTime": {
+                "alias": "_timeGetTime@0"
+            }
+        },
+        "msvcp140.dll": {
+            "?_Xlength_error@std@@YAXPBD@Z": {
+                "alias": "?_Xlength_error@std@@YAXPBD@Z"
+            },
+            "_Mtx_init_in_situ": {
+                "alias": "__Mtx_init_in_situ"
+            },
+            "?_Throw_Cpp_error@std@@YAXH@Z": {},
+            "_Thrd_join": {
+                "alias": "__Thrd_join"
+            },
+            "_Thrd_id": {
+                "alias": "__Thrd_id"
+            },
+            "_Query_perf_counter": {
+                "alias": "__Query_perf_counter"
+            },
+            "_Query_perf_frequency": {
+                "alias": "__Query_perf_frequency"
+            },
+            "_Cnd_timedwait": {
+                "alias": "__Cnd_timedwait"
+            },
+            "_Xtime_get_ticks": {
+                "alias": "__Xtime_get_ticks"
+            },
+            "_Mtx_lock": {
+                "alias": "__Mtx_lock"
+            },
+            "_Mtx_unlock": {
+                "alias": "__Mtx_unlock"
+            },
+            "_Cnd_do_broadcast_at_thread_exit": {
+                "alias": "__Cnd_do_broadcast_at_thread_exit"
+            },
+            "_Cnd_broadcast": {
+                "alias": "__Cnd_broadcast"
+            },
+            "_Mtx_destroy_in_situ": {
+                "alias": "__Mtx_destroy_in_situ"
+            },
+            "_Cnd_destroy_in_situ": {
+                "alias": "__Cnd_destroy_in_situ"
+            },
+            "_Cnd_init_in_situ": {
+                "alias": "__Cnd_init_in_situ"
+            }
+        },
+        "thcrap.dll": {
+            "json_object_get_string": {
+                "alias": "_json_object_get_string"
+            },
+            "jsondata_game_get": {
+                "alias": "_jsondata_game_get"
+            }
+        },
+        "user32.dll": {
+            "MessageBoxA": {
+                "alias": "_MessageBoxA@16"
+            },
+            "MessageBoxW": {
+                "alias": "_MessageBoxW@16"
+            },
+            "GetWindow": {
+                "alias": "_GetWindow@8"
+            },
+            "SendMessageA": {
+                "alias": "_SendMessageA@16"
+            },
+            "LoadImageA": {
+                "alias": "_LoadImageA@24"
+            },
+            "CreateIconFromResource": {
+                "alias": "_CreateIconFromResource@16"
+            }
+        },
+        "kernel32.dll": {
+            "DebugBreak": {
+                "alias": "_DebugBreak@0"
+            },
+            "AllocConsole": {
+                "alias": "_AllocConsole@0"
+            },
+            "GetModuleHandleA": {
+                "alias": "_GetModuleHandleA@4"
+            },
+            "GetLastError": {
+                "alias": "_GetLastError@0"
+            },
+            "Sleep": {
+                "alias": "_Sleep@4"
+            },
+            "CloseHandle": {
+                "alias": "_CloseHandle@4"
+            },
+            "ReadFile": {
+                "alias": "_ReadFile@20"
+            },
+            "PeekNamedPipe": {
+                "alias": "_PeekNamedPipe@24"
+            },
+            "WriteFile": {
+                "alias": "_WriteFile@20"
+            },
+            "CreateFileW": {
+                "alias": "_CreateFileW@28"
+            },
+            "WaitNamedPipeW": {
+                "alias": "_WaitNamedPipeW@8"
+            },
+            "GetCurrentProcessId": {
+                "alias": "_GetCurrentProcessId@0"
+            },
+            "CreateFileA": {
+                "alias": "_CreateFileA@28"
+            },
+            "WaitNamedPipeA": {
+                "alias": "_WaitNamedPipeA@8"
+            },
+            "CreateThread": {
+                "alias": "_CreateThread@24"
+            }
+        },
+        "ucrtbase.dll": {
+            "_wassert": {
+                "alias": "__wassert"
+            },
+            "__stdio_common_vfprintf": {
+                "alias": "___stdio_common_vfprintf"
+            },
+            "freopen": {
+                "alias": "_freopen"
+            },
+            "__acrt_iob_func": {
+                "alias": "___acrt_iob_func"
+            },
+            "__stdio_common_vfscanf": {
+                "alias": "___stdio_common_vfscanf"
+            },
+            "strtol": {
+                "alias": "_strtol"
+            },
+            "fgets": {
+                "alias": "_fgets"
+            },
+            "_invalid_parameter_noinfo_noreturn": {
+                "alias": "__invalid_parameter_noinfo_noreturn"
+            },
+            "_invoke_watson": {
+                "alias": "__invoke_watson"
+            },
+            "free": {
+                "alias": "_free"
+            },
+            "malloc": {
+                "alias": "_malloc"
+            },
+            "_wcsicmp": {
+                "alias": "__wcsicmp"
+            },
+            "strncmp": {
+                "alias": "_strncmp"
+            },
+            "puts": {
+                "alias": "_puts"
+            },
+            "_memccpy": {
+                "alias": "__memccpy"
+            },
+            "strnlen": {
+                "alias": "_strnlen"
+            },
+            "abort": {
+                "alias": "_abort"
+            },
+            "strncpy": {
+                "alias": "_strncpy"
+            },
+            "_beginthreadex": {
+                "alias": "__beginthreadex"
+            },
+            "terminate": {
+                "alias": "_terminate"
+            },
+            "_time64": {
+                "alias": "__time64"
+            }
+        },
+        "win32_utf8.dll": {
+            "RegisterClassU": {
+                "alias": "_RegisterClassU@4"
+            }
+        }
+    },
+    // Additional binhacks
+    "binhacks": {
+        "hook_window_update":
+        {
+            "addr": "0x459F27",
+            "code": "E9 [codecave:hook_window_update_fix] 90"
+        }
+    },
+    "codecaves": {
+        "hook_window_update_fix":
+        {
+            "code": "E8 [obj:_on_update] 6A 01 6A 00 6A 00 E9 [0x459F2D]"
+        }
+    }
+}
