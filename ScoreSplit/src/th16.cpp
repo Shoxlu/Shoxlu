@@ -6,6 +6,8 @@
 #define MAXSPLITS 255
 
 zAnmVm *vm;
+WCHAR patch_path[256];
+
 int recorded_scores[MAXSPLITS];
 int current_scores[MAXSPLITS];
 int previous_current_scores[MAXSPLITS];
@@ -231,7 +233,6 @@ void get_scores()
 	for (int i = 0; i < MAXSPLITS; i++)
 	{
 		auto score = json_object_get_string(save, itoa(i, buffer, 10));
-		printf("%d\n", score);
 		recorded_scores[i] = atoi(score);
 		previous_recorded_scores[i] = atoi(score);
 	}
@@ -250,7 +251,7 @@ void save_scores(const char* filename)
 	}
 	WCHAR previous_dir[512];
 	GetCurrentDirectoryW(512, previous_dir);
-	SetCurrentDirectoryW(L"C:\\Users\\Timothée\\Documents\\Touhou\\thcrap(modrepo)\\repos\\Shoxlu\\ScoreSplit\\th16");
+	SetCurrentDirectoryW(patch_path);
 	json_dump_file(save, filename, JSON_INDENT(4));
 	SetCurrentDirectoryW(previous_dir);
 	json_decref(save);
@@ -317,7 +318,8 @@ extern "C" void coff2binhack_init() {
 	timers[CANCEL_RESET].set_timer(50);
 	timers[CANCEL_ACTION].set_timer(50);
 	timers[RESET].set_timer(50);
-
+	GetCurrentDirectoryW(512, patch_path);
+	printf(L"");
 	hook_entry();
 	get_scores();
 	save_scores("save.back.json");
