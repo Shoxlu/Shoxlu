@@ -11,7 +11,7 @@ int current_scores[MAXSPLITS];
 int previous_current_scores[MAXSPLITS];
 int previous_recorded_scores[MAXSPLITS];
 
-int max_index = 16;
+int max_index = 6;
 int current_index = 0;
 int previous_index = 0;
 int max_number_to_be_shown = 8;
@@ -269,6 +269,7 @@ extern "C" void on_update()
 	}
 	if(is_register_key_pressed() && timers[REGISTER].is_finished())
 	{
+		save_scores("save.json");
 		next_split();
 	}else
 	if(is_cancel_action_key_pressed() && timers[CANCEL_ACTION].is_finished())
@@ -288,7 +289,6 @@ extern "C" void on_update()
 	}
 	print_current_scores();
 	print_recorded_scores();
-	save_scores("save.json");
 	tick_all_timers(timers, 16);
 }
 
@@ -317,6 +317,7 @@ extern "C" void coff2binhack_init() {
 	timers[CANCEL_RESET].set_timer(50);
 	timers[CANCEL_ACTION].set_timer(50);
 	timers[RESET].set_timer(50);
+
 	hook_entry();
 	get_scores();
 	save_scores("save.back.json");
