@@ -6,20 +6,78 @@
 zAnmVm *vm;
 int recorded_scores[255];
 int current_scores[255];
+int previous_current_scores[255];
 int previous_recorded_scores[255];
 
 int max_index = 16;
 int current_index = 0;
-int max_index_to_be_shown = 7;
+int previous_index = 0;
+int max_number_to_be_shown = 8;
 
 int STARTING_X = 440;
 int STARTING_Y = 260;
 
-void reset_scores(int scores[255])
+enum timer_names
+{
+	REGISTER,
+	RESET,
+	CANCEL_RESET,
+	CANCEL_ACTION
+};
+
+struct Timer{
+	unsigned int previous;
+	unsigned int current;
+	unsigned int duration;
+	bool is_finished()
+	{
+		return this->current == 0;
+	}
+	void tick_timer()
+	{
+		if(!is_finished())
+		{
+			this->previous = this->current;
+			this->current--;
+		}
+	}
+	void set_timer(unsigned int duration){
+		this->current = duration;
+		this->previous = duration;
+		this->duration = duration;
+	}
+	void reset()
+	{
+		set_timer(this->duration);
+	}
+	
+};
+
+Timer timers[16];
+
+void tick_all_timers(Timer timers[], int size){
+	for (int i = 0; i< size; i++)
+	{
+		timers[i].tick_timer();
+	}
+}
+
+void reset_scores(int scores[255], int backup_scores[255])
 {
 	for(int i = 0;i< 255; i++)
 	{
+		backup_scores[i] = scores[i];
 		scores[i] = 0;
+	}
+	current_index = -1;
+}
+
+void cancel_reset(int scores[255], int backup_scores[255])
+{
+	current_index = previous_index;
+	for(int i = 0; i< 255; i++)
+	{
+		scores[i] = backup_scores[i];
 	}
 }
 
@@ -72,8 +130,8 @@ void print_single_score(zFloat3* pos, int score, int index)
 
 void print_current_scores()
 {
-	int beginning = min(0, max_index_to_be_shown - current_index);
-	for (int i = beginning; i < min(max_index_to_be_shown+1+beginning, max_index+1); i++)
+	int beginning = max(0, - max_number_to_be_shown + current_index);
+	for (int i = beginning; i < min(max_number_to_be_shown+beginning, max_index+1); i++)
 	{
 		zFloat3 pos;
 		pos.x = STARTING_X;
@@ -84,8 +142,8 @@ void print_current_scores()
 }
 void print_recorded_scores()
 {
-	int beginning = min(0, max_index_to_be_shown - current_index);
-	for (int i = beginning; i < min(max_index_to_be_shown+beginning, max_index)+1; i++)
+	int beginning = max(0, - max_number_to_be_shown + current_index);
+	for (int i = beginning; i < min(max_number_to_be_shown+beginning, max_index+1); i++)
 	{
 		zFloat3 pos;
 		pos.x = STARTING_X;
@@ -97,58 +155,113 @@ void print_recorded_scores()
 
 void register_score(int scores[], int index)
 {
-	printf("Current score when index %d: %d\n", index, GLOBALS.CURRENT_SCORE);
+	//printf("Current score when index %d: %d\n", index, GLOBALS.CURRENT_SCORE);
 	scores[index % (max_index+1)] = GLOBALS.CURRENT_SCORE;
 }
 
 bool is_register_key_pressed()
 {
-	return false;
+	return (GetKeyState(VK_SPACE) & 0x8000);
 }
 
 bool is_cancel_action_key_pressed()
 {
-	return false;
+	return (GetKeyState(VK_BACK) & 0x8000);
 }
 
 bool is_reset_key_pressed()
 {
-	return false;
+	return (GetKeyState('L') & 0x8000);
+}
+bool is_cancel_reset_key_pressed()
+{
+	return (GetKeyState('M') & 0x8000);
 }
 
-extern "C" void on_update()
+
+void update_scores()
 {
-	// printf("ASCII_MANAGER_PTR:%x\n", ASCII_MANAGER_PTR);
-	if(!ASCII_MANAGER_PTR)
-	{
-		return;
-	}
 	register_score(current_scores, current_index);
 	if(current_scores[current_index] > recorded_scores[current_index])
 	{
 		register_score(recorded_scores, current_index);
 	}
-	if(is_register_key_pressed())
+}
+
+void next_split()
+{
+	printf("Next split !\n");
+	if(current_index < max_index)
 	{
-		current_index++;
 		previous_recorded_scores[current_index] = recorded_scores[current_index];
+		previous_index = current_index++;
+		timers[REGISTER].reset();
 	}
-	if(is_cancel_action_key_pressed())
+}
+
+void cancel_action()
+{
+	printf("Cancel action !\n");
+	recorded_scores[current_index] = previous_recorded_scores[current_index];
+	current_scores[current_index] = 0;
+	// current_index--;
+	current_index = previous_index;
+	timers[CANCEL_ACTION].reset();
+	//recorded_scores[current_index] = previous_recorded_scores[current_index];
+}
+
+void reset_splits()
+{
+	printf("Reset !\n");
+	previous_index = current_index;
+	reset_scores(current_scores, previous_current_scores);
+	timers[RESET].reset();
+}
+
+void save_backup()
+{
+	//copy records.json into records.back.json
+}
+
+void save_scores()
+{
+	//In one file named "records.json", put all current records as they are during current session
+}
+
+extern "C" void on_update()
+{
+	printf("current:%d, previous %d\n", current_index, previous_index);
+	if(!ASCII_MANAGER_PTR)
 	{
-		recorded_scores[current_index] = previous_recorded_scores[current_index];
-		current_scores[current_index] = 0;
-		if(current_index > 0)
-		{
-			current_index--;
-			recorded_scores[current_index] = previous_recorded_scores[current_index];
-		}
+		return;
 	}
-	if(is_reset_key_pressed())
+	if(current_index >= 0 && current_index <= max_index)
 	{
-		reset_scores(current_scores);
+		update_scores();
+	}
+	if(is_register_key_pressed() && timers[REGISTER].is_finished())
+	{
+		next_split();
+	}else
+	if(is_cancel_action_key_pressed() && timers[CANCEL_ACTION].is_finished())
+	{
+		cancel_action();
+	}else
+	// if(is_cancel_reset_key_pressed() && timers[CANCEL_RESET].is_finished())
+	// {
+	// 	printf("Cancel reset !\n");
+	// 	previous_index = current_index;
+	// 	cancel_reset(recorded_scores, previous_recorded_scores);
+	// 	timers[CANCEL_RESET].reset();
+	// }else
+	if(is_reset_key_pressed() && timers[RESET].is_finished())
+	{
+		reset_splits();
 	}
 	print_current_scores();
 	print_recorded_scores();
+	save_scores();
+	tick_all_timers(timers, 16);
 }
 
 extern "C" int hook_entry() {
@@ -172,6 +285,11 @@ extern "C" int hook_entry() {
 
 extern "C" void coff2binhack_init() {
 	//Sleep(5000);
+	save_backup();
+	timers[REGISTER].set_timer(50);
+	timers[CANCEL_RESET].set_timer(50);
+	timers[CANCEL_ACTION].set_timer(50);
+	timers[RESET].set_timer(50);
 	hook_entry();
 
 }
