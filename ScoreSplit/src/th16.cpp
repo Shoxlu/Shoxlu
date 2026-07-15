@@ -3,11 +3,13 @@
 
 #define DEBUG
 
+#define MAXSPLITS 255
+
 zAnmVm *vm;
-int recorded_scores[255];
-int current_scores[255];
-int previous_current_scores[255];
-int previous_recorded_scores[255];
+int recorded_scores[MAXSPLITS];
+int current_scores[MAXSPLITS];
+int previous_current_scores[MAXSPLITS];
+int previous_recorded_scores[MAXSPLITS];
 
 int max_index = 16;
 int current_index = 0;
@@ -62,9 +64,9 @@ void tick_all_timers(Timer timers[], int size){
 	}
 }
 
-void reset_scores(int scores[255], int backup_scores[255])
+void reset_scores(int scores[MAXSPLITS], int backup_scores[MAXSPLITS])
 {
-	for(int i = 0;i< 255; i++)
+	for(int i = 0;i< MAXSPLITS; i++)
 	{
 		backup_scores[i] = scores[i];
 		scores[i] = 0;
@@ -72,10 +74,10 @@ void reset_scores(int scores[255], int backup_scores[255])
 	current_index = -1;
 }
 
-void cancel_reset(int scores[255], int backup_scores[255])
+void cancel_reset(int scores[MAXSPLITS], int backup_scores[MAXSPLITS])
 {
 	current_index = previous_index;
-	for(int i = 0; i< 255; i++)
+	for(int i = 0; i< MAXSPLITS; i++)
 	{
 		scores[i] = backup_scores[i];
 	}
@@ -204,10 +206,8 @@ void cancel_action()
 	printf("Cancel action !\n");
 	recorded_scores[current_index] = previous_recorded_scores[current_index];
 	current_scores[current_index] = 0;
-	// current_index--;
 	current_index = previous_index;
 	timers[CANCEL_ACTION].reset();
-	//recorded_scores[current_index] = previous_recorded_scores[current_index];
 }
 
 void reset_splits()
@@ -218,19 +218,47 @@ void reset_splits()
 	timers[RESET].reset();
 }
 
-void save_backup()
+void get_scores()
 {
-	//copy records.json into records.back.json
+	jsondata_game_add("save.json");
+	json_t* save = jsondata_game_get("save.json");
+	if(save == nullptr)
+	{
+		printf("Save didn't exist\n");
+		return;
+	}
+	char buffer[100];
+	for (int i = 0; i < MAXSPLITS; i++)
+	{
+		auto score = json_object_get_string(save, itoa(i, buffer, 10));
+		printf("%d\n", score);
+		recorded_scores[i] = atoi(score);
+		previous_recorded_scores[i] = atoi(score);
+	}
 }
 
-void save_scores()
+void save_scores(const char* filename)
 {
-	//In one file named "records.json", put all current records as they are during current session
+	//In one file named "save.json", put all current records as they are during current session
+	//TODO: Change this function to edit current existing file
+	json_t *save = json_object();
+	char buffer[100];
+	for (int i = 0; i < MAXSPLITS; i++)
+	{
+		auto score = recorded_scores[i];
+		json_object_set_new(save, itoa(i, buffer, 10), json_string(itoa(score, buffer, 10)));
+	}
+	WCHAR previous_dir[512];
+	GetCurrentDirectoryW(512, previous_dir);
+	SetCurrentDirectoryW(L"C:\\Users\\Timothée\\Documents\\Touhou\\thcrap(modrepo)\\repos\\Shoxlu\\ScoreSplit\\th16");
+	json_dump_file(save, filename, JSON_INDENT(4));
+	SetCurrentDirectoryW(previous_dir);
+	json_decref(save);
 }
 
 extern "C" void on_update()
 {
-	printf("current:%d, previous %d\n", current_index, previous_index);
+	//printf("current:%d, previous %d\n", current_index, previous_index);
 	if(!ASCII_MANAGER_PTR)
 	{
 		return;
@@ -260,7 +288,7 @@ extern "C" void on_update()
 	}
 	print_current_scores();
 	print_recorded_scores();
-	save_scores();
+	save_scores("save.json");
 	tick_all_timers(timers, 16);
 }
 
@@ -285,12 +313,13 @@ extern "C" int hook_entry() {
 
 extern "C" void coff2binhack_init() {
 	//Sleep(5000);
-	save_backup();
 	timers[REGISTER].set_timer(50);
 	timers[CANCEL_RESET].set_timer(50);
 	timers[CANCEL_ACTION].set_timer(50);
 	timers[RESET].set_timer(50);
 	hook_entry();
+	get_scores();
+	save_scores("save.back.json");
 
 }
 
