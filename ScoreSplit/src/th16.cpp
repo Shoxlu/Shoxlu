@@ -1,9 +1,8 @@
 #include "th16.h"
-
+#include "config.h"
 
 #define DEBUG
 
-#define MAXSPLITS 255
 
 zAnmVm *vm;
 wchar_t* patch_path;
@@ -13,13 +12,15 @@ int current_scores[MAXSPLITS];
 int previous_current_scores[MAXSPLITS];
 int previous_recorded_scores[MAXSPLITS];
 
-int max_index = 6;
+int max_index = 5;
 int current_index = 0;
 int previous_index = 0;
 int max_number_to_be_shown = 8;
 
 int STARTING_X = 440;
 int STARTING_Y = 260;
+
+extern CfgFile cfg;
 
 enum timer_names
 {
@@ -128,7 +129,7 @@ void print_single_score(zFloat3* pos, int score, int index)
 	ptr->font_id = 0;
 	ptr->group = 0;
 	ptr->duration = 2;
-	ascii_sprintf_408260(ASCII_MANAGER_PTR, pos, "Split %d: %d", index, score);
+	ascii_sprintf_408260(ASCII_MANAGER_PTR, pos, "%s: %d", cfg.split_names[index], score);
 	reset_ascii();
 }
 
@@ -235,6 +236,7 @@ void get_scores()
 		auto score = json_object_get_string(save, itoa(i, buffer, 10));
 		recorded_scores[i] = atoi(score);
 		previous_recorded_scores[i] = atoi(score);
+		free((void*)score);
 	}
 }
 
@@ -247,7 +249,9 @@ void save_scores(const char* filename)
 	for (int i = 0; i < MAXSPLITS; i++)
 	{
 		auto score = recorded_scores[i];
-		json_object_set_new(save, itoa(i, buffer, 10), json_string(itoa(score, buffer, 10)));
+		json_t *value =  json_string(itoa(score, buffer, 10));
+		json_object_set_new(save, itoa(i, buffer, 10),value);
+
 	}
 	WCHAR previous_dir[512];
 	GetCurrentDirectoryW(512, previous_dir);
@@ -293,54 +297,6 @@ extern "C" void on_update()
 	tick_all_timers(timers, 16);
 }
 
-int find(std::string path, const char* s, size_t s_len)
-{
-	int len = path.length();
-	for (int i = 0; i < len; i++)
-	{
-		int j = 0;
-		while(j < s_len && s[j] == path[j+i])
-		{
-			j++;
-		}
-		if(j == s_len)
-		{
-			return i;
-		}
-	}
-	return -1;
-}
-
-
-wchar_t *utf8_to_wchar(const char *utf8)
-{
-    int size = MultiByteToWideChar(
-        CP_UTF8,
-        0,
-        utf8,
-        -1,
-        NULL,
-        0
-    );
-
-    if (size == 0)
-        return NULL;
-
-    wchar_t *result = (wchar_t*)malloc(size * sizeof(wchar_t));
-    if (!result)
-        return NULL;
-
-    MultiByteToWideChar(
-        CP_UTF8,
-        0,
-        utf8,
-        -1,
-        result,
-        size
-    );
-
-    return result;
-}
 
 wchar_t* get_full_patch_path()
 {
@@ -394,12 +350,15 @@ extern "C" void coff2binhack_init() {
 	timers[CANCEL_RESET].set_timer(50);
 	timers[CANCEL_ACTION].set_timer(50);
 	timers[RESET].set_timer(50);
+	patch_path = get_full_patch_path();
 	hook_entry();
 	get_scores();
-	patch_path = get_full_patch_path();
-
+	jsondata_game_add("cfg.json");
+	printf("scores ok\n");
+	read_cfg("cfg.json");
+	printf("cfg okay\n");
 	save_scores("save.back.json");
-
+	printf("End of init\n");
 }
 
 

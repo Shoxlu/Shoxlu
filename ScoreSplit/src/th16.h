@@ -19,4 +19,5 @@
 #include <thread>
 
 #include "linkerHacks.h"
+#include "utils.h"
 #include "th16_defs.h"
