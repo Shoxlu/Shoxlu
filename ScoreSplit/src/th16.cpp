@@ -6,7 +6,7 @@
 #define MAXSPLITS 255
 
 zAnmVm *vm;
-WCHAR patch_path[256];
+wchar_t* patch_path;
 
 int recorded_scores[MAXSPLITS];
 int current_scores[MAXSPLITS];
@@ -251,7 +251,7 @@ void save_scores(const char* filename)
 	}
 	WCHAR previous_dir[512];
 	GetCurrentDirectoryW(512, previous_dir);
-	SetCurrentDirectoryW(patch_path);
+	printf("%d %d\n", SetCurrentDirectoryW(patch_path), GetLastError());
 	json_dump_file(save, filename, JSON_INDENT(4));
 	SetCurrentDirectoryW(previous_dir);
 	json_decref(save);
@@ -270,8 +270,8 @@ extern "C" void on_update()
 	}
 	if(is_register_key_pressed() && timers[REGISTER].is_finished())
 	{
-		save_scores("save.json");
 		next_split();
+		save_scores("save.json");
 	}else
 	if(is_cancel_action_key_pressed() && timers[CANCEL_ACTION].is_finished())
 	{
@@ -293,9 +293,84 @@ extern "C" void on_update()
 	tick_all_timers(timers, 16);
 }
 
+int find(std::string path, const char* s, size_t s_len)
+{
+	int len = path.length();
+	for (int i = 0; i < len; i++)
+	{
+		int j = 0;
+		while(j < s_len && s[j] == path[j+i])
+		{
+			j++;
+		}
+		if(j == s_len)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
+
+
+wchar_t *utf8_to_wchar(const char *utf8)
+{
+    int size = MultiByteToWideChar(
+        CP_UTF8,
+        0,
+        utf8,
+        -1,
+        NULL,
+        0
+    );
+
+    if (size == 0)
+        return NULL;
+
+    wchar_t *result = (wchar_t*)malloc(size * sizeof(wchar_t));
+    if (!result)
+        return NULL;
+
+    MultiByteToWideChar(
+        CP_UTF8,
+        0,
+        utf8,
+        -1,
+        result,
+        size
+    );
+
+    return result;
+}
+
+wchar_t* get_full_patch_path()
+{
+	const char *fn = ".t";
+
+	std::string path = fn;
+	char **chain = resolve_chain_game(path.c_str());
+	char *c_full_path = stack_fn_resolve_chain(chain);
+	chain_free(chain);
+
+	path.assign(c_full_path, strlen(c_full_path) - strlen(fn));
+	thcrap_free(c_full_path);
+
+	int ds_pos = find(path, "//", strlen("//"));
+
+	while(ds_pos >= 0)
+	{
+		path.replace(ds_pos, 2, "/");
+		ds_pos = find(path, "//", strlen("//"));
+	}
+	wchar_t *conv = utf8_to_wchar(path.c_str());
+	
+	return conv;
+}
+
 extern "C" int hook_entry() {
 #ifdef DEBUG
+
 	AllocConsole();
+	// SetConsoleOutputCP(CP_UTF8);
 	freopen("CONIN$", "r", stdin);
 	freopen("CONOUT$", "w", stdout);
 	freopen("CONOUT$", "w", stderr);
@@ -312,16 +387,17 @@ extern "C" int hook_entry() {
     return 0;
 }
 
+
 extern "C" void coff2binhack_init() {
 	//Sleep(5000);
 	timers[REGISTER].set_timer(50);
 	timers[CANCEL_RESET].set_timer(50);
 	timers[CANCEL_ACTION].set_timer(50);
 	timers[RESET].set_timer(50);
-	GetCurrentDirectoryW(512, patch_path);
-	printf(L"");
 	hook_entry();
 	get_scores();
+	patch_path = get_full_patch_path();
+
 	save_scores("save.back.json");
 
 }
