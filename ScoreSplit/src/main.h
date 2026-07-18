@@ -1,4 +1,5 @@
 #pragma once
+#pragma once
 #define _USE_MATH_DEFINES 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wuninitialized"
@@ -16,8 +17,7 @@
 #include <cstdint>
 #include <functional>
 #include <thread>
-namespace th16{
-    void get_scores();
-    void on_update();
-    void init();
-}
+
+#include "linkerHacks.h"
+#include "utils.h"
+#include "th16_defs.h"
