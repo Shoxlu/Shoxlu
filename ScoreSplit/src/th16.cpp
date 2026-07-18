@@ -29,17 +29,17 @@ Timer timers[16];
 enum Characters
 {
 	Reimu,
-	Marisa,
+	Cirno,
 	Aya,
-	Cirno
+	Marisa
 };
 
 enum Subshots
 {
 	Spring,
-	Winter,
-	Autumn,
 	Summer,
+	Autumn,
+	Winter,
 };
 
 
@@ -57,6 +57,54 @@ int STARTING_X = 440;
 int STARTING_Y = 260;
 
 
+const char* get_character_name(int id){
+	switch (id)
+	{
+	case Reimu:
+		return "Reimu";
+		break;
+
+	case Marisa:
+		return "Marisa";
+		break;
+
+	case Aya:
+		return "Aya";
+		break;
+
+	case Cirno:
+		return "Cirno";
+		break;
+
+	default:
+		break;
+	}
+	return "";
+}
+const char* get_season_name(int id){
+	switch (id)
+	{
+	case Spring:
+		return "Spring";
+		break;
+
+	case Summer:
+		return "Summer";
+		break;
+
+	case Autumn:
+		return "Autumn";
+		break;
+
+	case Winter:
+		return "Winter";
+		break;
+
+	default:
+		break;
+	}
+	return "";
+}
 
 void reset_scores(int scores[MAXSPLITS][NCHARACTERS][NSUBSHOTS], int backup_scores[MAXSPLITS][NCHARACTERS][NSUBSHOTS])
 {
@@ -194,7 +242,6 @@ void reset_splits()
 
 void get_scores()
 {
-	jsondata_game_add("save.json");
 	json_t* save = jsondata_game_get("save.json");
 	if(save == nullptr)
 	{
@@ -204,11 +251,23 @@ void get_scores()
 	char buffer[100];
 	for (int i = 0; i < MAXSPLITS; i++)
 	{
-		auto score = json_object_get_string(save, itoa(i, buffer, 10));
-		recorded_scores[i][GLOBALS.CHARACTER][GLOBALS.SUBSEASON] = atoi(score);
-		previous_recorded_scores[i][GLOBALS.CHARACTER][GLOBALS.SUBSEASON] = atoi(score);
-		free((void*)score);
+		json_t * split = json_object_get(save, itoa(i, buffer, 10));
+
+		for (int c = 0; c < NCHARACTERS; c++)
+		{
+			json_t *character = json_object_get(split, get_character_name(c));
+			for (int s = 0; s < NSUBSHOTS; s++)
+			{
+				json_t *season = json_object_get(character, get_season_name(s));
+				recorded_scores[i][c][s] = json_integer_value(season);
+				previous_recorded_scores[i][c][s] = json_integer_value(season);
+				json_decref(season);
+			}
+			json_decref(character);
+		}
+		json_decref(split);
 	}
+	//json_decref(save);
 }
 
 void save_scores(const char* filename)
@@ -219,10 +278,20 @@ void save_scores(const char* filename)
 	char buffer[100];
 	for (int i = 0; i < MAXSPLITS; i++)
 	{
-		auto score = recorded_scores[i][GLOBALS.CHARACTER][GLOBALS.SUBSEASON];
-		json_t *value =  json_string(itoa(score, buffer, 10));
-		json_object_set_new(save, itoa(i, buffer, 10),value);
-
+		json_t *value = json_object();
+		for (int c = 0; c < NCHARACTERS; c++)
+		{
+			json_t *season = json_object();
+			for (int s = 0; s < NSUBSHOTS; s++)
+			{
+				auto score = recorded_scores[i][c][s];
+				json_object_set(season, get_season_name(s), json_integer(score));
+				json_object_set(value, get_character_name(c), season);
+				json_object_set(save, itoa(i, buffer, 10),value);
+			}
+			json_decref(season);
+		}
+		json_decref(value);
 	}
 	WCHAR previous_dir[512];
 	GetCurrentDirectoryW(512, previous_dir);
@@ -275,8 +344,9 @@ void init()
 	timers[CANCEL_ACTION].set_timer(50);
 	timers[RESET].set_timer(50);
 
-	get_scores();
+	jsondata_game_add("save.json");
 	jsondata_game_add("cfg.json");
+	get_scores();
 	printf("scores ok\n");
 	read_cfg("cfg.json");
 	printf("cfg okay\n");
