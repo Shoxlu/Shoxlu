@@ -86,6 +86,7 @@ extern "C" void coff2binhack_init() {
 	//Sleep(5000);
     hook_entry();
     patch_path = get_full_patch_path();
-    init_func_ptrs(get_game());
+	printf("%s\n", patch_path);
+	init_func_ptrs(get_game());
     printf("End of init\n");
 }

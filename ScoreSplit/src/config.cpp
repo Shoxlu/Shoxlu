@@ -32,10 +32,8 @@ void create_cfg(const char* fn)
 	{
         char buffer[10];
         std::string number = itoa(i, buffer, 10);
-        printf("%s\n", number.c_str());
         std::string full_name = name + number;
         strcpy(cfg.split_names[i], full_name.c_str());
-        printf("%s\n", cfg.split_names[i]);
     }
     save_cfg(fn);
 }
