@@ -172,6 +172,20 @@ void print_single_score(zFloat3* pos, int score, int index)
 	reset_ascii();
 }
 
+int get_color_from_score(int index)
+{
+	if(index >= current_index)
+	{
+		return 0xFFFFFFFF;
+	}
+	if(recorded_scores[index][GLOBALS.CHARACTER][GLOBALS.SUBSEASON] <= current_scores[index][GLOBALS.CHARACTER][GLOBALS.SUBSEASON])
+	{
+		return 0xFF00FFFF;
+	}else{
+		return 0xFFFF0000;
+	}
+}
+
 void print_current_scores()
 {
 	int beginning = max(0, - max_number_to_be_shown + current_index);
@@ -180,7 +194,7 @@ void print_current_scores()
 		zFloat3 pos;
 		pos.x = STARTING_X;
 		pos.y = STARTING_Y + (i - beginning) * 24;
-		ASCII_MANAGER_PTR->color = (D3DCOLOR)0xFFFFFFFF;
+		ASCII_MANAGER_PTR->color = (D3DCOLOR)get_color_from_score(i);
 		print_single_score(&pos, current_scores[i][GLOBALS.CHARACTER][GLOBALS.SUBSEASON]*10, i);
 	}
 }
@@ -192,7 +206,7 @@ void print_recorded_scores()
 		zFloat3 pos;
 		pos.x = STARTING_X;
 		pos.y = STARTING_Y + 12 + (i - beginning) * 24;
-		ASCII_MANAGER_PTR->color = 0xFF0000FF;
+		ASCII_MANAGER_PTR->color = 0xFFFFFF00;
 		print_single_score(&pos, recorded_scores[i][GLOBALS.CHARACTER][GLOBALS.SUBSEASON]*10, i);
 	}
 }
@@ -261,11 +275,8 @@ void get_scores()
 				json_t *season = json_object_get(character, get_season_name(s));
 				recorded_scores[i][c][s] = json_integer_value(season);
 				previous_recorded_scores[i][c][s] = json_integer_value(season);
-				json_decref(season);
 			}
-			json_decref(character);
 		}
-		json_decref(split);
 	}
 	//json_decref(save);
 }
