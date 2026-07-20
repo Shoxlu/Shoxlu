@@ -158,7 +158,7 @@ void test()
 	printf("Je print là\n");
 }
 
-void print_single_score(zFloat3* pos, int score, int index)
+void print_single_score(zFloat3* pos, int64_t score, int index)
 {
 	zAsciiManager* ptr = ASCII_MANAGER_PTR;
 	ptr->alignment_mode_h = 1;
