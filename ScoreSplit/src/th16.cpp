@@ -168,7 +168,7 @@ void print_single_score(zFloat3* pos, int64_t score, int index)
 	ptr->font_id = 0;
 	ptr->group = 0;
 	ptr->duration = 2;
-	ascii_sprintf_408260(ASCII_MANAGER_PTR, pos, "%s: %d", cfg.split_names[index], score);
+	ascii_sprintf_408260(ASCII_MANAGER_PTR, pos, "%s: %lld", cfg.split_names[index], score);
 	reset_ascii();
 }
 
@@ -195,7 +195,8 @@ void print_current_scores()
 		pos.x = STARTING_X;
 		pos.y = STARTING_Y + (i - beginning) * 24;
 		ASCII_MANAGER_PTR->color = (D3DCOLOR)get_color_from_score(i);
-		print_single_score(&pos, current_scores[i][GLOBALS.CHARACTER][GLOBALS.SUBSEASON]*10, i);
+		int64_t score = (int64_t)current_scores[i][GLOBALS.CHARACTER][GLOBALS.SUBSEASON] * 10;
+		print_single_score(&pos, score, i);
 	}
 }
 void print_recorded_scores()
@@ -207,7 +208,8 @@ void print_recorded_scores()
 		pos.x = STARTING_X;
 		pos.y = STARTING_Y + 12 + (i - beginning) * 24;
 		ASCII_MANAGER_PTR->color = 0xFFFFFF00;
-		print_single_score(&pos, recorded_scores[i][GLOBALS.CHARACTER][GLOBALS.SUBSEASON]*10, i);
+		int64_t score =  (int64_t)recorded_scores[i][GLOBALS.CHARACTER][GLOBALS.SUBSEASON] * 10;
+		print_single_score(&pos, score, i);
 	}
 }
 
