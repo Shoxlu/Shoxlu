@@ -48,7 +48,6 @@ int current_scores[MAXSPLITS][NCHARACTERS][NSUBSHOTS];
 int previous_current_scores[MAXSPLITS][NCHARACTERS][NSUBSHOTS];
 int previous_recorded_scores[MAXSPLITS][NCHARACTERS][NSUBSHOTS];
 
-int max_index = 5;
 int current_index = 0;
 int previous_index = 0;
 int max_number_to_be_shown = 8;
@@ -189,7 +188,7 @@ int get_color_from_score(int index)
 void print_current_scores()
 {
 	int beginning = max(0, - max_number_to_be_shown + current_index);
-	for (int i = beginning; i < min(max_number_to_be_shown+beginning, max_index+1); i++)
+	for (int i = beginning; i < min(max_number_to_be_shown+beginning, cfg.max_index+1); i++)
 	{
 		zFloat3 pos;
 		pos.x = STARTING_X;
@@ -202,7 +201,7 @@ void print_current_scores()
 void print_recorded_scores()
 {
 	int beginning = max(0, - max_number_to_be_shown + current_index);
-	for (int i = beginning; i < min(max_number_to_be_shown+beginning, max_index+1); i++)
+	for (int i = beginning; i < min(max_number_to_be_shown+beginning, cfg.max_index+1); i++)
 	{
 		zFloat3 pos;
 		pos.x = STARTING_X;
@@ -216,7 +215,7 @@ void print_recorded_scores()
 void register_score(int scores[MAXSPLITS][NCHARACTERS][NSUBSHOTS], int index)
 {
 	//printf("Current score when index %d: %d\n", index, GLOBALS.CURRENT_SCORE);
-	scores[index % (max_index+1)][GLOBALS.CHARACTER][GLOBALS.SUBSEASON] = GLOBALS.CURRENT_SCORE;
+	scores[index % (cfg.max_index+1)][GLOBALS.CHARACTER][GLOBALS.SUBSEASON] = GLOBALS.CURRENT_SCORE;
 }
 
 void update_scores()
@@ -231,7 +230,7 @@ void update_scores()
 void next_split()
 {
 	printf("Next split !\n");
-	if(current_index < max_index)
+	if(current_index < cfg.max_index)
 	{
 		previous_recorded_scores[current_index][GLOBALS.CHARACTER][GLOBALS.SUBSEASON] = recorded_scores[current_index][GLOBALS.CHARACTER][GLOBALS.SUBSEASON];
 		previous_index = current_index++;
@@ -321,7 +320,7 @@ void on_update()
 	{
 		return;
 	}
-	if(current_index >= 0 && current_index <= max_index)
+	if(current_index >= 0 && current_index <= cfg.max_index)
 	{
 		update_scores();
 	}

@@ -8,6 +8,8 @@
 
 struct CfgFile
 {
+    
+    int max_index = 5;
     char split_names[MAXSPLITS][256];
 };
 
